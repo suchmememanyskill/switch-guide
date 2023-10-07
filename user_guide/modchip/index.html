@@ -658,13 +658,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#disclaimer" class="md-nav__link">
-    Disclaimer
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1351,10 +1344,10 @@
 
 
 <h1 id="introduction-to-modchips">Introduction to Modchips<a class="headerlink" href="#introduction-to-modchips" title="Permanent link">&para;</a></h1>
-<div class="admonition tip"></div>
-<p>Modchips are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that <code>sdloader</code> can run. 
+<div class="admonition info">
+<p>Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that <code>sdloader</code> can run. 
 <code>sdloader</code> is the module responsible for loading <code>payload.bin</code> off of the root of your SD card, this allows even patched switches to run CFW.</p>
-<p>&amp;nbsp</p>
+</div>
 <h3 id="general-knowledge">General knowledge<a class="headerlink" href="#general-knowledge" title="Permanent link">&para;</a></h3>
 <p>If you've just finished installing your modchip or getting your switch modchipped, there are general things you should know.</p>
 <p>Unless you have a modchipped V1 unpatched switch, your switch is not vulnerable to the fusee-gelee exploit found in RCM. 
@@ -1366,13 +1359,12 @@ This means that you will not be able to use your switch normally if you don't ha
 <p>The upside of modchips is that you will be able to "cold boot" (run homebrew from the point of turning on your switch from a fully-off state) CFW. Running CFW on modchipped switches
 is also much more simplistic, as it doesn't require you to use an RCM jig and put your switch in RCM.
 It only requires you to have <code>payload.bin</code> present on the root of your SD card and turn on your switch.</p>
-<p>&amp;nbsp</p>
-<h3 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h3>
-<div class="admonition danger"></div>
+<div class="admonition danger">
+<p class="admonition-title">Disclaimer</p>
 <p>We do <strong>NOT</strong> assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
 There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
 The NH Discord server is also NOT a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).</p>
-<p>&amp;nbsp</p>
+</div>
 <p><a class="md-button md-button--primary" href="ensure_sd_payload/">Continue to Ensuring SD Payload <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 
