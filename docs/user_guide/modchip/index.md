@@ -1,10 +1,8 @@
 # Introduction to Modchips
 
-!!! tip ""
-Modchips are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that `sdloader` can run. 
-`sdloader` is the module responsible for loading `payload.bin` off of the root of your SD card, this allows even patched switches to run CFW.
-
-&nbsp
+!!! info "" 
+    Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that `sdloader` can run. 
+    `sdloader` is the module responsible for loading `payload.bin` off of the root of your SD card, this allows even patched switches to run CFW.
 
 ### General knowledge
 
@@ -23,15 +21,9 @@ The upside of modchips is that you will be able to "cold boot" (run homebrew fro
 is also much more simplistic, as it doesn't require you to use an RCM jig and put your switch in RCM.
 It only requires you to have `payload.bin` present on the root of your SD card and turn on your switch.
 
-&nbsp
-
-### Disclaimer
-
-!!! danger "" 
-We do **NOT** assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
-There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
-The NH Discord server is also NOT a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).
-
-&nbsp
+!!! danger "Disclaimer" 
+    We do **NOT** assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
+    There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
+    The NH Discord server is also NOT a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).
 
 [Continue to Ensuring SD Payload :material-arrow-right:](ensure_sd_payload.md){ .md-button .md-button--primary }
