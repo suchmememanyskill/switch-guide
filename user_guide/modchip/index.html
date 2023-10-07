@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modchip" class="md-skip">
+        <a href="#introduction-to-modchips" class="md-skip">
           Skip to content
         </a>
       
@@ -615,6 +615,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -624,6 +635,39 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-knowledge" class="md-nav__link">
+    General knowledge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    Disclaimer
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1306,8 +1350,27 @@
   
 
 
-<h1 id="modchip">Modchip<a class="headerlink" href="#modchip" title="Permanent link">&para;</a></h1>
-<p>Nothing here yet!</p>
+<h1 id="introduction-to-modchips">Introduction to Modchips<a class="headerlink" href="#introduction-to-modchips" title="Permanent link">&para;</a></h1>
+<p>!!! tip Modchips are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that <code>sdloader</code> can run. 
+<code>sdloader</code> is the module responsible for loading <code>payload.bin</code> off of the root of your SD card, this allows even patched switches to run CFW.</p>
+<p>&amp;nbsp</p>
+<h3 id="general-knowledge">General knowledge<a class="headerlink" href="#general-knowledge" title="Permanent link">&para;</a></h3>
+<p>If you've just finished installing your modchip or getting your switch modchipped, there are general things you should know.</p>
+<p>Unless you have a modchipped V1 unpatched switch, your switch is not vulnerable to the fusee-gelee exploit found in RCM. 
+This means that putting your switch in RCM and trying to inject a payload won't do anything.</p>
+<p>Modchipped switches, depending on the firmware they're running and the kind of modchip you have, will not boot without SD card inserted. (Some modchips and modchip firmwares allow you
+to bypass the modchip by either holding both volume buttons or either one of the volume buttons, this would allow you to boot normally.)
+This means that you will not be able to use your switch normally if you don't have an SD card. </p>
+<p>If you do turn on your switch without SD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
+<p>The upside of modchips is that you will be able to "cold boot" (run homebrew from the point of turning on your switch from a fully-off state) CFW. Running CFW on modchipped switches
+is also much more simplistic, as it doesn't require you to use an RCM jig and put your switch in RCM.
+It only requires you to have <code>payload.bin</code> present on the root of your SD card and turn on your switch.</p>
+<p>&amp;nbsp</p>
+<h3 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h3>
+<p>!!! danger We do <strong>NOT</strong> assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
+There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
+The NH Discord server is also NOT a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).</p>
+<p>&amp;nbsp</p>
 <p><a class="md-button md-button--primary" href="ensure_sd_payload/">Continue to Ensuring SD Payload <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 
