@@ -1,6 +1,7 @@
 # Introduction to Modchips
 
-!!! tip Modchips are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that `sdloader` can run. 
+!!! tip ""
+Modchips are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that `sdloader` can run. 
 `sdloader` is the module responsible for loading `payload.bin` off of the root of your SD card, this allows even patched switches to run CFW.
 
 &nbsp
@@ -26,7 +27,8 @@ It only requires you to have `payload.bin` present on the root of your SD card a
 
 ### Disclaimer
 
-!!! danger We do **NOT** assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
+!!! danger "" 
+We do **NOT** assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
 There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
 The NH Discord server is also NOT a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).
 
