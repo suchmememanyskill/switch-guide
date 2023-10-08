@@ -1345,6 +1345,7 @@
 
 <h1 id="introduction-to-modchips">Introduction to Modchips<a class="headerlink" href="#introduction-to-modchips" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
+<p class="admonition-title">Information</p>
 <p>Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that <code>sdloader</code> can run. 
 <code>sdloader</code> is the module responsible for loading <code>payload.bin</code> off of the root of your SD card, this allows even patched switches to run CFW.</p>
 </div>
@@ -1352,18 +1353,21 @@
 <p>If you've just finished installing your modchip or getting your switch modchipped, there are general things you should know.</p>
 <p>Unless you have a modchipped V1 unpatched switch, your switch is not vulnerable to the fusee-gelee exploit found in RCM. 
 This means that putting your switch in RCM and trying to inject a payload won't do anything.</p>
-<p>Modchipped switches, depending on the firmware they're running and the kind of modchip you have, will not boot without SD card inserted. (Some modchips and modchip firmwares allow you
-to bypass the modchip by either holding both volume buttons or either one of the volume buttons, this would allow you to boot normally.)
+<p>Modchipped switches, depending on the firmware they're running and the kind of modchip you have, will not boot without SD card inserted.
 This means that you will not be able to use your switch normally if you don't have an SD card. </p>
+<details class="note" open="open">
+<summary>Note about modchips and their firmwares</summary>
+<p>Some modchips and modchip firmwares <strong>DO</strong> allow you to bypass the modchip by either holding both volume buttons or either one of the volume buttons, this would allow you to boot normally without SD card inserted.</p>
+</details>
 <p>If you do turn on your switch without SD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
-<p>The upside of modchips is that you will be able to "cold boot" (run homebrew from the point of turning on your switch from a fully-off state) CFW. Running CFW on modchipped switches
-is also much more simplistic, as it doesn't require you to use an RCM jig and put your switch in RCM.
+<p>The upside of modchips is that you will be able to "cold boot" CFW (run homebrew from the point of turning on your switch from a fully-off state). Running CFW on modchipped switches
+is also much more simplistic, as it doesn't require you to use an RCM jig and put your switch in RCM, then inject a payload using an external device.
 It only requires you to have <code>payload.bin</code> present on the root of your SD card and turn on your switch.</p>
 <div class="admonition danger">
 <p class="admonition-title">Disclaimer</p>
 <p>We do <strong>NOT</strong> assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
 There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
-The NH Discord server is also NOT a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).</p>
+The NH Discord server is also <strong>NOT</strong> a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).</p>
 </div>
 <p><a class="md-button md-button--primary" href="ensure_sd_payload/">Continue to Ensuring SD Payload <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
