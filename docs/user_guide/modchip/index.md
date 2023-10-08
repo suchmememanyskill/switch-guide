@@ -1,8 +1,8 @@
 # Introduction to Modchips
 
 !!! info "Information" 
-    Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that `sdloader` can run. 
-    `sdloader` is the module responsible for loading `payload.bin` off of the root of your SD card, this allows even patched switches to run CFW.
+    Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC      and essentially "lag out" the CPU so that `sdloader` can run. 
+    `sdloader` is the module responsible for loading `payload.bin` off of the root of your SD card, this allows even          patched switches to run CFW.
 
 ### General knowledge
 
@@ -15,7 +15,7 @@ Modchipped switches, depending on the firmware they're running and the kind of m
 This means that you will not be able to use your switch normally if you don't have an SD card. 
 
 ???+ note "Note about modchips and their firmwares"
-    Some modchips and modchip firmwares **DO** allow you to bypass the modchip by either holding both volume buttons or either one of the volume buttons, this would allow you to boot normally without SD card inserted.
+    Some modchips and modchip firmwares **DO** allow you to bypass the modchip by either holding both volume buttons or       either one of the volume buttons, then powering on your switch. This would allow you to boot normally without SD card     inserted.
 
 If you do turn on your switch without SD card inserted, you should end up at a splash screen saying something along the lines of `NO SD`.
 
