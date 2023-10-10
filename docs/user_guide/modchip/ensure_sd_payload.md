@@ -3,7 +3,6 @@
 To get ready for formatting/partitioning your SD card, we will need to prepare your SD card with the required files. 
 
 ### What you need:
-!!! tip ""
     - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
     - Your micro SD card
 
@@ -18,7 +17,7 @@ To get ready for formatting/partitioning your SD card, we will need to prepare y
 6. Insert your SD card back into your switch, then turn on your switch.
 7. You should now be loaded into hekate. If not, consult the message below.
 	
-!!! warning ""
+!!! warning
     If your switch does not load into hekate or shows a `NO SD`/`No Payload` screen when turning on your switch, ensure that you inserted your SD card and renamed the hekate payload to exactly `payload.bin`
 
 
