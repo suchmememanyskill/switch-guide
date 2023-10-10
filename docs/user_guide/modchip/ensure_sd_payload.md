@@ -3,8 +3,8 @@
 To get ready for formatting/partitioning your SD card, we will need to prepare your SD card with the required files. 
 
 ### What you need:
-    - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
-    - Your micro SD card
+- The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
+- Your micro SD card
 
 
 ### Instructions:
