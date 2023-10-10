@@ -19,9 +19,9 @@ This means that you will not be able to use your switch normally if you don't ha
 
 If you do turn on your switch without SD card inserted, you should end up at a splash screen saying something along the lines of `NO SD`.
 
-The upside of modchips is that you will be able to "cold boot" CFW (run homebrew from the point of turning on your switch from a fully-off state). Running CFW on modchipped switches
-is also much more simplistic, as it doesn't require you to use an RCM jig and put your switch in RCM, then inject a payload using an external device.
-It only requires you to have `payload.bin` present on the root of your SD card and turn on your switch.
+Unlike unpatched switches, modchipped switches can "cold boot" CFW, they do not rely on an external device to inject a payload like unpatched switches would. 
+(Cold booting means turning on your console from a fully-off state and immediately being able to run CFW).
+Running CFW on modchipped switches is more simplistic as it only requires you to have `payload.bin` present on the root of your SD card and turn on your switch.
 
 !!! danger "Disclaimer" 
     We do **NOT** assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
