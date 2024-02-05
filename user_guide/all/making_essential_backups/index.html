@@ -26,7 +26,7 @@
     
     
       
-        <title>Making the emuMMC - NH Switch Guide</title>
+        <title>Making Essential Backups - NH Switch Guide</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#making-essential-backups-and-dumping-keys" class="md-skip">
+        <a href="#making-essential-backups-and-dumping-your-prodkeys" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Making the emuMMC
+              Making Essential Backups
             
           </span>
         </div>
@@ -748,7 +748,7 @@
           
   
   <span class="md-ellipsis">
-    Making the emuMMC
+    Making Essential Backups
   </span>
   
 
@@ -759,7 +759,7 @@
         
   
   <span class="md-ellipsis">
-    Making the emuMMC
+    Making Essential Backups
   </span>
   
 
@@ -790,14 +790,27 @@
         
           <li class="md-nav__item">
   <a href="#instructions" class="md-nav__link">
-    Instructions
+    Instructions:
   </a>
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-your-consoles-unique-prodkeys" class="md-nav__link">
+    Getting your console's unique prod.keys
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting your console's unique prod.keys">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
-  <a href="#getting-your-consoles-unique-keys" class="md-nav__link">
-    Getting your Console's Unique Keys
+  <a href="#instructions_1" class="md-nav__link">
+    Instructions:
   </a>
   
 </li>
@@ -1300,6 +1313,46 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/installing_android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extras/installing_linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1363,64 +1416,58 @@
   
 
 
-<h1 id="making-essential-backups-and-dumping-keys">Making Essential Backups and dumping keys<a class="headerlink" href="#making-essential-backups-and-dumping-keys" title="Permanent link">&para;</a></h1>
-<div class="admonition danger">
-<p class="admonition-title">Important</p>
-<p>It is critical to make these backups. Do not skip these steps.</p>
-</div>
-<p>&nbsp;</p>
+<h1 id="making-essential-backups-and-dumping-your-prodkeys">Making Essential Backups and dumping your prod.keys<a class="headerlink" href="#making-essential-backups-and-dumping-your-prodkeys" title="Permanent link">&para;</a></h1>
 <h2 id="making-a-nand-backup">Making a NAND Backup<a class="headerlink" href="#making-a-nand-backup" title="Permanent link">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Important</p>
-<p>A NAND backup is crucial. They can be used to restore the device to a working state in case of emergencies.</p>
+<p>A NAND backup is crucial to have, it's a full backup of the internal storage of your Switch and can be used to restore the device to a working state in case of emergencies. <strong>DO NOT SKIP THIS STEP</strong></p>
 <p>Once the backup is finished, <strong>keep it somewhere safe.</strong> The best backup is the one you have but never need, and the worst backup is the one you need but never made. To save space, it's recommended to compress the end-result with a <code>.zip</code> file or something similar.</p>
 <p>It's highly recommended that you use an SD card that is formatted to FAT32 and has at least 32 gigabytes of space free. This will still work on smaller cards, but it's not ideal.</p>
 </div>
-<h3 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
-<div class="admonition tip">
+<h3 id="instructions">Instructions:<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Enter RCM and inject the Hekate payload</li>
-<li>Use the touch screen to navigate to <code>Tools</code> and then <code>Backup eMMC</code></li>
-<li>Tap on <code>eMMC BOOT0 &amp; BOOT1</code></li>
-<li>This should only take a few seconds, but if your SD card is very slow, it may take around a minute.</li>
-<li>Tap on <code>Close</code> to continue, then tap on <code>eMMC RAW GPP</code></li>
-<li>This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your SD card is very slow).</li>
-<li>On FAT32 SD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.<ul>
-<li>Hekate will stop producing these parts when it runs out of space. When this happens, do the following:</li>
-<li>Power off your system</li>
-<li>Insert your SD card into your PC</li>
-<li>Move all files from the <code>backup</code> folder on your SD card to a safe location on your PC</li>
-<li>Insert your SD card into your Switch</li>
-<li>Enter RCM again, inject Hekate again, and continue the backup by tapping on <code>Tools</code> &gt; <code>Backup eMMC</code> &gt; <code>eMMC RAW GPP</code></li>
-<li>Repeat the process until the NAND is completely dumped</li>
+<li>Enter RCM and inject the Hekate payload.<ul>
+<li>If you use a modchipped console, you can simply just turn your Switch on with the hekate payload renamed to <code>payload.bin</code> on the root of your SD. </li>
 </ul>
 </li>
-<li>Press <code>Close</code> &gt; <code>Home</code> &gt; <code>Power Off</code></li>
-<li>Insert your SD card into your PC</li>
-<li>Copy the <code>backup</code> folder on your SD card to a safe location on your PC</li>
+<li>Use the touch screen to navigate to <code>Tools</code> and then <code>Backup eMMC</code></li>
+<li>Tap on <code>eMMC BOOT0 &amp; BOOT1</code><ul>
+<li>This should only take a few seconds, but if your SD card is very slow, it may take around a minute.</li>
+</ul>
+</li>
+<li>Tap on <code>Close</code> to continue, then tap on <code>eMMC RAW GPP</code><ul>
+<li>This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your SD card is very slow).</li>
+<li>On FAT32 SD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.</li>
+<li>Hekate will stop producing these parts when it runs out of space. When this happens, do the following:</li>
+<li>Power off your system.</li>
+<li>Insert your SD card into your PC.</li>
+<li>Move all files from the <code>backup</code> folder on your SD card to a safe location on your PC.</li>
+<li>Insert your SD card into your Switch.</li>
+<li>Enter RCM again, inject Hekate again, and continue the backup by tapping on <code>Tools</code> &gt; <code>Backup eMMC</code> &gt; <code>eMMC RAW GPP</code></li>
+<li>Repeat the process until the NAND is completely dumped.</li>
+</ul>
+</li>
+<li>Go to the top right and press <code>Close</code> &gt; <code>Home</code></li>
+<li>Navigate to <code>Tools</code> &gt; <code>USB tools</code> &gt; <code>SD card</code> and plug your switch into your PC via USB.</li>
+<li>Copy the <code>backup</code> folder on your SD card to a safe location on your PC.</li>
 </ol>
-</div>
-<p>&nbsp;</p>
 <hr />
-<p>&nbsp;</p>
-<h3 id="getting-your-consoles-unique-keys">Getting your Console's Unique Keys<a class="headerlink" href="#getting-your-consoles-unique-keys" title="Permanent link">&para;</a></h3>
+<h2 id="getting-your-consoles-unique-prodkeys">Getting your console's unique prod.keys<a class="headerlink" href="#getting-your-consoles-unique-prodkeys" title="Permanent link">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Important</p>
-<p>These keys are critical to have. In an extreme emergency, they can be used in conjunction with your NAND backup and other tools to restore your console to a working state.</p>
+<p>These keys are critical to have. These keys are required to decrypt the content and partitions on the internal storage of your Switch.
+In an extreme emergency, they can be used in conjunction with your NAND backup and other tools to restore your console to a working state.</p>
 </div>
-<div class="admonition tip">
+<h3 id="instructions_1">Instructions:<a class="headerlink" href="#instructions_1" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Enter RCM and inject the Hekate payload.</li>
 <li>Tap the <code>Payloads</code> option, then press Lockpick_RCM.bin.</li>
 <li>If Lockpick_RCM asks you to select between SysNAND and EmuNAND, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.</li>
 <li>Lockpick_RCM should now inform you that your keys have been saved to <code>/switch/prod.keys</code> on the SD card.</li>
 <li>Press any button to return to the main menu.</li>
-<li>Navigate to 'Power off' with the volume buttons and select it with the power button.</li>
-<li>Insert your SD card into your PC.</li>
+<li>Navigate to 'Reboot to hekate' with the volume buttons and select it with the power button.</li>
+<li>Once in hekate, navigate to <code>Tools</code> &gt; <code>USB tools</code> &gt; <code>SD card</code> and plug your switch into your PC via USB.</li>
 <li>Copy <code>prod.keys</code> from the <code>switch</code> folder on your SD card to a safe location on your PC (it is suggested to copy it to the same place that you copied your NAND backup to).</li>
 </ol>
-</div>
-<p>&nbsp;</p>
 <p><a class="md-button md-button--primary" href="../launching_cfw/">Continue to Launching CFW <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 
