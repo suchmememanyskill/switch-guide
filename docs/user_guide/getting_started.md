@@ -1,5 +1,9 @@
 # Getting Started
 
+???+ danger "Modchipped consoles"
+     If your console is modchipped, please continue with the guide **HERE**:
+     [Modchipped Switch guide :material-arrow-right:](modchip/index.md){ .md-button .md-button--primary }
+
 ### Finding your serial number
 
 The first thing to do is determine if your Switch is vulnerable to fusee-gelee, the exploit we will be using to launch CFW.

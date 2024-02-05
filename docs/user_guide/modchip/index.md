@@ -15,18 +15,19 @@ Modchipped switches, depending on the firmware they're running and the kind of m
 This means that you will not be able to use your switch normally if you don't have an SD card. 
 
 ???+ note "Note about modchips and their firmwares"
-    Some modchips and modchip firmwares **DO** allow you to bypass the modchip by either holding both volume buttons or       either one of the volume buttons, then powering on your switch. This would allow you to boot normally without SD card     inserted.
+    Some modchips and modchip firmwares (namely the PicoFly modchip and its firmware) **DO** allow you to bypass the modchip by either holding both volume buttons or       either one of the volume buttons, then powering on your switch. This would allow you to boot normally without SD card     inserted.
 
 If you do turn on your switch without SD card inserted, you should end up at a splash screen saying something along the lines of `NO SD`.
 
 Unlike unpatched switches, modchipped switches can "cold boot" CFW, they do not rely on an external device to inject a payload like unpatched switches would. 
 (Cold booting means turning on your console from a fully-off state and immediately being able to run CFW).
-Running CFW on modchipped switches is more simplistic as it only requires you to have `payload.bin` present on the root of your SD card and turn on your switch.
+Running CFW on modchipped switches is more simplistic as it only requires you to have `payload.bin` present on the root of your SD card and turn on your switch. 
 
 !!! danger "Disclaimer" 
-    We do **NOT** assist with the sourcing and installation of modchips, it's your own responsibility to install a modchip or let your switch get modchipped.
+    We **ONLY** support the PicoFly modchip (the `RP2040 Zero` development board and the "modchip variant" of it), it's your own responsibility to install a modchip or let your switch get modchipped.
     There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
-    The NH Discord server is also **NOT** a place for discussing modchips and fixing bad modchip installations (e.g. by you or a modchip installer).
+    The NH Discord server is also generally **NOT** a place for fixing bad modchip installations (e.g. by you or a modchip installer) as it should be fixable by someone knowledgeable. 
+    We can give advice and installation tips for the installation as long as it's for a Picofly modchip.
 
 [Continue to Preparing Hekate :material-arrow-right:](preparing_hekate.md){ .md-button .md-button--primary }
 

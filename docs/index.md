@@ -58,7 +58,7 @@ A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock 
 		- This does not work on every android phone
     - A Lightning-OTG adapter, a jailbroken iOS device and a USB cable capable of data transfer between your Switch and the adapter
         - This method is not covered by the guide, but you can read more about it at [this website](https://mologie.github.io/nxboot/)
-
+    - A modchipped Switch
 
     You will also need a micro SD card that is at least 64 gigabytes or larger if you plan on following this guide through the emummc path, which is safer and strongly recommended. If you must use a smaller SD card, it is possible with the sysmmc path, but strongly not recommended.
 
