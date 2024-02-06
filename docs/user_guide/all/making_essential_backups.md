@@ -12,7 +12,7 @@
 ### Instructions:
 
 1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped console, you can simply just turn your Switch on with the hekate payload renamed to `payload.bin` on the root of your SD. 
+    - If you use a modchipped Switch, you can simply just turn your Switch on with the hekate payload renamed to `payload.bin` on the root of your SD. 
 2. Use the touch screen to navigate to `Tools` and then `Backup eMMC`
 3. Tap on `eMMC BOOT0 & BOOT1`
     - This should only take a few seconds, but if your SD card is very slow, it may take around a minute.

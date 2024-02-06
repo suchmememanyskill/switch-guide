@@ -48,7 +48,8 @@ nav:
           - 'Introduction': 'user_guide/modchip/index.md' 
           - 'Preparing Hekate': 'user_guide/modchip/preparing_hekate.md'
         - Finalizing Setup:
-          - 'Partitioning the SD': 'user_guide/all/partitioning_sd.md'    
+          - 'Partitioning the SD for emuMMC': 'user_guide/all/partitioning_sd.md'
+          - 'Partitioning the SD for sysCFW': 'user_guide/all/partitioning_sd_syscfw.md'    
           - 'SD preparations': 'user_guide/all/sd_preparation.md'
           - 'Making Essential Backups': 'user_guide/all/making_essential_backups.md'
           - 'Launching CFW': 'user_guide/all/launching_cfw.md'

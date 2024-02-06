@@ -12,10 +12,10 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile. I
 1. From hekate's `Home` menu, navigate to the `Launch` menu.
 2. Find `Atmosphere FSS0 emuMMC` and launch it.
 
-Hekate is now booting into your emuMMC. To verify that your emuMMC launched properly, open System Settings and navigate to System. You should see `AMS` next to the version number, as well as an `E` at the end, indicating you are booted into emuMMC.
+Hekate is now booting into your emuMMC. To verify that your emuMMC launched properly, open System Settings and navigate to System. You should see `AMS` next to the version number (`AMS` indicating that you're booted into Atmosphere), as well as an `E` at the end (indicating you are booted into emuMMC).
 
-!!! tip ""
-    ![Atmosphere version string](img/launching_cfw_atmosphere_version_string2.jpg)
+
+![Atmosphere version string](img/launching_cfw_atmosphere_version_string2.jpg)
 
 !!! tip "Reboot to Hekate"
     Once booted into emuMMC, you can easily get back to Hekate by holding the power button, and selecting `Restart` in the power menu or by using the "reboot to payload" homebrew app in the homebrew menu.
@@ -40,15 +40,11 @@ You will now be able to launch the Homebrew Menu by opening the album or by hold
 
 - NXThemeInstaller is a theme installer app. See the [Theming section of our guide](../../extras/theming.md) for more information
 
-- hbappstore is a homebrew app store where a large collection of switch homebrew is kept.
-
 ### Installing Android/Linux
 
 If you've partitioned your SD card for preparation of Android/Linux earlier, you can continue with the installation of Android/Linux here with the guides below:
 
-[Android installation guide :material-arrow-right:](../../extras/installing_android.md){ .md-button .md-button--primary }
-
-[Linux installation guide :material-arrow-right:](../../extras/installing_linux.md){ .md-button .md-button--primary }
+[Android installation guide :material-arrow-right:](../../extras/installing_android.md){ .md-button .md-button--primary } [Linux installation guide :material-arrow-right:](../../extras/installing_linux.md){ .md-button .md-button--primary }
 
 
 

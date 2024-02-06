@@ -1,7 +1,8 @@
 # Getting Started
 
-???+ danger "Modchipped consoles"
+!!! danger "Modchipped consoles"
      If your console is modchipped, please continue with the guide **HERE**:
+     
      [Modchipped Switch guide :material-arrow-right:](modchip/index.md){ .md-button .md-button--primary }
 
 ### Finding your serial number
@@ -14,11 +15,9 @@ Patched and Mariko units can be identified by their serial number. This number c
 
 &nbsp;
 
-!!! tip ""
-    ![Visual for System Settings serial location](../user_guide/img/getting_started_serial_location.jpg)
+![Visual for System Settings serial location](../user_guide/img/getting_started_serial_location.jpg)
 
-!!! tip ""
-    ![Visual for serial location on the bottom of console](../user_guide/img/serial_switch.png)    
+![Visual for serial location on the bottom of console](../user_guide/img/serial_switch.png)    
 
 &nbsp;
 

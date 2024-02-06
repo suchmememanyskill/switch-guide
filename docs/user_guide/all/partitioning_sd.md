@@ -12,21 +12,22 @@
 
 ### Instructions:
 
-???+ note "Android/Linux preparation"
-     If you wish to install Android and/or Linux later, partition your SD card here accordingly during step 2 of the instructions below. We recommend setting the Android and Linux sliders to 16GB minimum.
-
-1. Navigate to `Tools` > `Partition SD card`.
+1. Navigate to `Tools` > `Partition SD card`
 2. Set the `emuMMC (RAW)` slider to `29 FULL` in the middle of the bar.
-    - Set the slider to `58 FULL` if you're on an OLED switch.
+    - Set the `emuMMC (RAW)` slider to `58 FULL` if you're on an OLED Switch.
+    - If you wish to install Android and/or Linux later, partition your SD card here accordingly by moving the sliders you see during this step. We recommend setting the `Android (USER)` and `Linux (EXT4)` sliders to 16GB minimum.
 3. Navigate to `Next Step` at the bottom right, then select `Start` in the menu that appears.
 4. From hekate's `Home` menu, navigate to `emuMMC` > `Create emuMMC` > `SD Partition` > `Part 1` and wait for hekate to complete creating the emuMMC.
-5. Close the emuMMC creation menu by navigating to the `Close` button, then navigate to `Change emuMMC` > `SD RAW 1` and press the `Close` button twice in the top right to return to hekate's home menu.
+5. Close the emuMMC creation menu by navigating to the `Close` button, then navigate to `Change emuMMC` > `SD RAW 1` and press the `Close` button twice in the top right to return to hekate's `Home` menu.
 6. Once done, go to `Tools` > `USB tools` > `SD card` and plug your switch into your PC via USB.
 7. Continue with the next step of the guide. Your SD card should now be accessible on your PC, if not, consult the message below.
 
 !!! warning "Your SD card is not showing up or Windows complaining about an unreadable drive"
     If you get the issue that Windows says the SD card is unreadable and wants to format it, do not format! This is likely your emuMMC partition. After partitioning your SD, your SD will show up as 2 drives on your PC. Use the accessible drive.
-    If your SD card isn't showing up at all, ensure that you're using a USB cable capable of data transfer and that (if you use Windows) Windows has assigned a drive letter to the FAT32 partition of your SD. If you still experience errors, join the <a href="https://discord.gg/C29hYvh" target="_blank">NH Discord server</a> for support.
+    If your SD card isn't showing up at all, ensure that you're using a USB cable capable of data transfer and that, if you use Windows, Windows has assigned a drive letter to the FAT32 partition of your SD. If you still experience errors, join the <a href="https://discord.gg/C29hYvh" target="_blank">NH Discord server</a> for support.
+
+
+![hekate-partitioning-emu](img/hekate-partitioning-emu.png)
 
 &nbsp;
 

@@ -29,19 +29,20 @@ Atmosphere has its own bootloader, called fusee. For the purposes of this guide 
 3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card.
 4. Copy the `bootloader` folder from the `bootlogos.zip` file to the root of your SD card.
     - If you're asked to merge the bootloader folders, do so.
-5. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
-6. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
-7. Create a folder named `hosts` inside the `atmosphere` folder on your SD card, and put `emummc.txt` in it
-8. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
+5. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card.
+6. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card.
+7. Create a folder named `hosts` inside the `atmosphere` folder on your SD card, and put `emummc.txt` in it.
+8. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card.
 9. If you were already using your microSD card as a storage device for your games and backed up the Nintendo folder before partitioning your SD card, please place it back on the root of your SD card.
+    - If you created an emuMMC on the previous page, don't forget to copy the Nintendo folder to `SD:/emuMMC/RAW1`!
 
-    !!!danger "About emummc.txt"
+    !!! danger "About emummc.txt"
         Putting the `emummc.txt` file provided by this guide into `/atmosphere/hosts` will prevent your emuMMC (emuNAND) from connecting to Nintendo. Not doing this will likely result in a ban.
 
-    !!! tip ""
-        Your SD card should look similar to this. The `Nintendo` folder will not be present if your switch has not already booted with the SD card inserted and `payload.bin` will not be present if you're using an unpatched switch.
-        ![sdfilesimg](img/sdfiles2.png)
-
-&nbsp;
+    !!! tip ""    
+        Your SD card should look similar to the image below. The `Nintendo` folder will not be present if your switch has not already booted with the SD card inserted and the `emuMMC` folder will not be present if you're following the sysCFW path of the guide/you haven't created an emuMMC! 
+        `payload.bin` will not be present if you're using an unpatched switch.
+        
+        ![sdfilesimg](img/sdfiles3.png){ align=left }
 
 [Continue to Making Essential Backups :material-arrow-right:](making_essential_backups.md){ .md-button .md-button--primary }
