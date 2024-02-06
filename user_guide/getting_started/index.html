@@ -774,7 +774,27 @@
         
   
   <span class="md-ellipsis">
-    Partitioning the SD
+    Partitioning the SD for emuMMC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../all/partitioning_sd_syscfw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Partitioning the SD for sysCFW
   </span>
   
 
@@ -1412,22 +1432,18 @@
 
 
 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<details class="danger" open="open">
-<summary>Modchipped consoles</summary>
-<p>If your console is modchipped, please continue with the guide <strong>HERE</strong>:
- <a class="md-button md-button--primary" href="../modchip/">Modchipped Switch guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
-</details>
+<div class="admonition danger">
+<p class="admonition-title">Modchipped consoles</p>
+<p>If your console is modchipped, please continue with the guide <strong>HERE</strong>:</p>
+<p><a class="md-button md-button--primary" href="../modchip/">Modchipped Switch guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+</div>
 <h3 id="finding-your-serial-number">Finding your serial number<a class="headerlink" href="#finding-your-serial-number" title="Permanent link">&para;</a></h3>
 <p>The first thing to do is determine if your Switch is vulnerable to fusee-gelee, the exploit we will be using to launch CFW.</p>
 <p>This vulnerability was independently discovered by several different Switch hacking teams, and multiple variants of it were released to the public in April 2018 after a 90-day disclosure period ended. Nintendo and NVIDIA were made aware of the issue before the public release as a result, and Switch systems that are not vulnerable to the exploit started being spotted in the wild in July 2018. NVIDIA <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability">publicly acknowledged the flaw</a> in April as well. In July 2019, Nintendo announced updated consoles, a handheld variant of the Switch called the Switch Lite (HDH-001), and a new model of original Switch (HAC-001-01) with better battery life. Both of these new models use a new processor called the T210b01 (also known as T214 and Mariko) with a new bootROM, and are not hackable at the current time.</p>
 <p>Patched and Mariko units can be identified by their serial number. This number can be found on the bottom of your Switch adjacent to the USB-C port, or in the Settings applet at <strong>System -&gt; Serial Information</strong>. </p>
 <p>&nbsp;</p>
-<div class="admonition tip">
 <p><img alt="Visual for System Settings serial location" src="../img/getting_started_serial_location.jpg" /></p>
-</div>
-<div class="admonition tip">
 <p><img alt="Visual for serial location on the bottom of console" src="../img/serial_switch.png" />    </p>
-</div>
 <p>&nbsp;</p>
 <h3 id="determining-if-your-switch-is-vulnerable">Determining if your Switch is vulnerable<a class="headerlink" href="#determining-if-your-switch-is-vulnerable" title="Permanent link">&para;</a></h3>
 <p>The homebrew community has crowdsourced a list of known serial numbers which are vulnerable to fusee-gelee. </p>

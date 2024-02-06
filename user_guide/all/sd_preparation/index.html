@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://guide.suchmeme.nl/user_guide/all/sd_preparation/">
       
       
-        <link rel="prev" href="../partitioning_sd/">
+        <link rel="prev" href="../partitioning_sd_syscfw/">
       
       
         <link rel="next" href="../making_essential_backups/">
@@ -699,7 +699,27 @@
         
   
   <span class="md-ellipsis">
-    Partitioning the SD
+    Partitioning the SD for emuMMC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partitioning_sd_syscfw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Partitioning the SD for sysCFW
   </span>
   
 
@@ -1421,23 +1441,26 @@
 <li>If you're asked to merge the bootloader folders, do so.</li>
 </ul>
 </li>
-<li>Copy <code>hekate_ipl.ini</code> to the <code>bootloader</code> folder on your SD card</li>
-<li>Copy <code>Lockpick_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card</li>
-<li>Create a folder named <code>hosts</code> inside the <code>atmosphere</code> folder on your SD card, and put <code>emummc.txt</code> in it</li>
-<li>Copy <code>JKSV.nro</code>, <code>ftpd.nro</code>, <code>NX-Shell.nro</code> and <code>NxThemesInstaller.nro</code> to the <code>switch</code> folder on your SD card</li>
+<li>Copy <code>hekate_ipl.ini</code> to the <code>bootloader</code> folder on your SD card.</li>
+<li>Copy <code>Lockpick_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card.</li>
+<li>Create a folder named <code>hosts</code> inside the <code>atmosphere</code> folder on your SD card, and put <code>emummc.txt</code> in it.</li>
+<li>Copy <code>JKSV.nro</code>, <code>ftpd.nro</code>, <code>NX-Shell.nro</code> and <code>NxThemesInstaller.nro</code> to the <code>switch</code> folder on your SD card.</li>
 <li>
 <p>If you were already using your microSD card as a storage device for your games and backed up the Nintendo folder before partitioning your SD card, please place it back on the root of your SD card.</p>
+<ul>
+<li>If you created an emuMMC on the previous page, don't forget to copy the Nintendo folder to <code>SD:/emuMMC/RAW1</code>!</li>
+</ul>
 <div class="admonition danger">
 <p class="admonition-title">About emummc.txt</p>
 <p>Putting the <code>emummc.txt</code> file provided by this guide into <code>/atmosphere/hosts</code> will prevent your emuMMC (emuNAND) from connecting to Nintendo. Not doing this will likely result in a ban.</p>
 </div>
 <div class="admonition tip">
-<p>Your SD card should look similar to this. The <code>Nintendo</code> folder will not be present if your switch has not already booted with the SD card inserted and <code>payload.bin</code> will not be present if you're using an unpatched switch.
-<img alt="sdfilesimg" src="../img/sdfiles2.png" /></p>
+<p>Your SD card should look similar to the image below. The <code>Nintendo</code> folder will not be present if your switch has not already booted with the SD card inserted and the <code>emuMMC</code> folder will not be present if you're following the sysCFW path of the guide/you haven't created an emuMMC! 
+<code>payload.bin</code> will not be present if you're using an unpatched switch.</p>
+<p><img align="left" alt="sdfilesimg" src="../img/sdfiles3.png" /></p>
 </div>
 </li>
 </ol>
-<p>&nbsp;</p>
 <p><a class="md-button md-button--primary" href="../making_essential_backups/">Continue to Making Essential Backups <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 

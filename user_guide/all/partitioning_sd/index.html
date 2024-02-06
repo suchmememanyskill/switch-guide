@@ -18,7 +18,7 @@
         <link rel="prev" href="../../modchip/preparing_hekate/">
       
       
-        <link rel="next" href="../sd_preparation/">
+        <link rel="next" href="../partitioning_sd_syscfw/">
       
       
       <link rel="icon" href="../../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Partitioning the SD - NH Switch Guide</title>
+        <title>Partitioning the SD for emuMMC - NH Switch Guide</title>
       
     
     
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Partitioning the SD
+              Partitioning the SD for emuMMC
             
           </span>
         </div>
@@ -708,7 +708,7 @@
           
   
   <span class="md-ellipsis">
-    Partitioning the SD
+    Partitioning the SD for emuMMC
   </span>
   
 
@@ -719,7 +719,7 @@
         
   
   <span class="md-ellipsis">
-    Partitioning the SD
+    Partitioning the SD for emuMMC
   </span>
   
 
@@ -758,6 +758,26 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partitioning_sd_syscfw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Partitioning the SD for sysCFW
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1402,27 +1422,25 @@ The Nintendo folder contains downloaded necessary game data (the data required f
 <li>Your switch loaded into Hekate</li>
 </ul>
 <h3 id="instructions">Instructions:<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
-<details class="note" open="open">
-<summary>Android/Linux preparation</summary>
-<p>If you wish to install Android and/or Linux later, partition your SD card here accordingly during step 2 of the instructions below. We recommend setting the Android and Linux sliders to 16GB minimum.</p>
-</details>
 <ol>
-<li>Navigate to <code>Tools</code> &gt; <code>Partition SD card</code>.</li>
+<li>Navigate to <code>Tools</code> &gt; <code>Partition SD card</code></li>
 <li>Set the <code>emuMMC (RAW)</code> slider to <code>29 FULL</code> in the middle of the bar.<ul>
-<li>Set the slider to <code>58 FULL</code> if you're on an OLED switch.</li>
+<li>Set the <code>emuMMC (RAW)</code> slider to <code>58 FULL</code> if you're on an OLED Switch.</li>
+<li>If you wish to install Android and/or Linux later, partition your SD card here accordingly by moving the sliders you see during this step. We recommend setting the <code>Android (USER)</code> and <code>Linux (EXT4)</code> sliders to 16GB minimum.</li>
 </ul>
 </li>
 <li>Navigate to <code>Next Step</code> at the bottom right, then select <code>Start</code> in the menu that appears.</li>
 <li>From hekate's <code>Home</code> menu, navigate to <code>emuMMC</code> &gt; <code>Create emuMMC</code> &gt; <code>SD Partition</code> &gt; <code>Part 1</code> and wait for hekate to complete creating the emuMMC.</li>
-<li>Close the emuMMC creation menu by navigating to the <code>Close</code> button, then navigate to <code>Change emuMMC</code> &gt; <code>SD RAW 1</code> and press the <code>Close</code> button twice in the top right to return to hekate's home menu.</li>
+<li>Close the emuMMC creation menu by navigating to the <code>Close</code> button, then navigate to <code>Change emuMMC</code> &gt; <code>SD RAW 1</code> and press the <code>Close</code> button twice in the top right to return to hekate's <code>Home</code> menu.</li>
 <li>Once done, go to <code>Tools</code> &gt; <code>USB tools</code> &gt; <code>SD card</code> and plug your switch into your PC via USB.</li>
 <li>Continue with the next step of the guide. Your SD card should now be accessible on your PC, if not, consult the message below.</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Your SD card is not showing up or Windows complaining about an unreadable drive</p>
 <p>If you get the issue that Windows says the SD card is unreadable and wants to format it, do not format! This is likely your emuMMC partition. After partitioning your SD, your SD will show up as 2 drives on your PC. Use the accessible drive.
-If your SD card isn't showing up at all, ensure that you're using a USB cable capable of data transfer and that (if you use Windows) Windows has assigned a drive letter to the FAT32 partition of your SD. If you still experience errors, join the <a href="https://discord.gg/C29hYvh" target="_blank">NH Discord server</a> for support.</p>
+If your SD card isn't showing up at all, ensure that you're using a USB cable capable of data transfer and that, if you use Windows, Windows has assigned a drive letter to the FAT32 partition of your SD. If you still experience errors, join the <a href="https://discord.gg/C29hYvh" target="_blank">NH Discord server</a> for support.</p>
 </div>
+<p><img alt="hekate-partitioning-emu" src="../img/hekate-partitioning-emu.png" /></p>
 <p>&nbsp;</p>
 <p><a class="md-button md-button--primary" href="../sd_preparation/">Continue to SD Preparations <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
