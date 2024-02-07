@@ -1426,23 +1426,26 @@
 <h1 id="introduction-to-modchips">Introduction to Modchips<a class="headerlink" href="#introduction-to-modchips" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">Information</p>
-<p>Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC      and essentially "lag out" the CPU so that <code>sdloader</code> can run. 
-<code>sdloader</code> is the module responsible for loading <code>payload.bin</code> off of the root of your SD card, this allows even          patched switches to run CFW.</p>
+<p>Modchips and modchipped switches are different from unpatched switches. They use voltage glitching to glitch the SoC and essentially "lag out" the CPU so that <code>sdloader</code> can run. 
+<code>sdloader</code> is the module responsible for loading <code>payload.bin</code> off of the root of your SD card, this allows even patched Switch consoles to run CFW.</p>
 </div>
-<h3 id="general-knowledge">General knowledge<a class="headerlink" href="#general-knowledge" title="Permanent link">&para;</a></h3>
-<p>If you've just finished installing your modchip or getting your switch modchipped, there are general things you should know.</p>
-<p>Unless you have a modchipped V1 unpatched switch, your switch is not vulnerable to the fusee-gelee exploit found in RCM. 
-This means that putting your switch in RCM and trying to inject a payload won't do anything.</p>
-<p>Modchipped switches, depending on the firmware they're running and the kind of modchip you have, will not boot without SD card inserted.
-This means that you will not be able to use your switch normally if you don't have an SD card. </p>
+<h3 id="general-knowledge"><strong>General knowledge</strong><a class="headerlink" href="#general-knowledge" title="Permanent link">&para;</a></h3>
+<p>If you've just finished installing your modchip or getting your Switch modchipped, there are general things you should know.</p>
+<p>Unless you have a modchipped V1 unpatched Switch, your Switch is not vulnerable to the fusee-gelee exploit found in RCM. 
+This means that putting your Switch in RCM and trying to inject a payload won't do anything.</p>
+<p>Modchipped Switch consoles, depending on the firmware they're running and the kind of modchip you have, will not boot without SD card inserted.
+This means that you will not be able to use your Switch normally if you don't have an SD card. </p>
 <details class="note" open="open">
 <summary>Note about modchips and their firmwares</summary>
-<p>Some modchips and modchip firmwares (namely the PicoFly modchip and its firmware) <strong>DO</strong> allow you to bypass the modchip by either holding both volume buttons or       either one of the volume buttons, then powering on your switch. This would allow you to boot normally without SD card     inserted.</p>
+<p>Some modchips and modchip firmwares (namely the PicoFly modchip and its firmware) <strong>DO</strong> allow you to bypass the modchip by either holding both volume buttons or either one of the volume buttons, then powering on your Switch. This would allow you to boot normally without SD card     inserted.</p>
 </details>
-<p>If you do turn on your switch without SD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
-<p>Unlike unpatched switches, modchipped switches can "cold boot" CFW, they do not rely on an external device to inject a payload like unpatched switches would. 
-(Cold booting means turning on your console from a fully-off state and immediately being able to run CFW).
-Running CFW on modchipped switches is more simplistic as it only requires you to have <code>payload.bin</code> present on the root of your SD card and turn on your switch. </p>
+<p>If you do turn on your Switch without SD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
+<p>Unlike unpatched Switch consoles, modchipped Switch consoles can "cold boot" CFW, they do not rely on an external device to inject a payload like unpatched Switch consoles would. </p>
+<ul>
+<li>"Cold booting" means turning on your console from a fully-off state and immediately being able to run CFW.</li>
+</ul>
+<p>Running CFW on modchipped switches is more simplistic as it only requires you to have <code>payload.bin</code> present on the root of your SD card and turn on your switch. </p>
+<p>Before setting up the console for homebrew, it is important to have at least one eShop game (such as <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (such as <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a> or <a href="https://www.nintendo.com/games/detail/hulu-switch/">Hulu</a>), or a game demo such as <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>. Running homebrew through any game cartridge will also work, but it must be inserted. Running homebrew does not permanently replace or remove the game/application, nor does it become tied to only one game/application (any cartridge you have inserted or any game/application installed can always be used). Once you have any game or application, you are prepared to continue on with the guide.</p>
 <div class="admonition danger">
 <p class="admonition-title">Disclaimer</p>
 <p>We <strong>ONLY</strong> support the PicoFly modchip (the <code>RP2040 Zero</code> development board and the "modchip variant" of it), it's your own responsibility to install a modchip or let your switch get modchipped.

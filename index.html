@@ -454,6 +454,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#continue-with-the-applicable-guide-for-your-switch-by-clicking-one-of-the-buttons-below" class="md-nav__link">
+    Continue with the applicable guide for your Switch by clicking one of the buttons below:
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1453,19 +1460,22 @@
 <h1 id="nh-switch-guide">NH Switch Guide<a class="headerlink" href="#nh-switch-guide" title="Permanent link">&para;</a></h1>
 <p>A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to Atmosphere.</p>
 <p>For live support with this guide please visit us in <strong>#switch-assistance</strong> over at the <a href="https://discord.gg/C29hYvh">Nintendo Homebrew Discord</a>.</p>
-<h3 id="what-is-homebrew">What is homebrew?<a class="headerlink" href="#what-is-homebrew" title="Permanent link">&para;</a></h3>
+<h3 id="what-is-homebrew"><strong>What is homebrew?</strong><a class="headerlink" href="#what-is-homebrew" title="Permanent link">&para;</a></h3>
 <p>Homebrew is a term for unoffical software written by hobbyists and amateur developers for locked down systems (i.e. the Switch).</p>
 <p>This can include save editing tools, games, emulators, and more.</p>
 <p>Homebrew can be run for free (except for an RCM jig) on your Switch through Custom Firmware as long as you have a "first-generation" system, and a USB-C cable.</p>
-<h3 id="what-is-custom-firmware">What is Custom Firmware?<a class="headerlink" href="#what-is-custom-firmware" title="Permanent link">&para;</a></h3>
+<p>&nbsp;</p>
+<h3 id="what-is-custom-firmware"><strong>What is Custom Firmware?</strong><a class="headerlink" href="#what-is-custom-firmware" title="Permanent link">&para;</a></h3>
 <p>Custom Firmware (“CFW”) is a piece of software that modifies the system firmware.
 Atmosphere, for example, does this by running in the background and patching the OS on the fly.</p>
 <p>This allows one to extend the functionality of their system by giving homebrew higher levels of permission than most userland exploits and can be used to provide extra features for homebrew devs and users to take advantage of for various purposes, for instance, game modding using LayeredFS.</p>
 <p>CFW can be set up on any first-generation and second-generation console on any version (but will require additional tools and include additional costs).</p>
-<h3 id="what-does-this-guide-install">What does this guide install?<a class="headerlink" href="#what-does-this-guide-install" title="Permanent link">&para;</a></h3>
+<p>&nbsp;</p>
+<h3 id="what-does-this-guide-install"><strong>What does this guide install?</strong><a class="headerlink" href="#what-does-this-guide-install" title="Permanent link">&para;</a></h3>
 <p>This guide has the end goal of taking a completely unmodified Switch from Stock Firmware to Atmosphere Custom Firmware.</p>
 <p>fusee-gelee is currently the best method of launching Custom Firmware that gives us nearly full control of the system. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to send any payload we want to the Switch's recovery mode, instead of only ones that Nintendo have authorized.</p>
-<h3 id="what-can-i-do-with-custom-firmware">What can I do with Custom Firmware?<a class="headerlink" href="#what-can-i-do-with-custom-firmware" title="Permanent link">&para;</a></h3>
+<p>&nbsp;</p>
+<h3 id="what-can-i-do-with-custom-firmware"><strong>What can I do with Custom Firmware?</strong><a class="headerlink" href="#what-can-i-do-with-custom-firmware" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Customize your HOME Menu with user-created themes and splash screens</li>
 <li>Use “ROM hacks” for games that you own</li>
@@ -1473,7 +1483,8 @@ Atmosphere, for example, does this by running in the background and patching the
 <li>Play games for older systems with various emulators, using RetroArch or other standalone emulators</li>
 <li>Safely update to the latest system version without fear of losing access to homebrew</li>
 </ul>
-<h3 id="what-do-i-need-to-know-before-starting">What do I need to know before starting?<a class="headerlink" href="#what-do-i-need-to-know-before-starting" title="Permanent link">&para;</a></h3>
+<p>&nbsp;</p>
+<h3 id="what-do-i-need-to-know-before-starting"><strong>What do I need to know before starting?</strong><a class="headerlink" href="#what-do-i-need-to-know-before-starting" title="Permanent link">&para;</a></h3>
 <p>Before beginning the guide, you must know the risks of Switch hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They’re rare but still a possibility so make sure you follow ALL directions EXACTLY.</p>
 <p>This guide will work on first-generation (V1) and modchipped second-generation (V2) Switch consoles in all regions on any firmware version.</p>
 <div class="admonition note">
@@ -1490,14 +1501,16 @@ Atmosphere, for example, does this by running in the background and patching the
 </li>
 <li>A successfully modchipped Switch</li>
 </ul>
-<p>You will also need a micro SD card that is at least 128 gigabytes or larger if you plan on following this guide through the emummc path, which is safer and strongly recommended. If you must use a smaller SD card, it is possible with the sysNAND CFW path, but strongly not recommended.</p>
-<p>Finally, you will need a way to access Recovery Mode (This will be further explained in the "Entering RCM section") or a successfully modchipped Switch.</p>
+<p>You will also need a micro SD card that is at least 128 gigabytes or larger if you plan on following this guide through the emuMMC path, which is safer and strongly recommended. If you do decide to follow the emuMMC path, make sure you disable <a href="https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html">Automatic Save Data Cloud backups/downloads</a>. 
+If you must use a smaller SD card, it is possible with the sysNAND CFW path, but strongly not recommended.</p>
+<p>Finally, you will need a way to access ReCovery Mode (This will be further explained in the "Entering RCM section") if you have a V1 unpatched Switch.</p>
 </div>
 <p>If everything goes according to plan, you will lose no data and end up with everything that you started with (games, Nintendo Account, saves, etc will be preserved).</p>
 <p>Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off.</p>
 <p>Custom Firmware is not permanent with current methods, and will be unloaded upon rebooting the system.</p>
 <p>It is advised that you read the entire guide from start to finish one or more times before actually running through the guide with your system.</p>
-<p><a class="md-button md-button--primary" href="user_guide/getting_started/">Continue to Getting Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<h3 id="continue-with-the-applicable-guide-for-your-switch-by-clicking-one-of-the-buttons-below"><strong>Continue with the applicable guide for your Switch by clicking one of the buttons below:</strong><a class="headerlink" href="#continue-with-the-applicable-guide-for-your-switch-by-clicking-one-of-the-buttons-below" title="Permanent link">&para;</a></h3>
+<p><a class="md-button md-button--primary" href="user_guide/getting_started/">Continue to Getting Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a> <a class="md-button md-button--primary" href="user_guide/modchip/">Continue to Modchipped Switch guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 <p>&nbsp;</p>
 <p>Note: We are not now, nor have we ever been, nor will we ever be, associated with Anton Retro, sthetix, or any other YouTube/TikTok video guide makers.</p>
 <p>Furthermore, we resent any implication to the contrary.</p>

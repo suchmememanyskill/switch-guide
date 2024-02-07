@@ -1435,7 +1435,7 @@
 
   <h1>emuMMC vs sysCFW</h1>
 
-<h3 id="emunand-vs-emummc-vs-sysnand-vs-sysmmc">emuNAND vs emuMMC vs sysNAND vs sysMMC<a class="headerlink" href="#emunand-vs-emummc-vs-sysnand-vs-sysmmc" title="Permanent link">&para;</a></h3>
+<h3 id="emunand-vs-emummc-vs-sysnand-vs-sysmmc"><strong>emuNAND vs emuMMC vs sysNAND vs sysMMC</strong><a class="headerlink" href="#emunand-vs-emummc-vs-sysnand-vs-sysmmc" title="Permanent link">&para;</a></h3>
 <p>We will often and most of the time refer to your Switch's internal storage as sysMMC, the definitions of the different terminologies is listed below:</p>
 <ul>
 <li>sysNAND stands for System NAND, meaning the internal storage inside of your actual Switch.</li>
@@ -1443,13 +1443,14 @@
 <li>emuNAND stands for emulated NAND, this means that your entire NAND (system memory) will run off your microSD card with Custom Firmware (CFW). This NAND's contents (games, applications, saves, etc.) are <em>completely</em> separate from your sysNAND.</li>
 <li>emuMMC is the name for the currently used implementation of emuNAND on Switch. It has no difference from emuNAND besides the name.</li>
 </ul>
-<h3 id="emummc-recommended-for-new-users-and-modchipped-switch-users">emuMMC (Recommended for new users and modchipped Switch users)<a class="headerlink" href="#emummc-recommended-for-new-users-and-modchipped-switch-users" title="Permanent link">&para;</a></h3>
+<h3 id="emummc-recommended-for-new-users-and-modchipped-switch-users"><strong>emuMMC (Recommended for new users and modchipped Switch users)</strong><a class="headerlink" href="#emummc-recommended-for-new-users-and-modchipped-switch-users" title="Permanent link">&para;</a></h3>
 <p><code>emuMMC</code> is a copy of your sysMMC (internal storage) at the point of creation, it's essentially an "offline" sandbox that never communicates with Nintendo's servers and always has Atmosphere applied to it.
 Its main purpose is to serve as (aforementioned) sandbox that you can use to practice all aspects of homebrew safely.</p>
 <ul>
 <li>"Offline" meaning behind a method of blocking Nintendo's servers.</li>
 </ul>
 <p>It can also additionally serve as brick protection, which is why it's especially important and recommended to set up for modchipped Switch users.</p>
+<p>This path of the guide also sets up sysCFW, you don't have to set it up additionally.</p>
 <h4 id="some-use-cases-for-this-path-of-the-guide-are">Some use cases for this path of the guide are:<a class="headerlink" href="#some-use-cases-for-this-path-of-the-guide-are" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Dumping games and save data</li>
@@ -1467,7 +1468,7 @@ Its main purpose is to serve as (aforementioned) sandbox that you can use to pra
 </ol>
 <p>If you wish to follow this path of the guide, click on the button below:</p>
 <p><a class="md-button md-button--primary" href="../partitioning_sd/">Partitioning the SD for emuMMC <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
-<h3 id="syscfw-not-recommended-for-new-users-and-modchipped-switch-users">sysCFW (Not recommended for new users and modchipped Switch users)<a class="headerlink" href="#syscfw-not-recommended-for-new-users-and-modchipped-switch-users" title="Permanent link">&para;</a></h3>
+<h3 id="syscfw-not-recommended-for-new-users-and-modchipped-switch-users"><strong>sysCFW (Not recommended for new users and modchipped Switch users)</strong><a class="headerlink" href="#syscfw-not-recommended-for-new-users-and-modchipped-switch-users" title="Permanent link">&para;</a></h3>
 <p><code>sysCFW</code> (sysNAND CFW) essentially is your Switch's internal storage (sysNAND) with Atmosphere applied to it.
 This allows you to run Atmosphere on your Switch's internal storage and use your Switch online with all homebrew functionality, as long as you do nothing bannable with CFW.</p>
 <p>This path is <em>not</em> recommended for modchipped Switch users.</p>

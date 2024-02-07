@@ -841,13 +841,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
-    Instructions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#launching-the-homebrew-menu" class="md-nav__link">
     Launching the Homebrew Menu
   </a>
@@ -1451,18 +1444,32 @@
 <p class="admonition-title">Keep emuMMC offline at all times</p>
 <p>Your emuMMC (emuNAND) should never connect to Nintendo. For online play, eShop browsing, or any other Nintendo online activity, use your sysNAND. Using both emuMMC and sysNAND online will likely result in a ban.</p>
 </div>
-<h3 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Instructions for emuMMC</label><label for="__tabbed_1_2">Instructions for sysCFW</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
 <li>From hekate's <code>Home</code> menu, navigate to the <code>Launch</code> menu.</li>
 <li>Find <code>Atmosphere FSS0 emuMMC</code> and launch it.</li>
 </ol>
 <p>Hekate is now booting into your emuMMC. To verify that your emuMMC launched properly, open System Settings and navigate to System. You should see <code>AMS</code> next to the version number (<code>AMS</code> indicating that you're booted into Atmosphere), as well as an <code>E</code> at the end (indicating you are booted into emuMMC).</p>
 <p><img alt="Atmosphere version string" src="../img/launching_cfw_atmosphere_version_string2.jpg" /></p>
-<div class="admonition tip">
-<p class="admonition-title">Reboot to Hekate</p>
-<p>Once booted into emuMMC, you can easily get back to Hekate by holding the power button, and selecting <code>Restart</code> in the power menu or by using the "reboot to payload" homebrew app in the homebrew menu.</p>
 </div>
-<h3 id="launching-the-homebrew-menu">Launching the Homebrew Menu<a class="headerlink" href="#launching-the-homebrew-menu" title="Permanent link">&para;</a></h3>
+<div class="tabbed-block">
+<ol>
+<li>From hekate's <code>Home</code> menu, navigate to the <code>Launch</code> menu.</li>
+<li>Find <code>Atmosphere FSS0 sysMMC</code> and launch it.</li>
+</ol>
+<p>Hekate is now booting into sysCFW. To verify that sysCFW launched properly, open System Settings and navigate to System. You should see <code>AMS</code> next to the version number (<code>AMS</code> indicating that you're booted into Atmosphere), as well as an <code>S</code> at the end (indicating you are booted into sysCFW).</p>
+<p><img alt="Atmosphere version string" src="../img/launching_cfw_atmosphere_version_string3.jpg" /></p>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<div class="admonition tip">
+<p class="admonition-title">Rebooting to Hekate</p>
+<p>Once booted into CFW, you can easily get back to Hekate by holding the power button, and selecting <code>Restart</code> in the power menu or by using the "reboot to payload" homebrew app in the homebrew menu. (Note that the reboot to payload app does <em>not</em> work on modchipped Switch consoles)</p>
+</div>
+<h3 id="launching-the-homebrew-menu"><strong>Launching the Homebrew Menu</strong><a class="headerlink" href="#launching-the-homebrew-menu" title="Permanent link">&para;</a></h3>
 <p>You will now be able to launch the Homebrew Menu by opening the album or by holding the R button while launching any game (including demos/cartridges), or application (e.g. Youtube/Hulu). If R is not held, the game or application will launch like normal.</p>
 <div class="admonition warning">
 <p class="admonition-title">A note about using the album for the Homebrew Menu</p>
@@ -1470,13 +1477,7 @@
 <li>Using the album for the Homebrew Menu instead of a game or application has several limitations, including but not limited to: a smaller amount of available memory (RAM), as well as being unable to launch a full-featured web browser. It is strongly recommended to launch homebrew through applications or games instead.</li>
 </ul>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Adding new applications</p>
-<ul>
-<li>Place homebrew applications (<code>.nro</code> files) into the <code>switch</code> folder on your SD card.</li>
-</ul>
-</div>
-<h3 id="what-the-included-homebrew-applications-do">What the included homebrew applications do<a class="headerlink" href="#what-the-included-homebrew-applications-do" title="Permanent link">&para;</a></h3>
+<h3 id="what-the-included-homebrew-applications-do"><strong>What the included homebrew applications do</strong><a class="headerlink" href="#what-the-included-homebrew-applications-do" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>JKSV is a save manager, it can dump and restore saves from/to your system. For more information, see <a href="../../../extras/save_management/">Save Management</a></p>
@@ -1491,7 +1492,8 @@
 <p>NXThemeInstaller is a theme installer app. See the <a href="../../../extras/theming/">Theming section of our guide</a> for more information</p>
 </li>
 </ul>
-<h3 id="installing-androidlinux">Installing Android/Linux<a class="headerlink" href="#installing-androidlinux" title="Permanent link">&para;</a></h3>
+<p>If you wish to install more homebrew apps, place them (<code>.nro</code> files) in the <code>switch</code> folder on your SD card.</p>
+<h3 id="installing-androidlinux"><strong>Installing Android/Linux</strong><a class="headerlink" href="#installing-androidlinux" title="Permanent link">&para;</a></h3>
 <p>If you've partitioned your SD card for preparation of Android/Linux earlier, you can continue with the installation of Android/Linux here with the guides below:</p>
 <p><a class="md-button md-button--primary" href="../../../extras/installing_android/">Android installation guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a> <a class="md-button md-button--primary" href="../../../extras/installing_linux/">Linux installation guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
