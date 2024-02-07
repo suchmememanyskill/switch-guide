@@ -29,6 +29,7 @@
 5. Go to the top right and press `Close` > `Home`
 6. Navigate to `Tools` > `USB tools` > `SD card` and plug your switch into your PC via USB.
 7. Copy the `backup` folder on your SD card to a safe location on your PC.
+8. Once done, eject the `UMS` device safely from within your computer's operating system and return to hekate's `Home` menu.
 
 -----
 

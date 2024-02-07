@@ -4,12 +4,8 @@ We will now place the required files for the Atmosphere custom firmware and some
 
 Atmosphere has its own bootloader, called fusee. For the purposes of this guide we will be using Hekate instead, so that we can back up the system's NAND (internal storage) and take advantage of other advanced features in the future.
 
-&nbsp;
-
 !!! warning "File name extensions"
     If you use Windows, you should enable file name extensions before continuing. See [this link](../../extras/showing_file_extensions.md) for a guide on how to do this.
-
-&nbsp;
 
 ### What you need
 - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
@@ -43,6 +39,6 @@ Atmosphere has its own bootloader, called fusee. For the purposes of this guide 
         Your SD card should look similar to the image below. The `Nintendo` folder will not be present if your switch has not already booted with the SD card inserted and the `emuMMC` folder will not be present if you're following the sysCFW path of the guide/you haven't created an emuMMC! 
         `payload.bin` will not be present if you're using an unpatched switch.
         
-        ![sdfilesimg](img/sdfiles3.png){ align=left }
+        ![sdfilesimg](img/sdfiles3.png)
 
 [Continue to Making Essential Backups :material-arrow-right:](making_essential_backups.md){ .md-button .md-button--primary }

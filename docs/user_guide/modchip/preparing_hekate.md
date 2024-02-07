@@ -21,4 +21,4 @@ To get ready for formatting/partitioning your SD card, we will need to prepare y
     If your switch does not load into hekate or shows a `NO SD`/`No Payload` screen when turning on your switch, ensure that you inserted your SD card and renamed the hekate payload to exactly `payload.bin`
 
 
-[Continue to Partitioning the SD :material-arrow-right:](../all/partitioning_sd.md){ .md-button .md-button--primary }
+[Continue to emuMMC vs sysCFW :material-arrow-right:](../all/syscfw_vs_emummc.md){ .md-button .md-button--primary }

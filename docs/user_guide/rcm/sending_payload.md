@@ -138,4 +138,4 @@ We will prepare the MicroSD card for partitioning before going to the next page.
 7. Put your MicroSD card back into your Switch.
 8. Use volume up and volume down to navigate the Hekate menu. Hover over 'reload' and hit power. Your screen should now have the Hekate GUI.
 
-[Continue to Partitioning the SD :material-arrow-right:](../all/partitioning_sd.md){ .md-button .md-button--primary }
+[Continue to emuMMC vs sysCFW :material-arrow-right:](../all/syscfw_vs_emummc.md){ .md-button .md-button--primary }

@@ -27,7 +27,7 @@ Running CFW on modchipped switches is more simplistic as it only requires you to
     We **ONLY** support the PicoFly modchip (the `RP2040 Zero` development board and the "modchip variant" of it), it's your own responsibility to install a modchip or let your switch get modchipped.
     There is always a risk of your switch being rendered dysfunctional if you don't know what you're doing.
     The NH Discord server is also generally **NOT** a place for fixing bad modchip installations (e.g. by you or a modchip installer) as it should be fixable by someone knowledgeable. 
-    We can give advice and installation tips for the installation as long as it's for a Picofly modchip.
+    We can give advice and installation tips for the installation as long as it's for a PicoFly modchip.
 
 [Continue to Preparing Hekate :material-arrow-right:](preparing_hekate.md){ .md-button .md-button--primary }
 

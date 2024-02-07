@@ -1,5 +1,5 @@
 site_name: NH Switch Guide
-copyright: Copyright &copy; 2023 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.
+copyright: Copyright &copy; 2024 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.
 site_description: Switch CFW Guide.
 site_author: NH Discord Server.
 site_url: https://guide.suchmeme.nl/
@@ -43,11 +43,12 @@ nav:
         - RCM:
           - 'Introduction': 'user_guide/rcm/index.md'  
           - 'Entering RCM': 'user_guide/rcm/entering_rcm.md'
-          - 'Sending a payload': 'user_guide/rcm/sending_payload.md'     
+          - 'Sending a payload': 'user_guide/rcm/sending_payload.md'
         - Modchip:
           - 'Introduction': 'user_guide/modchip/index.md' 
           - 'Preparing Hekate': 'user_guide/modchip/preparing_hekate.md'
         - Finalizing Setup:
+          - 'emuMMC vs sysCFW': 'user_guide/all/syscfw_vs_emummc.md'
           - 'Partitioning the SD for emuMMC': 'user_guide/all/partitioning_sd.md'
           - 'Partitioning the SD for sysCFW': 'user_guide/all/partitioning_sd_syscfw.md'    
           - 'SD preparations': 'user_guide/all/sd_preparation.md'

@@ -68,12 +68,7 @@ If your serial number is not listed above, your device is not vulnerable.
 ### Version Table
 
 !!! note "Note"
-    Nereba and Caffeine how-to guides are currently a Work-In-Progress (WIP)!
-
-!!! note "Note"
     While the "New" Switch (HAC-001-01)'s earliest possible firmware is 7.0.1, it is **not** vulnerable to *déjà vu*, the exploit used by Nereba and Caffeine, because of hardware differences from the "Old" Switch (HAC-001).
-
-&nbsp;
 
 | Firmware Version | Unpatched Switches (HAC-001) | Patched Switches (HAC-001) | "New" Switch (HAC-001-01)   | Switch Lite (HDH-001)  | 
 |:---------------|:--------------------------------|:---------------------------|:----------------------------|:-----------------------|
@@ -85,11 +80,7 @@ If your serial number is not listed above, your device is not vulnerable.
 | 8.0.1          | [**RCM**](rcm/index.md)               | Wait for homebrew          | Wait for homebrew           | Wait for homebrew      |
 | 8.1.0 and up | [**RCM**](rcm/index.md)               | Unhackable (currently)     | Unhackable (currently)      | Unhackable (currently) |
 
-&nbsp;
-
 !!! note "About OLED"
     OLED Switches (HEG-001) are currently unhackable via software.
-
-&nbsp;
 
 [If your Switch is not patched, continue to RCM :material-arrow-right:](rcm/index.md){ .md-button .md-button--primary }

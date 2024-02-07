@@ -20,18 +20,21 @@ There are several methods of entering RCM (**R**e**C**overy **M**ode). The most 
 
 === "RCM Jig (Recommended and easiest for beginners)"
     
-    Some jig designs use paperclips, inheriting the same risks as the Metal Bridge / Paperclip method.
+    Some jig designs use paperclips, inheriting the same risks as the Metal Bridge / Paperclip method and should not be done.
 
     Once you have successfully entered RCM, you can take the jig out of the joycon rail.
 
     This method is similar to the Metal Bridge / Paperclip method, but is more reliable and safer in many cases. Jigs hold a wire in place so the correct pins (10 and a ground) are shorted every time.
 
-    ![switchjigs.com jigs](../rcm/img/entering_rcm_jig.jpg)
+    The RCM Jig pictured below is the model we recommend to get, if you're buying your Jig from a webshop like Amazon or AliExpress.
+
+    ![recommended_jig](../rcm/img/recommended_jig.jpg)
 		
     In the case you plan to make you own jig, this image lays out the pads numbers on the console. Make sure your jig NEVER touches pin 4. Pin 4 provides 5v power to the Joycons, if connected to any other pin you will fry the console.
 
+    ![switchjigs.com jigs](../rcm/img/entering_rcm_jig.jpg)
+
     ![Console Numbered Pads Refrence](../rcm/img/entering_rcm_pads_numbered.jpg)
-	
 
 
 === "Soldered Joy-Con Pads - Physical RCM Button (Safest but not recommended for beginners)"
