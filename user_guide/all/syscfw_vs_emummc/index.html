@@ -12,28 +12,28 @@
         <meta name="author" content="NH Discord Server.">
       
       
-        <link rel="canonical" href="https://guide.suchmeme.nl/extras/rcm_injectors/">
+        <link rel="canonical" href="https://guide.suchmeme.nl/user_guide/all/syscfw_vs_emummc/">
       
       
-        <link rel="prev" href="../alternate_bootsetups/">
+        <link rel="prev" href="../../modchip/preparing_hekate/">
       
       
-        <link rel="next" href="../updating/">
+        <link rel="next" href="../partitioning_sd/">
       
       
-      <link rel="icon" href="../../img/favicon.ico">
+      <link rel="icon" href="../../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
     
     
       
-        <title>RCM Payload Injectors Information - NH Switch Guide</title>
+        <title>emuMMC vs sysCFW - NH Switch Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bd3936ea.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bd3936ea.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rcm-payload-injectors" class="md-skip">
+        <a href="#emunand-vs-emummc-vs-sysnand-vs-sysmmc" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="NH Switch Guide" class="md-header__button md-logo" aria-label="NH Switch Guide" data-md-component="logo">
+    <a href="../../.." title="NH Switch Guide" class="md-header__button md-logo" aria-label="NH Switch Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 320c88.4 0 160-71.6 160-160 0-15.3-2.2-30.1-6.2-44.2-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16v-57.4c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0c-88.4 0-160 71.6-160 160 0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1 0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9l181.6-181.6c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RCM Payload Injectors Information
+              emuMMC vs sysCFW
             
           </span>
         </div>
@@ -221,7 +221,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -236,11 +236,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../user_guide/getting_started/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../getting_started/" class="md-tabs__link">
           
   
   User Guide
@@ -258,7 +260,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../homebrew/" class="md-tabs__link">
+        <a href="../../../homebrew/" class="md-tabs__link">
           
   
   Homebrew
@@ -272,13 +274,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../blocking_nintendo/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../extras/blocking_nintendo/" class="md-tabs__link">
           
   
   Tutorials
@@ -294,7 +294,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../faq/" class="md-tabs__link">
+      <a href="../../../faq/" class="md-tabs__link">
         
   
     
@@ -311,7 +311,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../about/" class="md-tabs__link">
+      <a href="../../../about/" class="md-tabs__link">
         
   
     
@@ -347,7 +347,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NH Switch Guide" class="md-nav__button md-logo" aria-label="NH Switch Guide" data-md-component="logo">
+    <a href="../../.." title="NH Switch Guide" class="md-nav__button md-logo" aria-label="NH Switch Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 320c88.4 0 160-71.6 160-160 0-15.3-2.2-30.1-6.2-44.2-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16v-57.4c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0c-88.4 0-160 71.6-160 160 0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1 0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9l181.6-181.6c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
@@ -376,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,6 +393,8 @@
       
   
   
+    
+  
   
     
     
@@ -402,14 +404,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -423,7 +423,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             User Guide
@@ -436,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/getting_started/" class="md-nav__link">
+      <a href="../../getting_started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/rcm/" class="md-nav__link">
+      <a href="../../rcm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -517,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/rcm/entering_rcm/" class="md-nav__link">
+      <a href="../../rcm/entering_rcm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/rcm/sending_payload/" class="md-nav__link">
+      <a href="../../rcm/sending_payload/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/modchip/" class="md-nav__link">
+      <a href="../../modchip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/modchip/preparing_hekate/" class="md-nav__link">
+      <a href="../../modchip/preparing_hekate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -652,6 +652,8 @@
                 
   
   
+    
+  
   
     
     
@@ -661,14 +663,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
@@ -682,7 +682,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Finalizing Setup
@@ -693,9 +693,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../user_guide/all/syscfw_vs_emummc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    emuMMC vs sysCFW
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -704,6 +722,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#emunand-vs-emummc-vs-sysnand-vs-sysmmc" class="md-nav__link">
+    emuNAND vs emuMMC vs sysNAND vs sysMMC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emummc-recommended-for-new-users-and-modchipped-switch-users" class="md-nav__link">
+    emuMMC (Recommended for new users and modchipped Switch users)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syscfw-not-recommended-for-new-users-and-modchipped-switch-users" class="md-nav__link">
+    sysCFW (Not recommended for new users and modchipped Switch users)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -715,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/all/partitioning_sd/" class="md-nav__link">
+      <a href="../partitioning_sd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/all/partitioning_sd_syscfw/" class="md-nav__link">
+      <a href="../partitioning_sd_syscfw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/all/sd_preparation/" class="md-nav__link">
+      <a href="../sd_preparation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -775,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/all/making_essential_backups/" class="md-nav__link">
+      <a href="../making_essential_backups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user_guide/all/launching_cfw/" class="md-nav__link">
+      <a href="../launching_cfw/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -871,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../homebrew/" class="md-nav__link">
+      <a href="../../../homebrew/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -891,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../homebrew/jksv/" class="md-nav__link">
+      <a href="../../../homebrew/jksv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../homebrew/goldleaf/" class="md-nav__link">
+      <a href="../../../homebrew/goldleaf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -936,8 +993,6 @@
       
   
   
-    
-  
   
     
     
@@ -947,12 +1002,14 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -966,7 +1023,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Tutorials
@@ -979,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../blocking_nintendo/" class="md-nav__link">
+      <a href="../../../extras/blocking_nintendo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -999,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nandrestore/" class="md-nav__link">
+      <a href="../../../extras/nandrestore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1019,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../autorcm/" class="md-nav__link">
+      <a href="../../../extras/autorcm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1039,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dumping_title_keys/" class="md-nav__link">
+      <a href="../../../extras/dumping_title_keys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1059,7 +1116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../theming/" class="md-nav__link">
+      <a href="../../../extras/theming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1079,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../save_management/" class="md-nav__link">
+      <a href="../../../extras/save_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1099,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../game_modding/" class="md-nav__link">
+      <a href="../../../extras/game_modding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1119,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cheats/" class="md-nav__link">
+      <a href="../../../extras/cheats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1139,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adding_udev/" class="md-nav__link">
+      <a href="../../../extras/adding_udev/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../showing_file_extensions/" class="md-nav__link">
+      <a href="../../../extras/showing_file_extensions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1179,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../alternate_bootsetups/" class="md-nav__link">
+      <a href="../../../extras/alternate_bootsetups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1197,18 +1254,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../extras/rcm_injectors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1217,7 +1265,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1229,7 +1276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../updating/" class="md-nav__link">
+      <a href="../../../extras/updating/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1249,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../transfer_sd/" class="md-nav__link">
+      <a href="../../../extras/transfer_sd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1269,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../../extras/glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1289,7 +1336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing_android/" class="md-nav__link">
+      <a href="../../../extras/installing_android/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1309,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing_linux/" class="md-nav__link">
+      <a href="../../../extras/installing_linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1336,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1355,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1386,157 +1433,62 @@
   
 
 
-<h1 id="rcm-payload-injectors">RCM Payload Injectors<a class="headerlink" href="#rcm-payload-injectors" title="Permanent link">&para;</a></h1>
-<p>There are currently multiple RCM payload injectors available from multiple different companies and individuals. These devices remove the need to use a computer or smartphone when hacking an unpatched Switch. Each injector has its own advantages and disadvantages, listed below:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Manufacturer</th>
-<th style="text-align: left;">RCM Jig Included?</th>
-<th style="text-align: left;">RCM Jig Storage?</th>
-<th style="text-align: left;">Standard Payload (.bin) Support?</th>
-<th style="text-align: left;">Payload on SD Support?</th>
-<th style="text-align: left;">Multi-Payload Support?</th>
-<th style="text-align: left;">Battery Life</th>
-<th style="text-align: left;">Recharge Time</th>
-<th style="text-align: left;">Price (USD)</th>
-<th style="text-align: left;">Misc Info</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/AceNS%28Old%29.jpg">AceNS (Old)</a></td>
-<td style="text-align: left;">Ace3DS Team</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">N/A (Capacitors)</td>
-<td style="text-align: left;">10 seconds</td>
-<td style="text-align: left;"><s>$18.00</s>​ (<strong>Discontinued</strong>)</td>
-<td style="text-align: left;"><strong>Not Recommended:</strong> Overpriced clone of the RCMLoader Zero</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/AceNS%28New%29.jpg">AceNS (New)</a></td>
-<td style="text-align: left;">Ace3DS Team</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">️ ✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">45mAh LiPo (~1000 injections)</td>
-<td style="text-align: left;">1 hour</td>
-<td style="text-align: left;">$17.50</td>
-<td style="text-align: left;"><strong>Not Recommended:</strong> Overpriced clone of the RCMLoader One</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/AceNSPro.jpg">AceNS Pro</a></td>
-<td style="text-align: left;">Ace3DS Team</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️ (<strong>Required</strong>)</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">45mAh LiPo (~1000 injections)</td>
-<td style="text-align: left;">1 hour</td>
-<td style="text-align: left;">$42.90</td>
-<td style="text-align: left;"><strong>Not Recommended:</strong> Overpriced clone of the RCMLoader One with multiple features missing</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/DragonInjector.jpg">DragonInjector</a></td>
-<td style="text-align: left;">MatinatorX</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️ (<strong>Required</strong>)</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">40mAh CR1612 (~4000 injections)</td>
-<td style="text-align: left;">Non-Rechargeable (Replacable)</td>
-<td style="text-align: left;"><s>$30.00</s>​ (<strong>Discontinued</strong>)</td>
-<td style="text-align: left;">Fits in the Switch's gamecard slot</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/NS-Atmosphere.jpg">NS-Atmosphere</a></td>
-<td style="text-align: left;">Generic</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">150mAh LiPo (&gt;1000 injections)</td>
-<td style="text-align: left;">&gt;1 hour</td>
-<td style="text-align: left;">$13.15</td>
-<td style="text-align: left;"><strong>Not Recommended:</strong> Unsafe jig, overly bulky, changing payload requires installing a program, lack of .bin support complicates usage</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/R4S.jpg">R4S</a></td>
-<td style="text-align: left;">R4i-SDHC Team</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">120mAh LiPo (~1000 injections)</td>
-<td style="text-align: left;">1 hour</td>
-<td style="text-align: left;">$19.99</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/RCMLoaderZero.jpg">RCMLoader Zero</a></td>
-<td style="text-align: left;">Xkit</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">️ ✔️</td>
-<td style="text-align: left;">N/A (Capacitors)</td>
-<td style="text-align: left;">10 seconds</td>
-<td style="text-align: left;"><s>$5.99</s>​ (<strong>Discontinued</strong>)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/RCMLoaderOne.jpg">RCMLoader One</a></td>
-<td style="text-align: left;">Xkit</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">45mAh LiPo (~1000 injections)</td>
-<td style="text-align: left;">1 hour</td>
-<td style="text-align: left;">$9.99</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/SXGear.jpg">SX Gear</a></td>
-<td style="text-align: left;">Team Xecuter</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️ (<strong>Required</strong>)</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">N/A (Supercapacitors)</td>
-<td style="text-align: left;">5-10 seconds</td>
-<td style="text-align: left;">$24.95</td>
-<td style="text-align: left;"><strong>Not Recommended:</strong> Lack of .bin support complicates usage</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../img/rcm_injectors/SXPro.jpg">SX Pro</a></td>
-<td style="text-align: left;">Team Xecuter</td>
-<td style="text-align: left;">✔️</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">✔️ (<strong>Required</strong>)</td>
-<td style="text-align: left;">❌</td>
-<td style="text-align: left;">N/A (Supercapacitors)</td>
-<td style="text-align: left;">5-10 seconds</td>
-<td style="text-align: left;">$49.99</td>
-<td style="text-align: left;"><strong>Not Recommended:</strong> Lack of .bin support complicates usage</td>
-</tr>
-</tbody>
-</table>
+  <h1>emuMMC vs sysCFW</h1>
+
+<h3 id="emunand-vs-emummc-vs-sysnand-vs-sysmmc">emuNAND vs emuMMC vs sysNAND vs sysMMC<a class="headerlink" href="#emunand-vs-emummc-vs-sysnand-vs-sysmmc" title="Permanent link">&para;</a></h3>
+<p>We will often and most of the time refer to your Switch's internal storage as sysMMC, the definitions of the different terminologies is listed below:</p>
+<ul>
+<li>sysNAND stands for System NAND, meaning the internal storage inside of your actual Switch.</li>
+<li>sysMMC is the same as sysNAND besides the name, most of the time we will refer to sysNAND as sysMMC.</li>
+<li>emuNAND stands for emulated NAND, this means that your entire NAND (system memory) will run off your microSD card with Custom Firmware (CFW). This NAND's contents (games, applications, saves, etc.) are <em>completely</em> separate from your sysNAND.</li>
+<li>emuMMC is the name for the currently used implementation of emuNAND on Switch. It has no difference from emuNAND besides the name.</li>
+</ul>
+<h3 id="emummc-recommended-for-new-users-and-modchipped-switch-users">emuMMC (Recommended for new users and modchipped Switch users)<a class="headerlink" href="#emummc-recommended-for-new-users-and-modchipped-switch-users" title="Permanent link">&para;</a></h3>
+<p><code>emuMMC</code> is a copy of your sysMMC (internal storage) at the point of creation, it's essentially an "offline" sandbox that never communicates with Nintendo's servers and always has Atmosphere applied to it.
+Its main purpose is to serve as (aforementioned) sandbox that you can use to practice all aspects of homebrew safely.</p>
+<ul>
+<li>"Offline" meaning behind a method of blocking Nintendo's servers.</li>
+</ul>
+<p>It can also additionally serve as brick protection, which is why it's especially important and recommended to set up for modchipped Switch users.</p>
+<h4 id="some-use-cases-for-this-path-of-the-guide-are">Some use cases for this path of the guide are:<a class="headerlink" href="#some-use-cases-for-this-path-of-the-guide-are" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Dumping games and save data</li>
+<li>Restoring save data</li>
+<li>Modding and cheating in any game</li>
+<li>Theming (installing user made themes)</li>
+<li>Installing game cartridges</li>
+<li>Downgrade titles to their base versions</li>
+<li>Running CFW and therefore also running custom homebrew sysmodules and homebrew apps</li>
+</ul>
+<h4 id="the-requirements-for-emummc-are">The requirements for emuMMC are:<a class="headerlink" href="#the-requirements-for-emummc-are" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Your 128GB micro SD card or larger (smaller capacities <em>are</em> doable but you likely won't have a good time)</li>
+<li>Your Switch</li>
+</ol>
+<p>If you wish to follow this path of the guide, click on the button below:</p>
+<p><a class="md-button md-button--primary" href="../partitioning_sd/">Partitioning the SD for emuMMC <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<h3 id="syscfw-not-recommended-for-new-users-and-modchipped-switch-users">sysCFW (Not recommended for new users and modchipped Switch users)<a class="headerlink" href="#syscfw-not-recommended-for-new-users-and-modchipped-switch-users" title="Permanent link">&para;</a></h3>
+<p><code>sysCFW</code> (sysNAND CFW) essentially is your Switch's internal storage (sysNAND) with Atmosphere applied to it.
+This allows you to run Atmosphere on your Switch's internal storage and use your Switch online with all homebrew functionality, as long as you do nothing bannable with CFW.</p>
+<p>This path is <em>not</em> recommended for modchipped Switch users.</p>
+<h4 id="some-use-cases-for-this-path-of-the-guide-are_1">Some use cases for this path of the guide are:<a class="headerlink" href="#some-use-cases-for-this-path-of-the-guide-are_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Dumping games and save data</li>
+<li>Restoring save data (this should <em>not</em> be done to every game, it's bannable in some instances)</li>
+<li>Modding offline games</li>
+<li>Modding online games with "Wi-Fi safe" mods (e.g. UI/skin mods)</li>
+<li>Cheating in offline games</li>
+<li>Theming (installing user made themes)</li>
+<li>Running CFW and therefore also running custom homebrew sysmodules and homebrew apps</li>
+</ul>
+<p>Bannable offenses can be found <a href="https://nx.eiphax.tech/ban.html">here</a></p>
+<h4 id="the-requirements-for-syscfw-are">The requirements for sysCFW are:<a class="headerlink" href="#the-requirements-for-syscfw-are" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Your micro SD card</li>
+<li>Your Switch</li>
+</ol>
+<p>If you wish to follow this path of the guide, click on the button below:</p>
+<p><a class="md-button md-button--primary" href="../partitioning_sd_syscfw/">Formatting/Partitioning the SD for sysCFW <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 
 
@@ -1579,10 +1531,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.instant", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["toc.integrate", "navigation.instant", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.94c44541.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.94c44541.min.js"></script>
       
     
   </body>
