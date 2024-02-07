@@ -9,7 +9,7 @@
 
 	It's highly recommended that you use an SD card that is formatted to FAT32 and has at least 32 gigabytes of space free. This will still work on smaller cards, but it's not ideal.
 
-### Instructions:
+### **Instructions:**
 
 1. Enter RCM and inject the Hekate payload.
     - If you use a modchipped Switch, you can simply just turn your Switch on with the hekate payload renamed to `payload.bin` on the root of your SD. 
@@ -39,7 +39,7 @@
     These keys are critical to have. These keys are required to decrypt the content and partitions on the internal storage of your Switch.
     In an extreme emergency, they can be used in conjunction with your NAND backup and other tools to restore your console to a working state.
 
-### Instructions:
+### **Instructions:**
 
 1. Tap the `Payloads` option, then press Lockpick_RCM.bin.
 2. If Lockpick_RCM asks you to select between SysNAND and EmuNAND, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.

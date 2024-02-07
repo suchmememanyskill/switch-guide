@@ -11,7 +11,7 @@ There are several methods of entering RCM (**R**e**C**overy **M**ode). The most 
     The order of methods on this page is in the order of ease. The easiest to immediately accomplish are listed at the top, and the most advanced/difficult methods are at the bottom and should not be attempted by most people.
     **USING A PAPERCLIP OR TIN FOIL CAN/WILL DAMAGE YOUR CONSOLE, DO NOT DO THIS!**
 
-### Instructions:
+### **Instructions:**
 
 1. Power off the Switch and use one of the methods listed below to short the pins on the right Joy-Con rail.
 2. Hold `Volume Up` and press the `Power` button once while holding `Volume Up`.

@@ -6,11 +6,11 @@
 
 -----
 
-### What you need:
+### **What you need:**
 
 - Your switch loaded into Hekate
 
-### Instructions:
+### **Instructions:**
 
 1. Navigate to `Tools` > `Partition SD card`
 2. Set the `emuMMC (RAW)` slider to `29 FULL` in the middle of the bar.

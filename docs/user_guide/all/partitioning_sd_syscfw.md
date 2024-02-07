@@ -6,11 +6,11 @@
 
 -----
 
-### What you need:
+### **What you need:**
 
 - Your switch loaded into Hekate
 
-### Instructions:
+### **Instructions:**
 
 1. Navigate to `Tools` > `Partition SD card`
 2. Navigate to `Next Step` at the bottom right, then select `Start` in the menu that appears.

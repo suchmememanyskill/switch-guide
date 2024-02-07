@@ -1,4 +1,4 @@
-### emuNAND vs emuMMC vs sysNAND vs sysMMC
+### **emuNAND vs emuMMC vs sysNAND vs sysMMC**
 
 We will often and most of the time refer to your Switch's internal storage as sysMMC, the definitions of the different terminologies is listed below:
 
@@ -7,7 +7,7 @@ We will often and most of the time refer to your Switch's internal storage as sy
 - emuNAND stands for emulated NAND, this means that your entire NAND (system memory) will run off your microSD card with Custom Firmware (CFW). This NAND's contents (games, applications, saves, etc.) are *completely* separate from your sysNAND.
 - emuMMC is the name for the currently used implementation of emuNAND on Switch. It has no difference from emuNAND besides the name.
 
-### emuMMC (Recommended for new users and modchipped Switch users)
+### **emuMMC (Recommended for new users and modchipped Switch users)**
 
 `emuMMC` is a copy of your sysMMC (internal storage) at the point of creation, it's essentially an "offline" sandbox that never communicates with Nintendo's servers and always has Atmosphere applied to it.
 Its main purpose is to serve as (aforementioned) sandbox that you can use to practice all aspects of homebrew safely.
@@ -15,6 +15,8 @@ Its main purpose is to serve as (aforementioned) sandbox that you can use to pra
 - "Offline" meaning behind a method of blocking Nintendo's servers.
 
 It can also additionally serve as brick protection, which is why it's especially important and recommended to set up for modchipped Switch users.
+
+This path of the guide also sets up sysCFW, you don't have to set it up additionally.
 
 #### Some use cases for this path of the guide are:
 
@@ -35,7 +37,7 @@ If you wish to follow this path of the guide, click on the button below:
 
 [Partitioning the SD for emuMMC :material-arrow-right:](../all/partitioning_sd.md){ .md-button .md-button--primary }
 
-### sysCFW (Not recommended for new users and modchipped Switch users)
+### **sysCFW (Not recommended for new users and modchipped Switch users)**
 
 `sysCFW` (sysNAND CFW) essentially is your Switch's internal storage (sysNAND) with Atmosphere applied to it.
 This allows you to run Atmosphere on your Switch's internal storage and use your Switch online with all homebrew functionality, as long as you do nothing bannable with CFW.
