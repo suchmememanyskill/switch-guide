@@ -15,7 +15,7 @@ To get ready for formatting/partitioning your SD card, we will need to prepare y
 4. Copy the `bootloader` folder and `hekate_ctcaer_(version).bin` payload to the root of your SD card.
 5. Rename the `hekate_ctcaer_(version).bin` payload to `payload.bin`
 6. Insert your SD card back into your switch, then turn on your switch.
-7. You should now be loaded into hekate. If not, consult the message below.
+7. You should now be loaded into hekate. If not, consult the warning message below.
 	
 !!! warning
     If your switch does not load into hekate or shows a `NO SD`/`No Payload` screen when turning on your switch, ensure that you inserted your SD card and renamed the hekate payload to exactly `payload.bin`
