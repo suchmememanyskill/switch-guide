@@ -589,6 +589,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-you-need_5" class="md-nav__link">
+    What You Need:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions_5" class="md-nav__link">
+    Instructions:
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1437,7 +1451,7 @@
 <ul>
 <li>The latest release of <a href="https://github.com/eliboa/TegraRcmGUI/releases" target="_blank">TegraRcmGUI</a> (either the MSI or zip)</li>
 <li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (hekate_ctcaer bin) is located in the hekate_ctcaer zip.</li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located in the <code>hekate_ctcaer_(version).zip</code>.</li>
 </ul>
 <h4 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1469,7 +1483,7 @@
 <ul>
 <li>The latest release of <a href="https://github.com/nh-server/fusee-interfacee-tk/releases" target="_blank">fusee-interfacee-tk</a></li>
 <li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (hekate_ctcaer bin) is located in the hekate_ctcaer zip.</li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located in the <code>hekate_ctcaer_(version).zip</code>.</li>
 </ul>
 <h4 id="instructions_1">Instructions<a class="headerlink" href="#instructions_1" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1489,7 +1503,7 @@
 <li>If your device has a USB-C port, you may use a C-C cable</li>
 <li>If your device only has a Micro USB port, you will need a USB OTG adapter and a USB A-C cable</li>
 <li>This <strong>will not work</strong> on every phone!</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (hekate_ctcaer bin) is located in the   hekate_ctcaer zip.</li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located in the <code>hekate_ctcaer_(version).zip</code>.</li>
 </ul>
 <h4 id="instructions_2">Instructions<a class="headerlink" href="#instructions_2" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1516,7 +1530,7 @@
 <p>If your Chromebook has a USB-C port, do note that this will not work using a C-C cable.</p>
 </div>
 <ul>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (hekate_ctcaer bin) is located in the hekate_ctcaer zip.</li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located in the <code>hekate_ctcaer_(version).zip</code>.</li>
 </ul>
 <h4 id="instructions_3">Instructions<a class="headerlink" href="#instructions_3" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1543,7 +1557,7 @@
 </div>
 <ul>
 <li>A USB 3 Type A to Type C cable</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (hekate_ctcaer bin) is located in the hekate_ctcaer zip.</li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located in the <code>hekate_ctcaer_(version).zip</code>.</li>
 </ul>
 <h4 id="instructions_4">Instructions<a class="headerlink" href="#instructions_4" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1559,23 +1573,22 @@
 <p class="admonition-title">If nothing happens after you send the payload</p>
 <p>If your console's screen remains black after you've sent Hekate (or any other payload), it's possible your payload was corrupted, or that your console is patched.   If your payload injector program shows         that 0 bytes were sent, then it is definitely patched, so you'll be unable to proceed with the rest of the guide.</p>
 </div>
-<h2 id="preparing-hekate">Preparing Hekate<a class="headerlink" href="#preparing-hekate" title="Permanent link">&para;</a></h2>
-<p>We will prepare the MicroSD card for partitioning before going to the next page. Removing the SD card while in Hekate is safe so turning off the console is not necessary and keeping it on will save time that would be spent reinjecting the payload.</p>
-<h4 id="what-you-need_5">What You Need<a class="headerlink" href="#what-you-need_5" title="Permanent link">&para;</a></h4>
+<h3 id="preparing-hekate"><strong>Preparing Hekate</strong><a class="headerlink" href="#preparing-hekate" title="Permanent link">&para;</a></h3>
+<p>We will prepare the micro SD card for formatting/partitioning before going to the next page. Removing the SD card while in Hekate is safe so turning off the console is not necessary and keeping it on will save time that would be spent reinjecting the payload.</p>
+<h3 id="what-you-need_5"><strong>What You Need:</strong><a class="headerlink" href="#what-you-need_5" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target ="_blank">Hekate</a>.</li>
-<li>Your MicroSD card</li>
+<li>Your micro SD card</li>
 </ul>
-<h4 id="instructions_5">Instructions<a class="headerlink" href="#instructions_5" title="Permanent link">&para;</a></h4>
+<h3 id="instructions_5"><strong>Instructions:</strong><a class="headerlink" href="#instructions_5" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Without turning your Switch off, remove the MicroSD card from it.</li>
-<li>Insert your Switch's MicroSD card into your PC.</li>
-<li>Inside the extracted Hekate folder you will find a folder named <code>bootloader</code>.</li>
-<li>Copy the <code>bootloader</code> folder to the root of your MicroSD card.</li>
-<li>Copy the Nintendo folder from the root of your MicroSD card to a safe space on your computer.</li>
-<li>Once the Nintendo folder is done copying eject your MicroSD from inside your OS.</li>
-<li>Put your MicroSD card back into your Switch.</li>
-<li>Use volume up and volume down to navigate the Hekate menu. Hover over 'reload' and hit power. Your screen should now have the Hekate GUI.</li>
+<li>Without turning your Switch off, remove the SD card from the Switch.</li>
+<li>Insert your Switch's SD card into your computer.</li>
+<li>Extract the hekate <code>.zip</code> to a location on your computer</li>
+<li>Inside the extracted hekate folder you will find a folder named <code>bootloader</code>.</li>
+<li>Copy the <code>bootloader</code> folder to the root of your SD card.</li>
+<li>Put your SD card back into your Switch.</li>
+<li>Use volume up and volume down to navigate the hekate menu. Hover over 'reload' and hit power. Your screen should now have the Hekate GUI.</li>
 </ol>
 <p><a class="md-button md-button--primary" href="../../all/syscfw_vs_emummc/">Continue to emuMMC vs sysCFW <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
