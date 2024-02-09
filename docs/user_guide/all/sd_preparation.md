@@ -30,7 +30,7 @@ Atmosphere has its own bootloader, called fusee. For the purposes of this guide 
 7. Create a folder named `hosts` inside the `atmosphere` folder on your SD card, and put `emummc.txt` in it.
 8. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card.
 9. If you were already using your microSD card as a storage device for your games and backed up the Nintendo folder before partitioning your SD card, please place it back on the root of your SD card.
-    - If you created an emuMMC on the previous page, don't forget to copy the Nintendo folder to `SD:/emuMMC/RAW1`!
+    - If you created an emuMMC on the previous page, don't forget to copy the Nintendo folder to `SD:/emuMMC/RAW1/`!
 
     !!! danger "About emummc.txt"
         Putting the `emummc.txt` file provided by this guide into `/atmosphere/hosts` will prevent your emuMMC (emuNAND) from connecting to Nintendo. Not doing this will likely result in a ban.

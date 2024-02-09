@@ -4,7 +4,7 @@
 
 A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to Atmosphere.
 
-For live support with this guide please visit us in **#switch-assistance** over at the [Nintendo Homebrew Discord](https://discord.gg/C29hYvh).
+For live support with this guide please visit us in **#switch-assistance-1** or **#switch-assistance-2** over at the [NH Discord server](https://discord.gg/C29hYvh).
 
 ### **What is homebrew?**
 
@@ -62,7 +62,7 @@ This guide will work on first-generation (V1) and modchipped second-generation (
         - This method is not covered by the guide, but you can read more about it at [this website](https://mologie.github.io/nxboot/)
     - A successfully modchipped Switch
 
-    You will also need a micro SD card that is at least 128 gigabytes or larger if you plan on following this guide through the emuMMC path, which is safer and strongly recommended. If you do decide to follow the emuMMC path, make sure you disable [Automatic Save Data Cloud backups/downloads](https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html). 
+    You will also need a micro SD card that is at least 128 gigabytes or larger if you plan on following this guide through the emuMMC path, which is safer and strongly recommended. If you do decide to follow the emuMMC path (recommended), make sure you disable [Automatic Save Data Cloud backups/downloads](https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html) beforehand as well as making sure [the Switch is set as Primary Console](https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account). 
     If you must use a smaller SD card, it is possible with the sysNAND CFW path, but strongly not recommended.
 
     Finally, you will need a way to access ReCovery Mode (This will be further explained in the "Entering RCM section") if you have a V1 unpatched Switch.
