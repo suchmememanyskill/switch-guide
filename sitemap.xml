@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://guide.suchmeme.nl/extras/</loc>
+         <lastmod>2024-02-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://guide.suchmeme.nl/extras/adding_udev/</loc>
          <lastmod>2024-02-12</lastmod>
          <changefreq>daily</changefreq>
