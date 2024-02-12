@@ -7,6 +7,6 @@ They are listed in the sidebar.
 ### **Commonly used guides**:
 
 - [Get started](index.md)
-- [Updating CFW](extras/updating.md)
-- [Blocking Nintendo servers](extras/blocking_nintendo.md)
-- [Changing SD cards](extras/transfer_sd)
+- [Updating CFW](updating.md)
+- [Blocking Nintendo servers](blocking_nintendo.md)
+- [Changing SD cards](transfer_sd)
