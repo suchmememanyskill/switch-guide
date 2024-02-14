@@ -420,15 +420,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-homebrew" class="md-nav__link">
-    What is homebrew?
+  <a href="#what-is-custom-firmware" class="md-nav__link">
+    What is Custom Firmware?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-is-custom-firmware" class="md-nav__link">
-    What is Custom Firmware?
+  <a href="#what-is-homebrew" class="md-nav__link">
+    What is homebrew?
   </a>
   
 </li>
@@ -775,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user_guide/all/firmware_environment/" class="md-nav__link">
+      <a href="user_guide/all/cfw_environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1478,23 +1478,21 @@
 
 <p><a href="https://discord.gg/C29hYvh" target="_blank"><img style="float: right;" src="img/discord.png"></a></p>
 <h1 id="nh-switch-guide">NH Switch Guide<a class="headerlink" href="#nh-switch-guide" title="Permanent link">&para;</a></h1>
-<p>A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to Atmosphère.</p>
-<p>For live support with this guide please visit us in <strong>#switch-assistance-1</strong> or <strong>#switch-assistance-2</strong> over at the <a href="https://discord.gg/C29hYvh">NH Discord server</a>.</p>
-<h3 id="what-is-homebrew"><strong>What is homebrew?</strong><a class="headerlink" href="#what-is-homebrew" title="Permanent link">&para;</a></h3>
-<p>Homebrew is a term for unoffical software written by hobbyists and amateur developers for locked down systems, like the Nintendo Switch.</p>
-<p>Homebrew can include original games, emulators, save-editing tools, and much more.</p>
-<p>Homebrew can be run for free (except for an RCM jig) on your Switch through Custom Firmware as long as you have a "first-generation" system, and a USB-C cable. All other consoles <em>can</em> run homebrew, but it requires external tools and hardware.</p>
-<p>&nbsp;</p>
+<p>NH Switch Guide is a collaboration from Nintendo Homebrew's Discord community, getting you from stock to Atmosphère.</p>
+<p>For live support with this guide, visit us in <strong>#switch-assistance-1</strong> or <strong>#switch-assistance-2</strong> over at the <a href="https://discord.gg/C29hYvh">NH Discord server</a>.</p>
 <h3 id="what-is-custom-firmware"><strong>What is Custom Firmware?</strong><a class="headerlink" href="#what-is-custom-firmware" title="Permanent link">&para;</a></h3>
-<p>Custom FirmWare (“CFW”) is a type of homebrew software that modifies the system firmware.
+<p>Custom FirmWare (“CFW”) is complex software that modifies the function of a device's operating system, also known as a system firmware.
 Atmosphère, for example, does this by running in the background and patching the OS on the fly.</p>
-<p>Custom firmware can be considered a holy grail in terms of device modding, as it allows nearly limitless control and freedoms than you would get with more primitive "userland" access.</p>
-<p>CFW can be set up on any console, with a hardware modification known as a modchip. However, some lucky people can run CFW for free, with no (expensive) tools, as long as they own a first-generation Nintendo Switch ("V1"), which were all manufactured between 2017 and mid-2018.
+<p>Custom firmware can be considered a holy grail in terms of device modding, as it allows nearly limitless control and freedoms than you would get with more primitive "userland" access.
+&nbsp;</p>
+<h3 id="what-is-homebrew"><strong>What is homebrew?</strong><a class="headerlink" href="#what-is-homebrew" title="Permanent link">&para;</a></h3>
+<p>Homebrew is a term for unofficial software written by hobbyists and amateur developers for locked down systems, like the Nintendo Switch. Homebrew can include original games, emulators, save-editing tools, and much, much more!</p>
+<p>On the Switch in particular, you need CFW to run almost all available homebrew. Some lucky individuals with a "first-generation"/"V1" console can run homebrew by simply following this guide, for free (or ultra-low cost). All other consoles (known as "patched" consoles) can run homebrew, but it requires specialised hardware to be installed to the system beforehand.
 &nbsp;</p>
 <h3 id="what-does-this-guide-install"><strong>What does this guide install?</strong><a class="headerlink" href="#what-does-this-guide-install" title="Permanent link">&para;</a></h3>
 <p>This guide has the end-goal of taking a completely unmodified Switch from stock firmware to a custom firmware named Atmosphère.</p>
-<p>"fusee-gelee" is currently the most widespread method of launching custom firmware, giving us nearly full control of the system. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to send any payload we want to the Switch's recovery mode, instead of only ones that Nvidia and Nintendo authorized.</p>
-<p>&nbsp;</p>
+<p>"<a href="https://github.com/Qyriad/fusee-launcher/blob/master/report/fusee_gelee.md">fusee-gelee</a>" is currently the most widespread entrypoint of launching custom firmware, giving us nearly full control of the system. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to boot the console via any payload we choose, instead of only ones that Nvidia and Nintendo authorize.  The result allows full baremetal control over your console, including system storage backups, recovery, custom firmwares, and custom operating systems.
+&nbsp;</p>
 <h3 id="what-can-i-do-with-custom-firmware"><strong>What can I do with custom firmware?</strong><a class="headerlink" href="#what-can-i-do-with-custom-firmware" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Customize your HOME Menu with user-created themes and splash screens</li>
@@ -1502,26 +1500,27 @@ Atmosphère, for example, does this by running in the background and patching th
 <li>Backup, edit, and restore saves for many games</li>
 <li>Play games for older systems with various emulators, using RetroArch or other standalone emulators</li>
 <li>Safely update to the latest system version without fear of losing access to homebrew</li>
+<li>Safely customise your device while retaining access to Nintendo online services
+&nbsp;</li>
 </ul>
-<p>&nbsp;</p>
 <h3 id="what-do-i-need-to-know-before-starting"><strong>What do I need to know before starting?</strong><a class="headerlink" href="#what-do-i-need-to-know-before-starting" title="Permanent link">&para;</a></h3>
-<p>Before beginning the guide, you must know the risks of Switch hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They’re rare, but still a possibility -- so make sure you read the directions carefully before performing them, and follow them EXACTLY.</p>
+<p>Acknowledge that EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. A brick is a damaged device that no longer functions; something that becomes as "useful as a brick". On the Switch, they're rare, but still a possibility -- so make sure you read the directions carefully before performing them, and follow them EXACTLY.</p>
 <p>This guide will work on first-generation (V1) and modchipped Switch consoles in all regions on any firmware version.</p>
 <div class="admonition note">
-<p>You will need <strong>one</strong> of the following in order to successfully follow this guide:</p>
+<p>You will need just <strong>one</strong> of the following in order to successfully follow this guide:</p>
 <ul>
-<li>A PC and a USB cable capable of data transfer between your Switch and your PC</li>
-<li>An Android device and a USB cable capable of data transfer between your Switch and your Android device<ul>
+<li>A PC, and a USB-C cable capable of data transfer to connect them together</li>
+<li>An Android device, and a USB-C cable capable of data transfer to connect them together<ul>
 <li>This does not work on every Android phone</li>
 </ul>
 </li>
-<li>A Lightning-OTG adapter, a jailbroken iOS device, and a USB cable capable of data transfer between your Switch and the adapter<ul>
+<li>A Lightning OTG adapter, a jailbroken iOS device, and a USB cable, all capable of data transfer to connect everything together<ul>
 <li>This method is not covered by the guide, but you can read more about it at <a href="https://mologie.github.io/nxboot/">this website</a></li>
 </ul>
 </li>
 <li>A successfully modchipped Switch</li>
 </ul>
-<p>You will also need a microSD card that is at least 128 gigabytes or larger if you plan on following this guide through the emuMMC path, which is safer and strongly recommended. If you do decide to follow the emuMMC path, make sure you disable <a href="https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html">Automatic Save Data Cloud backups/downloads</a> beforehand as well as making sure <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">the Switch is set as Primary Console</a>.
+<p>You will also need a microSD card that is <em>at least</em> 128 gigabytes if you plan on following this guide through the emuMMC path, which is safer and highly recommended. If you do decide to follow the emuMMC path, it is important to disable <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/41209/~/how-to-enable%2Fdisable-automatic-save-data-backups-and-downloads">Automatic Save Data Cloud backups and downloads</a> beforehand as well as making sure <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">the Switch is set as Primary Console</a>.
 If you must use a smaller microSD card, you can choose to use the sysNAND CFW path, after assuming the risks involved.</p>
 <p>Additionally, on a V1 "unpatched" Switch, you will need a way to access the ReCovery Mode (this will be further explained in the "Entering RCM section").</p>
 </div>
@@ -1529,8 +1528,10 @@ If you must use a smaller microSD card, you can choose to use the sysNAND CFW pa
 <p>Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off.</p>
 <p>Custom firmware is not permanently installed and does not change anything on your console simply by running it. It will be entirely unloaded upon rebooting the console if you aren't using a modchip. However, CFW does allow you to make permanent changes at your own will, so <strong>be cautious of what you do with the powers that CFW grants you</strong>.</p>
 <p>It is advised that you read the entire guide from start to finish one or more times before actually running through the guide with your system.</p>
+<p>&nbsp;</p>
 <h3 id="continue-with-the-applicable-guide-for-your-switch-by-clicking-one-of-the-buttons-below"><strong>Continue with the applicable guide for your Switch by clicking one of the buttons below:</strong><a class="headerlink" href="#continue-with-the-applicable-guide-for-your-switch-by-clicking-one-of-the-buttons-below" title="Permanent link">&para;</a></h3>
-<p><a class="md-button md-button--primary" href="user_guide/getting_started/">Get Started with RCM (V1) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a> <a class="md-button md-button--primary" href="user_guide/modchip/">Get Started with Modchips (Not Free!) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<p>&nbsp;</p>
+<p><a class="md-button md-button--primary" href="user_guide/getting_started/">Get Started with RCM (free) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a> <a class="md-button md-button--primary" href="user_guide/modchip/">Get Started with Modchips (not free!) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 <p>&nbsp;</p>
 <p>Note: We are not currently, historically, or will we ever be, associated with Anton Retro, sthetix, Ely M., or other derivative or YouTube/TikTok guide publishers, especially any that claim relation to us.</p>
 <p>Furthermore, we resent any implication to the contrary.</p>

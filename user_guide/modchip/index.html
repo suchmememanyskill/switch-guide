@@ -749,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../all/firmware_environment/" class="md-nav__link">
+      <a href="../all/cfw_environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1454,11 +1454,11 @@
 <div class="admonition info">
 <p class="admonition-title">information</p>
 <p>Unlike "unpatched" consoles,
-modchips enable CFW via CPU voltage glitching, which bypass firmware verifications. It allows a <code>payload.bin</code> file to be launched in place of BOOT0, loaded via a modchip firmware module named <code>sdloader</code>. This is much different from RCM and its exploit, <a href="link">fusee-gelee</a>, which "unpatched" consoles use.
-Modchips allow any console (even all patched consoles) to run CFW!</p>
+modchips enable CFW via CPU voltage glitching, which bypass bootROM firmware verifications. It allows a <code>payload.bin</code> file to be launched in place of BOOT0, loaded via a modchip firmware module named <code>sdloader</code>. This is much different from RCM and its exploit, <a href="https://github.com/Qyriad/fusee-launcher/blob/master/report/fusee_gelee.md">fusee-gelee</a>, which "unpatched" consoles use.
+Modchips allow any console (like all "patched" consoles) to run CFW!</p>
 </div>
 <h3 id="general-knowledge"><strong>General knowledge</strong><a class="headerlink" href="#general-knowledge" title="Permanent link">&para;</a></h3>
-<p>If you're new to the world of modchipped Switch consoles, there are general things you should know.</p>
+<p>Are you new to the world of modchipped consoles? Here are some things you should know.</p>
 <p>Modchipped Switch consoles, except certain original V1 consoles made from 2017 to mid-2018, are immune to the fusee-gelee exploit in RCM. Attempting payload injection in RCM is futile; modchips are typically used on unhackable consoles in the first place.</p>
 <p>Depending on the firmware running on your modchip, you may not be able to boot the console without a microSD card inserted.
 This means that you will not be able to use your Switch <em>at all</em> if you don't have an microSD card inserted.</p>
@@ -1467,11 +1467,11 @@ This means that you will not be able to use your Switch <em>at all</em> if you d
 <p>Some modchip firmwares (Spacecraft-NX, for example) <strong>DO</strong> allow you to bypass the modchip's <code>sdloader</code> by either holding both volume buttons or either one of the volume buttons, then powering on your Switch. This would allow you to boot normally without a microSD card inserted. However, not all modchips allow upgrading their firmware.</p>
 </details>
 <p>If you do turn on your Switch without a microSD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
-<p>Unlike unpatched Switch consoles, modchipped Switch consoles allow "untethered, coldboot" CFW loading; they do not rely on an external device to inject a payload like unpatched Switch consoles would.</p>
+<p>Unlike unpatched Switch consoles, modchipped Switch consoles allow "untethered, coldboot" CFW loading; they do not require an external device to inject a payload like the RCM method does.</p>
 <ul>
-<li>"Untethered coldboot" means being able to turn on your console from a fully-off ("cold") state, directly into custom firmware, without external devices such as a dongle, payload injector, or jig.</li>
+<li>"Untethered coldboot" means being able to turn on your console from a fully-off ("cold") state directly into custom firmware, without external devices such as a dongle, payload injector, or jig.</li>
 </ul>
-<p>Running CFW on modchipped switches is more simplistic, as it only requires you to have <code>payload.bin</code> present on the root of your microSD card when you turn on the Switch.</p>
+<p>Running CFW on modchipped consoles is more simplistic, as it only requires you to have <code>payload.bin</code> present on the root of your microSD card when you turn on the system.</p>
 <p>Before setting up the console for homebrew, it is important to have at least one eShop title installed. Running the homebrew menu "over a title" allows for much higher resource allocation. Try downloading a free game (such as <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (such as <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a>), or a game demo such as <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>. Running homebrew through any game cartridge will also work, but it must be inserted. Running homebrew does not permanently replace or remove the game/application, nor does it become tied to only one game/application (any cartridge you have inserted or any game/application installed can always be used). Once you obtain any bootable title, you are prepared to continue on with the guide.</p>
 <h3 id="important"><strong>Important</strong><a class="headerlink" href="#important" title="Permanent link">&para;</a></h3>
 <p>If you do decide to follow the recommended emuMMC path later in the guide, make sure you disable <a href="https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html">Automatic Save Data Cloud backups/downloads</a> beforehand as well as making sure <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">the Switch is set as Primary Console</a>.</p>
