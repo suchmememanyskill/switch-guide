@@ -29,9 +29,9 @@ Modchipped Switch consoles, except certain original V1 consoles made from 2017 t
 Depending on your modchip's firmware, booting the console may require a microSD card. Without it, your Switch becomes unusable.
 
 ???+ note "Note about modchips and their firmwares"
-Some modchip firmwares (e.g., Spacecraft-NX) allow bypassing sdloader by holding volume buttons during power-on, enabling normal boot without a microSD card. Not all modchips support firmware upgrades.
+     Some modchip firmwares (e.g., Spacecraft-NX, Hwfly-NX and the Picofly firmware) allow bypassing sdloader by holding one of- or both volume buttons during power-on, enabling normal boot without a microSD card. Not all modchips support firmware upgrades.
 
-Booting without a microSD card leads to a NO SD splash screen.
+     Booting without a microSD card leads to a NO SD splash screen.
 
 Modchipped Switch consoles allow untethered, coldboot CFW loading, directly entering custom firmware without external devices like dongles or jigs. This is in contrast to the tethered coldboot "RCM" entrypoint.
 
