@@ -1461,28 +1461,18 @@ Modchips allow any console (like all "patched" consoles) to run CFW!</p>
 <p>Modchipped Switch consoles, except certain original V1 consoles made from 2017 to mid-2018, are immune to the fusee-gelee exploit in RCM. Attempting payload injection in RCM is futile; modchips are typically used on patched consoles in the first place.</p>
 <p>Depending on your modchip's firmware, you may not be able to boot the console without a microSD card inserted.
 This means without a microSD inserted at all times, your Switch becomes <em>unusable</em>.</p>
-<details class="note" open="open">
-<summary>Note about modchips and their firmwares</summary>
-<p>Some modchip firmwares (Spacecraft-NX, for example) <strong>DO</strong> allow you to bypass the modchip's <code>sdloader</code> by either holding both volume buttons or either one of the volume buttons during startup. This would allow you to boot normally without a microSD card inserted. However, not all modchips allow upgrading their firmware.</p>
-</details>
 <p>If you do turn on your Switch without a microSD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
-<p>Introduction to Modchips
-Unlike "unpatched" consoles, modchips enable CFW through CPU voltage glitching, bypassing bootROM firmware verifications. This allows launching a payload.bin file instead of BOOT0, loaded via a modchip firmware module named <code>sdloader</code>. Modchips, in contrast to the RCM and its fusee-gelee exploit used by "unpatched" consoles, enable any console, including all "patched" consoles, to run CFW.</p>
-<p>General knowledge
-New to modchipped consoles? Here's what you need to know.</p>
-<p>Modchipped Switch consoles, except certain original V1 consoles made from 2017 to mid-2018, are immune to the fusee-gelee exploit in RCM. Payload injection in RCM is futile on consoles typically using modchips.</p>
-<p>Depending on your modchip's firmware, booting the console may require a microSD card. Without it, your Switch becomes unusable.</p>
 <details class="note" open="open">
 <summary>Note about modchips and their firmwares</summary>
-<p>Some modchip firmwares (e.g., Spacecraft-NX, Hwfly-NX and the Picofly firmware) allow bypassing sdloader by holding one of- or both volume buttons during power-on, enabling normal boot without a microSD card. Not all modchips support firmware upgrades.</p>
-<p>Booting without a microSD card leads to a NO SD splash screen.</p>
+<p>Some modchip firmwares (e.g., Spacecraft-NX, Hwfly-NX and the Picofly firmware) allow bypassing <code>sdloader</code> by holding one of - or both - volume buttons during power-on, enabling normal boot without a microSD card. Not all modchips support firmware upgrades.</p>
+<p>If you do turn on your Switch without a microSD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
 </details>
 <p>Modchipped Switch consoles allow untethered, coldboot CFW loading, directly entering custom firmware without external devices like dongles or jigs. This is in contrast to the tethered coldboot "RCM" entrypoint.</p>
 <ul>
 <li>"Untethered coldboot" means being able to turn on your console from a fully-off ("cold") state directly into custom firmware, without external devices such as a dongle, payload injector, or jig.</li>
 </ul>
 <p>Running CFW on modchipped consoles is more simplistic, as it only requires you to have <code>payload.bin</code> present on the root of your microSD card when you turn on the system.</p>
-<p>Before setting up for homebrew, install at least one eShop title. Running homebrew "over a title" allows more resources for homebrew apps. Try downloading a free game (such as <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (such as <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a>), or a game demo such as <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>. Running homebrew via a game cartridge will also work, but it must be inserted every time. Running homebrew does not permanently replace or remove the game/application, nor does it become tied to only one game/application (any cartridge you have inserted or any game/application installed can always be used). Once you obtain any bootable title, you are prepared to continue on with the guide.</p>
+<p>Before setting up for homebrew, install at least one eShop title. Running the Homebrew Menu "over a title" allows more resources for homebrew apps. Try downloading a free game (such as <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (such as <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a>), or a game demo (such as <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>). Running the Homebrew Menu via a game cartridge will also work, but it must be inserted every time you want to boot into homebrew. Taking over a title in this manner does not permanently replace or remove the donor game/application, nor does it become tied to only one game/application. Any cartridge you have inserted or any game/application installed can always be used normally if you don't hold any buttons while booting it. <br> Once you obtain any bootable title, you are prepared to continue on with the guide.</p>
 <h3 id="important"><strong>Important</strong><a class="headerlink" href="#important" title="Permanent link">&para;</a></h3>
 <p>If you do decide to follow the recommended emuMMC path later in the guide, make sure you disable <a href="https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html">Automatic Save Data Cloud backups/downloads</a> beforehand as well as making sure <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">the Switch is set as Primary Console</a>.</p>
 <div class="admonition danger">
