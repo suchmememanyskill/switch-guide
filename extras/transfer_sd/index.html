@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#changing-sd-cards" class="md-skip">
+        <a href="#changing-microsd-cards" class="md-skip">
           Skip to content
         </a>
       
@@ -1463,13 +1463,13 @@
   
 
 
-<h1 id="changing-sd-cards">Changing SD cards<a class="headerlink" href="#changing-sd-cards" title="Permanent link">&para;</a></h1>
-<p>The goal of this page is to transfer the contents from one SD card to another one. The method to do this will differ, depending on whether you're using a partition based emuMMC on your SD card or not.</p>
-<p>We will be using <a href="https://github.com/CTCaer/hekate/releases/">hekate</a> to both backup and restore the emuMMC, so make sure that you have its latest files on your SD card already.</p>
+<h1 id="changing-microsd-cards">Changing microSD cards<a class="headerlink" href="#changing-microsd-cards" title="Permanent link">&para;</a></h1>
+<p>The goal of this page is to transfer the contents from one microSD card to another one. The method to do this will differ, depending on whether you're using a partition based emuMMC on your microSD card or not.</p>
+<p>We will be using <a href="https://github.com/CTCaer/hekate/releases/">hekate</a> to both backup and restore the emuMMC, so make sure that you have its latest files on your microSD card already.</p>
 <h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h2>
 <p>You should first check whether you have a file or partition based emuMMC:</p>
 <ol>
-<li>Inject the hekate payload.</li>
+<li>Inject the Hekate payload.</li>
 <li>Tap on <code>emuMMC</code>.</li>
 <li>Under <code>emuMMC Info &amp; Selection</code>, check the text next to <code>Type</code>.<ul>
 <li>If you have one it should be either <code>SD Raw Partition</code> or <code>SD File</code>.</li>
@@ -1479,15 +1479,15 @@
 <hr />
 <h3 id="if-you-are-using-a-file-based-emummc-or-are-using-no-emummc-at-all">If you are using a file based emummc or are using no emummc at all:<a class="headerlink" href="#if-you-are-using-a-file-based-emummc-or-are-using-no-emummc-at-all" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Remove your SD card.   </li>
-<li>Insert your old SD card into your computer.</li>
-<li>Copy the contents of your SD card somewhere to your PC.</li>
-<li>Eject the SD card and insert your new one.</li>
-<li>Format your new SD card to FAT32 if it isn’t already.<ul>
+<li>Remove your  microSD card.   </li>
+<li>Insert your old microSD card into your computer.</li>
+<li>Copy the contents of your microSD card somewhere to your PC.</li>
+<li>Eject the microSD card and insert your new one.</li>
+<li>Format your new microSD card to FAT32 if it isn’t already.<ul>
 <li>To do this, use <a href="http://ridgecrop.co.uk/index.htm?guiformat.htm">guiformat</a> for example (Windows).</li>
 </ul>
 </li>
-<li>Copy the files from your PC to your new SD card and you’re done.</li>
+<li>Copy the files from your PC to your new microSD card and you’re done.</li>
 </ol>
 <hr />
 <h3 id="if-you-are-using-a-partition-based-emummc">If you are using a partition based emummc:<a class="headerlink" href="#if-you-are-using-a-partition-based-emummc" title="Permanent link">&para;</a></h3>
@@ -1496,25 +1496,25 @@
 <p>You need at least 30GB of free space to be able to backup and restore the emuMMC!</p>
 </div>
 <ol>
-<li>Inject the hekate payload.</li>
+<li>Inject the Hekate payload.</li>
 <li>In the main menu, tap on <code>Tools</code>, then <code>Backup eMMC</code> and set <code>SD emuMMC Raw Partition</code> at the bottom of your screen to <code>ON</code>.</li>
 <li>Backup both <code>SD emuMMC BOOT0 &amp; BOOT1</code> and <code>SD emuMMC RAW GPP</code> (Note: raw gpp may take a while).</li>
-<li>Once both are done, go back to the main menu, remove your SD card and insert it into your PC.</li>
+<li>Once both are done, go back to the main menu, remove your microSD card and insert it into your PC.</li>
 <li>If Windows asks you to format a drive, discard it and select the drive with your SD contents.</li>
-<li>Copy the contents of your SD card somewhere to your PC.</li>
-<li>Follow only <a href="../../user_guide/all/partitioning_sd/">this page</a> to partition the new SD card for an emuMMC setup.</li>
-<li>After it’s done, exit and insert your new SD card into your PC.</li>
-<li>Copy the contents of your old SD card to your new one.</li>
-<li>Navigate to <code>/backup/&lt;some characters&gt;/emummc</code> on your SD card and move <code>BOOT0</code>, <code>BOOT1</code> and the <code>rawnand.bin.xx</code> files to <code>/backup/&lt;some characters&gt;/restore/emummc</code>.</li>
-<li>Eject the SD card and insert it into your switch.</li>
-<li>Inject the hekate payload once again.</li>
+<li>Copy the contents of your microSD card somewhere to your PC.</li>
+<li>Follow only <a href="../../user_guide/all/partitioning_sd/">this page</a> to partition the new microSD card for an emuMMC setup.</li>
+<li>After it’s done, exit and insert your new microSD card into your PC.</li>
+<li>Copy the contents of your old microSD card to your new one.</li>
+<li>Navigate to <code>/backup/&lt;some characters&gt;/emummc</code> on your microSD card and move <code>BOOT0</code>, <code>BOOT1</code> and the <code>rawnand.bin.xx</code> files to <code>/backup/&lt;some characters&gt;/restore/emummc</code>.</li>
+<li>Eject the microSD card and insert it into your Switch.</li>
+<li>Inject the Hekate payload once again.</li>
 <li>Tap on <code>Tools</code>, <code>Restore eMMC</code>, set <code>SD emuMMC Raw Partition</code> at the bottom of your screen to <code>ON</code>.</li>
 <li>Restore the backup by tapping on both <code>SD emuMMC BOOT0 &amp; BOOT1</code> and <code>SD emuMMC RAW GPP</code> (Note: raw gpp may take a while).<ul>
 <li>It is very important that for both of these the <code>SD emuMMC Raw Partition</code> option is enabled, otherwise you will be altering your sysMMC
   which is not what you want.</li>
 </ul>
 </li>
-<li>Your emuMMC is now restored on the new SD card and you should be able to launch it from <code>Launch</code> -&gt; <code>Atmosphere FSS0 emuMMC</code> in hekate.</li>
+<li>Your emuMMC is now restored on the new microSD card and you should be able to launch it from <code>Launch</code> -&gt; <code>Atmosphere FSS0 emuMMC</code> in hekate.</li>
 </ol>
 
 

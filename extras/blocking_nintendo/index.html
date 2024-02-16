@@ -1053,7 +1053,7 @@
       
         <li class="md-nav__item">
   <a href="#instructions-90dns" class="md-nav__link">
-    Instructions (90dns)
+    Instructions (90DNS)
   </a>
   
 </li>
@@ -1074,17 +1074,17 @@
       
         <li class="md-nav__item">
   <a href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks" class="md-nav__link">
-    Using homebrew to set 90dns on all existing WiFi networks
+    Using homebrew to set 90DNS on all existing WiFi networks
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#testing-if-you-can-reach-nintendo" class="md-nav__link">
-    Testing if you can reach nintendo
+    Testing if you can reach Nintendo
   </a>
   
-    <nav class="md-nav" aria-label="Testing if you can reach nintendo">
+    <nav class="md-nav" aria-label="Testing if you can reach Nintendo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1501,17 +1501,17 @@
 <h1 id="blocking-nintendo-servers">Blocking Nintendo servers<a class="headerlink" href="#blocking-nintendo-servers" title="Permanent link">&para;</a></h1>
 <p>This page will help you set up a method to block all communication with Nintendo. This will stop any updates and reporting to Nintendo, but it will prevent use of the eShop and online games.</p>
 <h3 id="instructions-ams-dns-redirection">Instructions (AMS DNS redirection)<a class="headerlink" href="#instructions-ams-dns-redirection" title="Permanent link">&para;</a></h3>
-<p>You can configure Atmosphere to automatically redirect any requests directed to Nintendo to nothing instead. Documentation about this feature can be <a href="https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/dns_mitm.md">found here</a>. The section below will help you set up DNS redirection on your emummc. Note that this will only apply when you are using cfw.</p>
+<p>You can configure Atmosphère to automatically redirect any requests directed to Nintendo to nothing instead. Documentation about this feature can be <a href="https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/dns_mitm.md">found here</a>. The section below will help you set up DNS redirection on your emummc. Note that this will only apply when you are using cfw.</p>
 <h4 id="what-you-need">What you need:<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="../../files/emummc.txt" download>emummc.txt</a></li>
-<li>Atmosphere 0.18.0 or higher</li>
+<li>Atmosphère 0.18.0 or higher</li>
 </ul>
 <h4 id="setup">Setup:<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Insert your SD into your pc</li>
+<li>Insert your microSD into your PC</li>
 <li>Enter the Atmosphere folder</li>
-<li>If it doesn't exist already, create a folder named <code>hosts</code> in the atmosphere folder</li>
+<li>If it doesn't exist already, create a folder named <code>hosts</code> in the <code>/atmosphere</code> folder</li>
 <li>Copy the emummc.txt into the hosts folder<ul>
 <li>If you want to apply the DNS redirection to sysmmc instead of emummc, rename the file to <code>sysmmc.txt</code></li>
 </ul>
@@ -1519,14 +1519,14 @@
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Verify functionality</p>
-<p>You can verify the functionality of the DNS redirection by booting into emummc (or sysmmc if you applied the config to sys), and powering off after. </p>
+<p>You can verify the functionality of the DNS redirection by booting into emummc (or sysmmc if you applied the config to sys), and powering off after.</p>
 <p>A report will be generated in sd:/atmosphere/logs called <code>dns_mitm_startup.log</code>. If this starts with the following, the dns redirection is active</p>
 <div class="admonition tip">
 <p><img alt="dnsmitmlog" src="../img/dnsmitm.png" /></p>
 </div>
 </div>
 <p>&nbsp;</p>
-<h3 id="instructions-90dns">Instructions (90dns)<a class="headerlink" href="#instructions-90dns" title="Permanent link">&para;</a></h3>
+<h3 id="instructions-90dns">Instructions (90DNS)<a class="headerlink" href="#instructions-90dns" title="Permanent link">&para;</a></h3>
 <p>You can add a custom DNS to your WiFi connection that will block all communication with Nintendo's servers. We will be using <a href="https://gitlab.com/a/90dns">90DNS</a>, a community-run custom DNS server. If you prefer, you can run your own DNS server following the instructions on the <a href="https://gitlab.com/a/90dns/blob/master/SELFHOST.md">GitLab repository.</a></p>
 <div class="admonition tip">
 <p>Enter the console's System Settings, and then proceed to the Internet tab. From here:</p>
@@ -1556,13 +1556,13 @@
 <li>Save the settings and test the connection.</li>
 </ol>
 <hr />
-<h3 id="using-homebrew-to-set-90dns-on-all-existing-wifi-networks">Using homebrew to set 90dns on all existing WiFi networks<a class="headerlink" href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks" title="Permanent link">&para;</a></h3>
+<h3 id="using-homebrew-to-set-90dns-on-all-existing-wifi-networks">Using homebrew to set 90DNS on all existing WiFi networks<a class="headerlink" href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Download <a href="https://github.com/suchmememanyskill/switch-90dns-setter/releases">switch-90dns-setter</a> and put it in the switch folder.</li>
+<li>Download <a href="https://github.com/suchmememanyskill/switch-90dns-setter/releases">switch-90dns-setter</a> and put it in the <code>/switch</code> folder.</li>
 <li>Launch CFW and open the homebrew menu.</li>
-<li>Launch <code>90dns setter</code>.</li>
-<li>Press X to apply 90dns to all WiFi networks.</li>
-<li>Press Y to reboot the switch.</li>
+<li>Launch <code>90DNS Setter</code>.</li>
+<li>Press X to apply 90DNS to all WiFi networks.</li>
+<li>Press Y to reboot the Switch.</li>
 <li>Check in system settings if networks have a custom DNS applied.</li>
 </ol>
 </div>
@@ -1588,11 +1588,11 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p>Example for a 90dns connection with the Europe settings:
+<p>Example for a 90DNS connection with the Europe settings:
 <img alt="Visual for System Settings serial location" src="../img/blocking_updates.png" /></p>
 </div>
 <p>&nbsp;</p>
-<h2 id="testing-if-you-can-reach-nintendo">Testing if you can reach nintendo<a class="headerlink" href="#testing-if-you-can-reach-nintendo" title="Permanent link">&para;</a></h2>
+<h2 id="testing-if-you-can-reach-nintendo">Testing if you can reach Nintendo<a class="headerlink" href="#testing-if-you-can-reach-nintendo" title="Permanent link">&para;</a></h2>
 <h3 id="testing-via-the-eshop-stock">Testing via the eShop (Stock)<a class="headerlink" href="#testing-via-the-eshop-stock" title="Permanent link">&para;</a></h3>
 <div class="admonition tip">
 <ol>
@@ -1603,9 +1603,9 @@
 <h3 id="testing-via-a-homebrew-app-cfw">Testing via a homebrew app (CFW)<a class="headerlink" href="#testing-via-a-homebrew-app-cfw" title="Permanent link">&para;</a></h3>
 <div class="admonition tip">
 <ol>
-<li>Download the latest release of the <a href="https://github.com/meganukebmp/Switch_90DNS_tester/releases">90dns Tester</a></li>
+<li>Download the latest release of the <a href="https://github.com/meganukebmp/Switch_90DNS_tester/releases">90DNS Tester</a></li>
 <li>Place the <code>Switch_90DNS_tester.nro</code> in the <code>switch</code> folder on your SD</li>
-<li>Enter the homebrew menu and run the 90dns Tester</li>
+<li>Enter the homebrew menu and run the 90DNS Tester</li>
 <li>After the test finished it should look similar to the below picture, with every <code>nintendo</code> domain being blocked</li>
 </ol>
 </div>

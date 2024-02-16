@@ -1062,10 +1062,10 @@
       
         <li class="md-nav__item">
   <a href="#restore-a-nand-backup-to-the-switch" class="md-nav__link">
-    Restore a NAND backup to the switch
+    Restore a NAND backup to the Switch
   </a>
   
-    <nav class="md-nav" aria-label="Restore a NAND backup to the switch">
+    <nav class="md-nav" aria-label="Restore a NAND backup to the Switch">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1461,10 +1461,10 @@
 
   <h1>Restoring a NAND Backup</h1>
 
-<h2 id="restore-a-nand-backup-to-the-switch">Restore a NAND backup to the switch<a class="headerlink" href="#restore-a-nand-backup-to-the-switch" title="Permanent link">&para;</a></h2>
+<h2 id="restore-a-nand-backup-to-the-switch">Restore a NAND backup to the Switch<a class="headerlink" href="#restore-a-nand-backup-to-the-switch" title="Permanent link">&para;</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Warning:</p>
-<p>-This will reset all of your saves, games, system version and other system settings back to a point when you made the the nand backup. Keep this in mind, as you probably don't have to restore a nand backup unless you have bricked your switch or want to go back online safely after using cfw.</p>
+<p>-This will reset all of your saves, games, system version and other system settings back to a point when you made the the nand backup. Keep this in mind, as you probably don't have to restore a nand backup unless you have bricked your Switch or want to go back online safely after using cfw.</p>
 <p>-If you're going to restore an old NAND which will downgrade your firmware it's best to create a second NAND backup before restoring the first one in case something goes wrong.</p>
 </div>
 <h3 id="what-you-need">What you need:<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h3>
@@ -1475,22 +1475,22 @@
 </ul>
 </li>
 <li>The <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> Payload</li>
-<li>A microSD card larger than 32gb</li>
+<li>A microSD card larger than 32GB</li>
 </ul>
 <h3 id="instructions">Instructions:<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
-<p>Before we start, check if you have a tree of folders called <code>backup/[8 Character NAND id]/restore</code> on your sd card.</p>
+<p>Before we start, check if you have a tree of folders called <code>backup/[8 Character NAND id]/restore</code> on your microSD card.</p>
 <div class="admonition warning">
-<p class="admonition-title">If you don't see a backup or [8 Character NAND id] folder on your sd card:</p>
+<p class="admonition-title">If you don't see a backup or [8 Character NAND id] folder on your microSD card:</p>
 <p>This means you do not have a nand backup, it is highly recommended you make one as soon as possible. Follow the steps below to make one.</p>
 <ol>
-<li>Launch the latest Hekate payload on your switch.</li>
+<li>Launch the latest Hekate payload on your Switch.</li>
 <li>Navigate to <code>Tools &gt; Backup eMMC &gt; eMMC BOOT0 &amp; BOOT1</code> and let it do its thing.</li>
-<li>Wait for the process to complete. When it's completed, you now have a <code>backup/[8 Character NAND id]/restore</code> folder on your sd card. Continue with step 1 of the guide.</li>
+<li>Wait for the process to complete. When it's completed, you now have a <code>backup/[8 Character NAND id]/restore</code> folder on your microSD card. Continue with step 1 of the guide.</li>
 </ol>
 </div>
 <ol>
-<li>Copy your <code>rawnand.bin</code> (combined or in 15 or 30 parts), <code>BOOT0</code>, and <code>BOOT1</code> to the <code>backup/[8 Character NAND id]/restore</code> folder on the sd card.</li>
-<li>Put your sd card into your switch, and launch Hekate.</li>
+<li>Copy your <code>rawnand.bin</code> (combined or in 15 or 30 parts), <code>BOOT0</code>, and <code>BOOT1</code> to the <code>backup/[8 Character NAND id]/restore</code> folder on the microSD card.</li>
+<li>Put your microSD card into your Switch, and launch Hekate.</li>
 <li>Navigate to <code>Tools &gt; Restore eMMC</code>. Select <code>Restore eMMC BOOT0 &amp; BOOT1</code>. Wait for this process to complete.</li>
 <li>In that same menu, select <code>eMMC RAW GPP</code> and wait for the process to complete. This will take a very long time to complete.</li>
 </ol>

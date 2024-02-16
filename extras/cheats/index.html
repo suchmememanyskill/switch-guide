@@ -1447,19 +1447,19 @@
 <p>For cheats management, <a href="https://github.com/WerWolv/EdiZon/releases">EdiZon</a> is recommended. It has support for Atmosphere's cheat engine, providing an easy way to download new cheats, as well as toggle them on or off.</p>
 <p>&nbsp;</p>
 <h3 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
-<div class="admonition tip">
-<p>Atmosphere looks for cheats to load in the <code>contents</code> sub-folder of the <code>atmosphere</code> folder. The template it looks for is <code>sd:/atmosphere/contents/&lt;title_id&gt;/cheats/&lt;build_id&gt;.txt</code>.
-You need to create the <code>&lt;title_id&gt;</code> folder and sub-folders manually:</p>
-<ul>
-<li><code>title_id</code> being the title or program of a game. This is game specific.</li>
-<li><code>build_id</code> being the version of a game. Cheats can be version specific so make sure the cheats you are using are compatible with your version.</li>
-</ul>
-<p><strong>Note: On Atmosphere 0.9.4 and below <code>contents</code> is called <code>titles</code></strong>. </p>
-<p>Switch game title IDs and build IDs can be found using the cheat menu of EdiZon (TID and BID, see below for a sample). Once the title is launched while in Atmosphere, your cheats should be applied.</p>
-</div>
+<div class="admonition tip"></div>
+<p>Atmosphère looks for cheats to load in the <code>contents</code> sub-folder of the <code>atmosphere</code> folder. The template it looks for is <code>sd:/atmosphere/contents/&lt;title_id&gt;/cheats/&lt;build_id&gt;.txt</code>.
+    You need to create the <code>&lt;title_id&gt;</code> folder and sub-folders manually:</p>
+<pre><code>- `title_id` being the title or program of a game. This is game specific.
+- `build_id` being the version of a game. Cheats can be version specific so make sure the cheats you are using are compatible with your version.
+
+**Note: On Atmosphère 0.9.4 and below `contents` is called `titles`**.
+
+Switch game title IDs and build IDs can be found using the cheat menu of EdiZon (TID and BID, see below for a sample). Once the title is launched while in Atmosphere, your cheats should be applied.
+</code></pre>
 <div class="admonition tip">
 <p class="admonition-title">Preventing cheats from being active</p>
-<p>To prevent cheats from being enabled by default, you can change your atmosphere configuration:</p>
+<p>To prevent cheats from being enabled by default, you can change your Atmosphère configuration:</p>
 <ul>
 <li>Copy <code>system_settings.ini</code> from <code>/atmosphere/config_templates</code> to <code>/atmosphere/config</code> if it is not already there.</li>
 <li>Edit the line <code>; dmnt_cheats_enabled_by_default = u8!0x1</code> to <code>dmnt_cheats_enabled_by_default = u8!0x0</code>.
