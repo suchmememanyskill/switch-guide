@@ -7,28 +7,28 @@
 
 	Once the backup is finished, **keep it somewhere safe.** The best backup is the one you have but never need, and the worst backup is the one you need but never made. To save space, it's recommended to compress the end-result with a `.zip` file or something similar.
 
-	It's highly recommended that you use an SD card that is formatted to FAT32 and has at least 32 gigabytes of space free. This will still work on smaller cards, but it's not ideal.
+	It's highly recommended that you use an microSD card that is formatted to FAT32 and has at least 32 gigabytes of space free. This will still work on smaller cards, but it's not ideal.
 
 ### **Instructions:**
 
 1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the hekate payload renamed to `payload.bin` on the root of your SD. 
+    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your SD.
 2. Use the touch screen to navigate to `Tools` and then `Backup eMMC`
 3. Tap on `eMMC BOOT0 & BOOT1`
-    - This should only take a few seconds, but if your SD card is very slow, it may take around a minute.
+    - This should only take a few seconds, but if your microSD card is very slow, it may take around a minute.
 4. Tap on `Close` to continue, then tap on `eMMC RAW GPP`
-    - This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your SD card is very slow).
-    - On FAT32 SD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.
+    - This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your microSD card is very slow).
+    - On FAT32 microSD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.
        - Hekate will stop producing these parts when it runs out of space. When this happens, do the following:
        - Power off your system.
-       - Insert your SD card into your PC.
-       - Move all files from the `backup` folder on your SD card to a safe location on your PC.
-       - Insert your SD card into your Switch.
+       - Insert your microSD card into your PC.
+       - Move all files from the `backup` folder on your microSD card to a safe location on your PC.
+       - Insert your microSD card into your Switch.
        - Enter RCM again, inject Hekate again, and continue the backup by tapping on `Tools` > `Backup eMMC` > `eMMC RAW GPP`
        - Repeat the process until the NAND is completely dumped.
 5. Go to the top right and press `Close` > `Home`
-6. Navigate to `Tools` > `USB tools` > `SD card` and plug your switch into your PC via USB.
-7. Copy the `backup` folder on your SD card to a safe location on your PC.
+6. Navigate to `Tools` > `USB tools` > `SD card` and plug your Switch into your PC via USB.
+7. Copy the `backup` folder on your microSD card to a safe location on your PC.
 8. Once done, eject the `UMS` device safely from within your computer's operating system and return to hekate's `Home` menu.
 
 -----
@@ -43,10 +43,10 @@
 
 1. Tap the `Payloads` option, then press Lockpick_RCM.bin.
 2. If Lockpick_RCM asks you to select between SysNAND and EmuNAND, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.
-3. Lockpick_RCM should now inform you that your keys have been saved to `/switch/prod.keys` on the SD card.
+3. Lockpick_RCM should now inform you that your keys have been saved to `/switch/prod.keys` on the microSD card.
 4. Press any button to return to the main menu.
 5. Navigate to 'Reboot to hekate' with the volume buttons and select it with the power button.
-6. Once in hekate, navigate to `Tools` > `USB tools` > `SD card` and plug your switch into your PC via USB.
-7. Copy `prod.keys` from the `switch` folder on your SD card to a safe location on your PC (it is suggested to copy it to the same place that you copied your NAND backup to).
-    
+6. Once in hekate, navigate to `Tools` > `USB tools` > `SD card` and plug your Switch into your PC via USB.
+7. Copy `prod.keys` from the `switch` folder on your microSD card to a safe location on your PC (it is suggested to copy it to the same place that you copied your NAND backup to).
+
 [Continue to Launching CFW :material-arrow-right:](launching_cfw.md){ .md-button .md-button--primary }
