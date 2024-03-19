@@ -1,4 +1,4 @@
-# Making Essential Backups and dumping your prod.keys
+# Making Essential Backups
 
 ## Making a NAND Backup
 
@@ -33,20 +33,5 @@
 
 -----
 
-## Getting your console's unique prod.keys
-
-!!! danger "Important"
-    These keys are critical to have. These keys are required to decrypt the content and partitions on the internal storage of your Switch.
-    In an extreme emergency, they can be used in conjunction with your NAND backup and other tools to restore your console to a working state.
-
-### **Instructions:**
-
-1. Tap the `Payloads` option, then press Lockpick_RCM.bin.
-2. If Lockpick_RCM asks you to select between SysNAND and EmuNAND, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.
-3. Lockpick_RCM should now inform you that your keys have been saved to `/switch/prod.keys` on the microSD card.
-4. Press any button to return to the main menu.
-5. Navigate to 'Reboot to hekate' with the volume buttons and select it with the power button.
-6. Once in hekate, navigate to `Tools` > `USB tools` > `SD card` and plug your Switch into your PC via USB.
-7. Copy `prod.keys` from the `switch` folder on your microSD card to a safe location on your PC (it is suggested to copy it to the same place that you copied your NAND backup to).
 
 [Continue to Launching CFW :material-arrow-right:](launching_cfw.md){ .md-button .md-button--primary }
