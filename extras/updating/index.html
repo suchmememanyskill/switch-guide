@@ -1610,15 +1610,19 @@ To prevent autoRCM from being disabled, boot CFW on sysMMC and update through se
 </div>
 <h3 id="preparing-your-microsd-card">Preparing your microSD card<a class="headerlink" href="#preparing-your-microsd-card" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Insert your microSD card into your computer.</li>
-<li>Download <code>TegraExplorer.bin</code> and place it somewhere on your PC (A good idea is to put it where you keep all your Switch payloads like Hekate).</li>
+<li>Load Hekate, start Hekate UMS by going to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code></li>
+<li>Connect your Switch to your PC via a USB cable. An Android phone may also work.</li>
+<li>Download <code>TegraExplorer.bin</code> and place it somewhere on your device (A good idea is to put it where you keep all your Switch payloads like Hekate).</li>
 <li>Update Atmosphère and Hekate by using the above guides.</li>
 <li>If you haven't already, update the sysMMC to the latest firmware.</li>
 </ol>
 <h3 id="dumping-your-sysmmc-firmware">Dumping your sysMMC firmware<a class="headerlink" href="#dumping-your-sysmmc-firmware" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Make sure your sysMMC is up to date. If your sysMMC is not up-to-date, update it through the System Settings.</li>
-<li>Inject <code>TegraExplorer.bin</code> using TegraRCMGUI (Like you would with Hekate).</li>
+<li>Inject <code>TegraExplorer.bin</code> using your favourite payload injector (Like you would with Hekate).<ul>
+<li>If you are using a modchipped Switch, you can simply put <code>TegraExplorer.bin</code> in <code>/bootloader/payloads</code> on your SD card, then turn on your console and load tegraexplorer via Hekate's payloads menu (<code>Payloads</code> &gt; <code>TegraExplorer.bin</code>)</li>
+</ul>
+</li>
 <li>Using the joystick and the A buttons, select <code>FirmwareDump.te</code>, then select <code>Dump sysmmc</code>.</li>
 <li>Wait about 1-2 minutes for the tool to dump your firmware.</li>
 <li>When the tool finishes, press any button.</li>
