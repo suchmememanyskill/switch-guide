@@ -434,6 +434,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-are-custom-operating-systems" class="md-nav__link">
+    What are custom operating systems?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-does-this-guide-install" class="md-nav__link">
     What does this guide install?
   </a>
@@ -1463,9 +1470,12 @@ Atmosphère, for example, patches the Switch OS (named Horizon) on the fly.</p>
 <p>Homebrew refers to unofficial software written by hobbyists for locked down systems, like the Nintendo Switch. Homebrew can include original games, emulators, save-editing tools, and much, much more!</p>
 <p>On the Switch in particular, you need CFW to run almost all available homebrew. Some first-gen ("V1") consoles can run homebrew for free, while all other ("patched") consoles require specialized hardware installation beforehand.
 &nbsp;</p>
+<h3 id="what-are-custom-operating-systems"><strong>What are custom operating systems?</strong><a class="headerlink" href="#what-are-custom-operating-systems" title="Permanent link">&para;</a></h3>
+<p>Custom operating systems (OSes) are alternative system software installations, like Android or Linux, that install alongside the default Switch OS. These are usually perfect for powerusers who want to extend the functionality of their console beyond that of a gaming console, transforming Nintendo Switch to a full-fledged hybrid tablet or desktop. These custom OSes run completely independent of the Switch OS, meaning that anything you do in a custom OS cannot be reported back to Nintendo. Custom operating systems are not "emulations"; they run natively on the Switch's Tegra X1 APU.</p>
+<p>This guide will give you the opportunity to set aside space on your microSD to install these custom OSes onto, if you desire. It is important to note that these installations are optional; you do not need to install any custom OS in order to complete this guide and install Atmosphère. However, it is better to decide sooner rather than later, as the installation process involves formatting your microSD card.</p>
 <h3 id="what-does-this-guide-install"><strong>What does this guide install?</strong><a class="headerlink" href="#what-does-this-guide-install" title="Permanent link">&para;</a></h3>
 <p>This guide has the end-goal of taking a completely unmodified Switch from stock firmware to a custom firmware named Atmosphère.</p>
-<p>"<a href="/files/extras/fusee_gelee_nvidia.pdf">fusee-gelee</a>" is currently the most widespread software entrypoint of launching custom firmware. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to boot the console via any payload we choose, instead of only ones that Nvidia and Nintendo authorize.  The result allows full baremetal control over your console, including system storage backups, recovery, custom firmwares, and custom operating systems.
+<p>"<a href="files/extras/fusee_gelee_nvidia.pdf">fusee-gelee</a>" is currently the most widespread software entrypoint of launching custom firmware. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to boot the console via any payload we choose, instead of only ones that Nvidia and Nintendo authorize.  The result allows full baremetal control over your console, including system storage backups, recovery, custom firmwares, and custom operating systems.
 &nbsp;</p>
 <h3 id="what-can-i-do-with-custom-firmware"><strong>What can I do with custom firmware?</strong><a class="headerlink" href="#what-can-i-do-with-custom-firmware" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1503,6 +1513,8 @@ If you must use a smaller microSD card, you can choose to use the sysNAND CFW pa
 <p>Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off.</p>
 <p>Custom firmware is not permanently installed and does not change anything on your console simply by running it. It will be entirely unloaded upon rebooting the console if you aren't using a modchip. However, CFW does allow you to make permanent changes at your own will, so <strong>be responsible and cautious with the abilities enabled by CFW</strong>.</p>
 <p>It is advised that you read the entire guide from start to finish one or more times before actually running through the guide with your system.</p>
+<p><img alt="reading warning" src="user_guide/img/ability.png" /></p>
+<p>If something doesn't make sense while you follow the guide, please reach out and ask for clarification rather than fumble around on your own. If your English isn't the best, use a translator such as <a href="https://translate.google.com/">Google Translate</a> to submit your questions, so we can help.</p>
 <p>&nbsp;</p>
 <h1 id="select-an-option-below-to-continue-the-guide"><strong>Select an option below to continue the guide!</strong><a class="headerlink" href="#select-an-option-below-to-continue-the-guide" title="Permanent link">&para;</a></h1>
 <p><a class="md-button md-button--primary" href="user_guide/getting_started/">Get Started with RCM (free) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a> <a class="md-button md-button--primary" href="user_guide/modchip/">Get Started with Modchips (not free!) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
