@@ -18,12 +18,12 @@ You should first check whether you have a file or partition based emuMMC:
 ### **If you are using a file based emummc or are using no emummc at all:**
 
 1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your SD..
+    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your SD.
 2. Navigate to `Tools` > `USB Tools` > `SD Card` and plug your Switch into your PC via USB.
 2. Copy the contents of your microSD card somewhere to your PC.
 4. Access your new microSD card via a microSD card reader or similar.
 5. Format your new microSD card to FAT32 if it isn’t already.
-    - To do this, use [guiformat](http://ridgecrop.co.uk/index.htm?guiformat.htm) for example (Windows).
+    - To do this, use [this guide](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).
 6. Copy the files from your PC or directly from your old microSD card to your new microSD card.
 7. Eject the `UMS` device safely from within your computer's operating system.
 
