@@ -6,7 +6,6 @@ This page will help you set up a method to block all communication with Nintendo
 You can configure Atmosphère to automatically redirect any requests directed to Nintendo to nothing instead. Documentation about this feature can be [found here](https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/dns_mitm.md). The section below will help you set up DNS redirection on your emummc. Note that this will only apply when you are using cfw.
 
 #### What you need:
-
 - <a href="../../files/emummc.txt" download>emummc.txt</a>
 - Atmosphère 0.18.0 or higher
 
