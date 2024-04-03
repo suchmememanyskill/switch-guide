@@ -1283,18 +1283,12 @@
     Updating your firmware
   </a>
   
-    <nav class="md-nav" aria-label="Updating your firmware">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#about-emummc" class="md-nav__link">
     About emuMMC
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1460,7 +1454,7 @@
 <h1 id="keeping-your-system-up-to-date">Keeping your system up-to-date<a class="headerlink" href="#keeping-your-system-up-to-date" title="Permanent link">&para;</a></h1>
 <p>This page documents how you can keep your system up-to-date.</p>
 <p>After following our guide, your system will consist of three core elements that can be updated. Atmosphere, Hekate and your system firmware.</p>
-<h2 id="updating-atmosphere">Updating Atmosphere<a class="headerlink" href="#updating-atmosphere" title="Permanent link">&para;</a></h2>
+<h3 id="updating-atmosphere"><strong>Updating Atmosphere</strong><a class="headerlink" href="#updating-atmosphere" title="Permanent link">&para;</a></h3>
 <p>When updating Atmosphère, always make sure to <em>read the release notes</em>. They may list important changes and modifications to your system.</p>
 <div class="admonition warning">
 <p class="admonition-title">Updating from below Atmosphère 1.0.0</p>
@@ -1479,9 +1473,9 @@
 </ul>
 </li>
 <li>Eject the <code>UMS</code> device safely from within your computer's operating system.</li>
-<li>(If your Hekate is not on the latest version) Update Hekate via the steps below.</li>
+<li>(If your Hekate is not on the latest version) update Hekate via the steps below.</li>
 </ol>
-<h2 id="updating-hekate">Updating Hekate<a class="headerlink" href="#updating-hekate" title="Permanent link">&para;</a></h2>
+<h3 id="updating-hekate"><strong>Updating Hekate</strong><a class="headerlink" href="#updating-hekate" title="Permanent link">&para;</a></h3>
 <p>When updating Hekate always make sure to <em>read the release notes</em>. They may list important changes and modifications to your system.</p>
 <p>When a new version of Hekate releases, you can update by following these steps:</p>
 <ol>
@@ -1496,7 +1490,7 @@
 <li>Go back to Hekate's main menu and press <code>Reload</code> &gt; <code>Reload</code> to reload Hekate from your microSD card.</li>
 <li>From here, you're done and you can boot into CFW.</li>
 </ol>
-<h2 id="updating-your-firmware">Updating your firmware<a class="headerlink" href="#updating-your-firmware" title="Permanent link">&para;</a></h2>
+<h3 id="updating-your-firmware"><strong>Updating your firmware</strong><a class="headerlink" href="#updating-your-firmware" title="Permanent link">&para;</a></h3>
 <p>Always check <em>before</em> updating your system firmware if the latest version of Atmosphère <em>as well</em> as the latest version of Hekate support the firmware version you are updating towards.</p>
 <p>In addition, updating to or past some firmwares update the gamecard firmware. Reference the table below for information about these.</p>
 <table>
@@ -1563,10 +1557,10 @@
 <p>If you have autoRCM enabled and you're updating your system while in stock firmware, <strong>updating will disable autoRCM</strong> and you will need to enter RCM manually to boot custom firmware again.
 To prevent autoRCM from being disabled, boot CFW on sysMMC and update through settings from there, as booting without AutoRCM <ins>will burn any preserved fuses</ins>.</p>
 </div>
-<h3 id="about-emummc">About emuMMC<a class="headerlink" href="#about-emummc" title="Permanent link">&para;</a></h3>
+<h3 id="about-emummc"><strong>About emuMMC</strong><a class="headerlink" href="#about-emummc" title="Permanent link">&para;</a></h3>
 <p>sysMMC and emuMMC have separate system firmwares and need to be updated separately.</p>
 <p>If you keep your emuMMC offline, you will have to use a gamecard to update your system firmware, synchronize it with another Nintendo Switch or dump an updated firmware from your sysMMC.</p>
-<h2 id="updating-emummc-by-dumping-an-updated-firmware-from-your-sysmmc">Updating emuMMC by dumping an updated firmware from your sysMMC<a class="headerlink" href="#updating-emummc-by-dumping-an-updated-firmware-from-your-sysmmc" title="Permanent link">&para;</a></h2>
+<h3 id="updating-emummc-by-dumping-an-updated-firmware-from-your-sysmmc"><strong>Updating emuMMC by dumping an updated firmware from your sysMMC</strong><a class="headerlink" href="#updating-emummc-by-dumping-an-updated-firmware-from-your-sysmmc" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Do you have an eMMC backup yet?</p>
 <p>Please do not start this guide without doing a RAW GPP and a BOOT 0/1 eMMC backup!</p>
@@ -1576,27 +1570,27 @@ To prevent autoRCM from being disabled, boot CFW on sysMMC and update through se
 <p class="admonition-title">Downgrading</p>
 <p>This guide is made for updating your emuMMC. It is <strong>not</strong> for downgrading. Downgrading at all, sysMMC or emuMMC, is not recommended and not worth it. Downgrading is also very dangerous and can lead to serious complications even when performed correctly.</p>
 </div>
-<h4 id="what-you-need">What you need:<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
+<h4 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
 <li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
-<h4 id="preparing-your-microsd-card">Preparing your microSD card<a class="headerlink" href="#preparing-your-microsd-card" title="Permanent link">&para;</a></h4>
+<h4 id="preparing-your-microsd-card"><strong>Preparing your microSD card</strong><a class="headerlink" href="#preparing-your-microsd-card" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Load Hekate, start Hekate UMS by going to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code></li>
 <li>Connect your Switch to your PC via a USB cable. An Android phone may also work.</li>
 <li>Download <code>TegraExplorer.bin</code> and place it somewhere on your device (A good idea is to put it where you keep all your Switch payloads like Hekate).</li>
 <li>Update Atmosphère and Hekate by using the above guides.</li>
-<li>If you haven't already, update the sysMMC to the latest firmware.</li>
+<li>If you haven't already, update the sysMMC to the latest firmware using the steps below.</li>
 </ol>
-<h4 id="dumping-your-sysmmc-firmware">Dumping your sysMMC firmware<a class="headerlink" href="#dumping-your-sysmmc-firmware" title="Permanent link">&para;</a></h4>
+<h4 id="dumping-your-sysmmc-firmware"><strong>Dumping your sysMMC firmware</strong><a class="headerlink" href="#dumping-your-sysmmc-firmware" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Make sure your sysMMC is up to date. If your sysMMC is not up-to-date, boot into Stock or sysCFW and update it through the System Settings.<ul>
 <li>sysCFW is recommended since it preserves e-fuses and preserves AutoRCM (if applicable).</li>
 </ul>
 </li>
 <li>Inject <code>TegraExplorer.bin</code> using your favourite payload injector (Like you would with Hekate).<ul>
-<li>If you are using a modchipped Switch, you can simply put <code>TegraExplorer.bin</code> in <code>/bootloader/payloads</code> on your SD card, then turn on your console and load tegraexplorer via Hekate's payloads menu (<code>Payloads</code> &gt; <code>TegraExplorer.bin</code>)</li>
+<li>If you are using a modchipped Switch, you can simply put <code>TegraExplorer.bin</code> in <code>sd:/bootloader/payloads</code> on your SD card, then turn on your console and load tegraexplorer via Hekate's payloads menu (<code>Payloads</code> &gt; <code>TegraExplorer.bin</code>).</li>
 </ul>
 </li>
 <li>Using the joystick and the A buttons, select <code>FirmwareDump.te</code>, then select <code>Dump sysmmc</code>.<ul>
@@ -1604,16 +1598,16 @@ To prevent autoRCM from being disabled, boot CFW on sysMMC and update through se
   (This is also required for Switch Lite console users.)</li>
 </ul>
 </li>
-<li>Wait about 1-2 minutes for the tool to dump your firmware.</li>
-<li>When the tool finishes, press any button.</li>
+<li>Wait about 1-2 minutes for the script to dump your firmware.</li>
+<li>When the script finishes, press any button.</li>
 <li>Select <code>Reboot to bootloader/update.bin</code>.</li>
 </ol>
-<h4 id="updating-your-emummc-with-daybreak">Updating your emuMMC with Daybreak<a class="headerlink" href="#updating-your-emummc-with-daybreak" title="Permanent link">&para;</a></h4>
+<h4 id="updating-your-emummc-with-daybreak"><strong>Updating your emuMMC with Daybreak</strong><a class="headerlink" href="#updating-your-emummc-with-daybreak" title="Permanent link">&para;</a></h4>
 <ol>
 <li>In Hekate go to <code>Launch -&gt; Atmosphere FSS0 emuMMC</code>.</li>
 <li>Once booted, hold <code>R</code> while launching a game to boot into the homebrew menu.</li>
 <li>Find Daybreak in the homebrew menu and launch it.</li>
-<li>Tap on <code>Install</code> and navigate to <code>tegraexplorer/Firmware/&lt;latest firmware number&gt;</code>.</li>
+<li>Tap on <code>Install</code> and navigate to <code>sd:/tegraexplorer/Firmware/&lt;latest firmware number&gt;</code>.</li>
 <li>Tap on <code>Continue</code> and then <code>Preserve settings</code>.<ul>
 <li>If you see the message <code>Warning: exFAT firmware is missing or corrupt</code>, you likely don't have the exFAT drivers installed on your sysMMC. Just press continue if this is the case.</li>
 </ul>

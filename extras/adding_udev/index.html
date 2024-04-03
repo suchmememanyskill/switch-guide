@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux-run-payload-sender-without-root" class="md-skip">
+        <a href="#linux-run-payload-injector-without-root" class="md-skip">
           Skip to content
         </a>
       
@@ -1189,26 +1189,6 @@
     Option 1: Manually adding rules and group
   </a>
   
-    <nav class="md-nav" aria-label="Option 1: Manually adding rules and group">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-new-group" class="md-nav__link">
-    Creating a new group
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-udev-rule" class="md-nav__link">
-    Adding a udev rule
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1450,20 +1430,14 @@
   
 
 
-<h1 id="linux-run-payload-sender-without-root">Linux - Run payload sender without root<a class="headerlink" href="#linux-run-payload-sender-without-root" title="Permanent link">&para;</a></h1>
-<p>This section details how to add an udev rule to let you send a payload to the Nintendo Switch without needing to use <code>sudo</code>.</p>
-<div class="admonition tip">
+<h1 id="linux-run-payload-injector-without-root">Linux - Run payload injector without root<a class="headerlink" href="#linux-run-payload-injector-without-root" title="Permanent link">&para;</a></h1>
+<p>This section details how to add an <code>udev</code> rule to let you send a payload to your Switch without needing to use <code>sudo</code>.</p>
 <p>The following instructions only work if you have a system that implements <code>udev</code>. Most modern distros come with <code>systemd</code> already installed, which includes a <code>udev</code> implementation.</p>
-</div>
-<div class="admonition tip">
 <p>Do the following instructions while your Switch is <em>not</em> connected to your computer.</p>
-</div>
 <p>&nbsp;</p>
-<h2 id="option-1-manually-adding-rules-and-group">Option 1: Manually adding rules and group<a class="headerlink" href="#option-1-manually-adding-rules-and-group" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
+<h3 id="option-1-manually-adding-rules-and-group"><strong>Option 1: Manually adding rules and group</strong><a class="headerlink" href="#option-1-manually-adding-rules-and-group" title="Permanent link">&para;</a></h3>
 <p>The following instructions are not for beginners. Only do this if you understand what you are doing.</p>
-</div>
-<h3 id="creating-a-new-group">Creating a new group<a class="headerlink" href="#creating-a-new-group" title="Permanent link">&para;</a></h3>
+<h4 id="creating-a-new-group"><strong>Creating a new group</strong><a class="headerlink" href="#creating-a-new-group" title="Permanent link">&para;</a></h4>
 <p>To start, we will create a new group and add ourselves to it. The group the Nintendo Switch device will be owned by on Linux will be set to this group.</p>
 <ol>
 <li>Open a terminal.</li>
@@ -1472,8 +1446,8 @@
 <li>Enter the following command: <code>sudo usermod -a -G nintendo_switch $USER</code>. Make sure that the <code>G</code> is capitalized!</li>
 <li>Close the terminal.</li>
 </ol>
-<h3 id="adding-a-udev-rule">Adding a udev rule<a class="headerlink" href="#adding-a-udev-rule" title="Permanent link">&para;</a></h3>
-<p>Next we're gonna add a new udev rule. udev is a device manager for the linux kernel. The rule we're gonna specify is that if the Switch is connected in RCM mode, the group the Switch belongs to will be the group we made in the previous section.</p>
+<h4 id="adding-a-udev-rule"><strong>Adding a udev rule</strong><a class="headerlink" href="#adding-a-udev-rule" title="Permanent link">&para;</a></h4>
+<p>Next we're gonna add a new <code>udev</code> rule. <code>udev</code> is a device manager for the linux kernel. The rule we're gonna specify is that if the Switch is connected in <code>RCM</code>, the group the Switch belongs to will be the group we made in the previous section.</p>
 <ol>
 <li>Open a terminal.</li>
 <li>Change to the root user with the following command: <code>sudo -i</code>. Enter your password when prompted.</li>
@@ -1485,11 +1459,8 @@
 </ol>
 <p>You should now be able to run the payload sender without having to use <code>sudo</code>.</p>
 <p>&nbsp;</p>
-<h2 id="option-2-installing-a-package-with-the-rules">Option 2: Installing a package with the rules<a class="headerlink" href="#option-2-installing-a-package-with-the-rules" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Note:</p>
+<h3 id="option-2-installing-a-package-with-the-rules"><strong>Option 2: Installing a package with the rules</strong><a class="headerlink" href="#option-2-installing-a-package-with-the-rules" title="Permanent link">&para;</a></h3>
 <p>These rules will actually allow <em>ANY</em> user to access your Switch via USB, not only <em>your</em> user.</p>
-</div>
 <p>You may just follow the instructions at <a href="https://github.com/pheki/nx-udev" target="_blank">nx-udev</a>, or if you're on Ubuntu / Debian:</p>
 <ol>
 <li>Download <a href="https://github.com/pheki/nx-udev/releases/latest/download/nx-udev_latest_all.deb
