@@ -99,7 +99,7 @@ If you keep your emuMMC offline, you will have to use a gamecard to update your 
 1. Make sure your sysMMC is up to date. If your sysMMC is not up-to-date, boot into Stock or sysCFW and update it through the System Settings.
     - sysCFW is recommended since it preserves e-fuses and preserves AutoRCM (if applicable).
 2. Inject `TegraExplorer.bin` using your favourite payload injector (Like you would with Hekate).
-    - If you are using a modchipped Switch, you can simply put `TegraExplorer.bin` in `sd:/bootloader/payloads` on your SD card, then turn on your console and load tegraexplorer via Hekate's payloads menu (`Payloads` > `TegraExplorer.bin`).
+    - If you are using a modchipped Switch, you can simply put `TegraExplorer.bin` in `sd:/bootloader/payloads` on your SD card, then turn on your console and load TegraExplorer via Hekate's payloads menu (`Payloads` > `TegraExplorer.bin`).
 3. Using the joystick and the A buttons, select `FirmwareDump.te`, then select `Dump sysmmc`.
     - If navigation doesn't work with your Joycons, navigating using the volume buttons and selecting using the power button also works.
       (This is also required for Switch Lite console users.)
