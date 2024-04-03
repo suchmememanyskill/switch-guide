@@ -36,7 +36,7 @@ You can add a custom DNS to your WiFi connection that will block all communicati
 Enter the console's System Settings, and then proceed to the Internet tab. From here:
 
 
-### **Setting up a new connection via Wi-Fi**
+#### **Setting up a new connection via Wi-Fi**
 
 !!! warning "Open WiFi networks without a password"
     Not all WiFi networks require a password to connect. If your network does not use one, you can use the `Manual Setup` option, located at the very bottom of the `Internet Settings` screen below all other WiFi networks.
@@ -54,7 +54,7 @@ Enter the console's System Settings, and then proceed to the Internet tab. From 
 
     -----
 
-### **Editing an existing WiFi connection**
+#### **Editing an existing WiFi connection**
 1. Select your existing WiFi network from the list of networks.
 2. Select `Change Settings`.
 3. Pick the server that is the closest to your location out of the below chart and enter its Primary and Secondary DNS into your connection settings.
@@ -62,7 +62,7 @@ Enter the console's System Settings, and then proceed to the Internet tab. From 
 
     -----
 
-### **Using homebrew to set 90DNS on all existing WiFi networks**
+#### **Using homebrew to set 90DNS on all existing WiFi networks**
 1. Download [switch-90dns-setter](https://github.com/suchmememanyskill/switch-90dns-setter/releases) and put it in the `/switch` folder.
 2. Launch CFW and open the homebrew menu.
 3. Launch `90DNS Setter`.
@@ -84,17 +84,17 @@ Enter the console's System Settings, and then proceed to the Internet tab. From 
 
 &nbsp;
 
-## Testing if you can reach Nintendo
+### **Testing if you can reach Nintendo**
 
-### **Testing via the eShop (Stock)**
-1. Open the eShop. Wait until it either opens or displays an error
-2. If it displays "Unable to display page." you seem to have Nintendo blocked
+#### **Testing via the eShop (Stock)**
+1. Open the eShop. Wait until it either opens or displays an error.
+2. If it displays "Unable to display page.", you seem to have blocked Nintendo's servers.
 
-### **Testing via a homebrew app (CFW)**
+#### **Testing via a homebrew app (CFW)**
 1. Download the latest release of the [90DNS Tester](https://github.com/meganukebmp/Switch_90DNS_tester/releases)
-2. Place the `Switch_90DNS_tester.nro` in the `switch` folder on your SD
-3. Enter the homebrew menu and run the 90DNS Tester
-4. After the test finished it should look similar to the below picture, with every `nintendo` domain being blocked
+2. Place the `Switch_90DNS_tester.nro` in the `switch` folder on your SD.
+3. Enter the homebrew menu and run the 90DNS Tester.
+4. After the test finished it should look similar to the below picture, with every `nintendo` domain being blocked.
 
 !!! tip ""
     ![tester example](../extras/img/90dns_tester_switch.jpg)

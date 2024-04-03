@@ -69,6 +69,8 @@ You can install and create unique styles and layouts for your Switch Home Menu.
     4. Your browser will prompt you to download a file. Save this file to a temporary folder.
     5. Repeat step 2 to 4 for every Home Menu part of the Switch you want to modify.
 
+-----
+
 ### **Installing a custom font**
 
 1. Put a font with the `.ttf` file type into the `themes` folder (It is recommended you put them into their own folders, e.g. `sd:/themes/cool_font/font.ttf`).
