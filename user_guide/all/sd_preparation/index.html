@@ -761,8 +761,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -791,8 +789,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -801,15 +797,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-you-need" class="md-nav__link">
-    What you need:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
-    Instructions:
+  <a href="#sd-preparation" class="md-nav__link">
+    SD Preparation
   </a>
   
 </li>
@@ -1430,14 +1419,16 @@
   
 
 
-<h1 id="sd-preparation">SD Preparation<a class="headerlink" href="#sd-preparation" title="Permanent link">&para;</a></h1>
+  <h1>SD preparations</h1>
+
+<h3 id="sd-preparation"><strong>SD Preparation</strong><a class="headerlink" href="#sd-preparation" title="Permanent link">&para;</a></h3>
 <p>We will now place the required files for the Atmosphère custom firmware and some additional homebrew files on the microSD card.</p>
 <p>Atmosphere has its own bootloader, called fusee. For the purposes of this guide we will be using Hekate instead, so that we can back up the system's NAND (internal storage) and take advantage of other advanced features in the future.</p>
 <div class="admonition warning">
 <p class="admonition-title">File name extensions</p>
 <p>If you use Windows, you should enable file name extensions before continuing. See <a href="../../../extras/showing_file_extensions/">this link</a> for a guide on how to do this.</p>
 </div>
-<h3 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h3>
+<h4 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the <code>hekate_ctcaer_(version).zip</code> release of hekate)</li>
 <li>The Hekate config file: <a href="../../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a></li>
@@ -1449,7 +1440,7 @@
 <li>The latest release of <a href="https://github.com/exelix11/SwitchThemeInjector/releases" target="_blank">NXThemeInstaller</a> (Download the <code>NxThemesInstaller.nro</code> release of NxThemeInstaller)</li>
 <li>The latest release of <a href="https://github.com/joel16/NX-Shell/releases" target="_blank">NX-Shell</a> (Download the <code>NX-Shell.nro</code> release of nx-shell)</li>
 </ul>
-<h3 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
+<h4 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Navigate to the accessible drive.</li>
 <li>Copy <em>the contents of</em> the Atmosphère<code>.zip</code> file to the root of your microSD card.</li>
@@ -1459,13 +1450,12 @@
 </ul>
 </li>
 <li>Copy <code>hekate_ipl.ini</code> to the <code>bootloader</code> folder on your microSD card.</li>
-<li>Copy <code>Lockpick_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your microSD card.</li>
 <li>Create a folder named <code>hosts</code> inside the <code>atmosphere</code> folder on your microSD card, and put <code>emummc.txt</code> in it.</li>
 <li>Copy <code>JKSV.nro</code>, <code>ftpd.nro</code>, <code>NX-Shell.nro</code> and <code>NxThemesInstaller.nro</code> to the <code>switch</code> folder on your microSD card.</li>
 <li>
-<p>If you were already using your microSD card as a storage device for your games and backed up the Nintendo folder before partitioning your microSD card, please place it back on the root of your microSD card.</p>
+<p>If you were already using your microSD card as a storage device for your games and backed up the Nintendo folder before partitioning your microSD card, please place it back on the root of your microSD card now.</p>
 <ul>
-<li>If you created an emuMMC on the previous page, don't forget to copy the Nintendo folder to <code>SD:/emuMMC/RAW1/</code>!</li>
+<li>If you created an emuMMC on the previous page, don't forget to copy the Nintendo folder to <code>sd:/emuMMC/RAW1/</code>!</li>
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">About emummc.txt</p>

@@ -1059,50 +1059,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setting-up-a-new-connection-via-wi-fi" class="md-nav__link">
-    Setting up a new connection via Wi-Fi
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#editing-an-existing-wifi-connection" class="md-nav__link">
-    Editing an existing WiFi connection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks" class="md-nav__link">
-    Using homebrew to set 90DNS on all existing WiFi networks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#testing-if-you-can-reach-nintendo" class="md-nav__link">
     Testing if you can reach Nintendo
   </a>
-  
-    <nav class="md-nav" aria-label="Testing if you can reach Nintendo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testing-via-the-eshop-stock" class="md-nav__link">
-    Testing via the eShop (Stock)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testing-via-a-homebrew-app-cfw" class="md-nav__link">
-    Testing via a homebrew app (CFW)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1515,7 +1474,7 @@
 <h3 id="instructions-90dns"><strong>Instructions (90DNS)</strong><a class="headerlink" href="#instructions-90dns" title="Permanent link">&para;</a></h3>
 <p>You can add a custom DNS to your WiFi connection that will block all communication with Nintendo's servers. We will be using <a href="https://gitlab.com/a/90dns">90DNS</a>, a community-run custom DNS server. If you prefer, you can run your own DNS server following the instructions on the <a href="https://gitlab.com/a/90dns/blob/master/SELFHOST.md">GitLab repository.</a></p>
 <p>Enter the console's System Settings, and then proceed to the Internet tab. From here:</p>
-<h3 id="setting-up-a-new-connection-via-wi-fi"><strong>Setting up a new connection via Wi-Fi</strong><a class="headerlink" href="#setting-up-a-new-connection-via-wi-fi" title="Permanent link">&para;</a></h3>
+<h4 id="setting-up-a-new-connection-via-wi-fi"><strong>Setting up a new connection via Wi-Fi</strong><a class="headerlink" href="#setting-up-a-new-connection-via-wi-fi" title="Permanent link">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Open WiFi networks without a password</p>
 <p>Not all WiFi networks require a password to connect. If your network does not use one, you can use the <code>Manual Setup</code> option, located at the very bottom of the <code>Internet Settings</code> screen below all other WiFi networks.</p>
@@ -1535,7 +1494,7 @@
 <hr />
 </li>
 </ol>
-<h3 id="editing-an-existing-wifi-connection"><strong>Editing an existing WiFi connection</strong><a class="headerlink" href="#editing-an-existing-wifi-connection" title="Permanent link">&para;</a></h3>
+<h4 id="editing-an-existing-wifi-connection"><strong>Editing an existing WiFi connection</strong><a class="headerlink" href="#editing-an-existing-wifi-connection" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Select your existing WiFi network from the list of networks.</li>
 <li>Select <code>Change Settings</code>.</li>
@@ -1545,7 +1504,7 @@
 <hr />
 </li>
 </ol>
-<h3 id="using-homebrew-to-set-90dns-on-all-existing-wifi-networks"><strong>Using homebrew to set 90DNS on all existing WiFi networks</strong><a class="headerlink" href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks" title="Permanent link">&para;</a></h3>
+<h4 id="using-homebrew-to-set-90dns-on-all-existing-wifi-networks"><strong>Using homebrew to set 90DNS on all existing WiFi networks</strong><a class="headerlink" href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Download <a href="https://github.com/suchmememanyskill/switch-90dns-setter/releases">switch-90dns-setter</a> and put it in the <code>/switch</code> folder.</li>
 <li>Launch CFW and open the homebrew menu.</li>
@@ -1580,18 +1539,18 @@
 <img alt="Visual for System Settings serial location" src="../img/blocking_updates.png" /></p>
 </div>
 <p>&nbsp;</p>
-<h2 id="testing-if-you-can-reach-nintendo">Testing if you can reach Nintendo<a class="headerlink" href="#testing-if-you-can-reach-nintendo" title="Permanent link">&para;</a></h2>
-<h3 id="testing-via-the-eshop-stock"><strong>Testing via the eShop (Stock)</strong><a class="headerlink" href="#testing-via-the-eshop-stock" title="Permanent link">&para;</a></h3>
+<h3 id="testing-if-you-can-reach-nintendo"><strong>Testing if you can reach Nintendo</strong><a class="headerlink" href="#testing-if-you-can-reach-nintendo" title="Permanent link">&para;</a></h3>
+<h4 id="testing-via-the-eshop-stock"><strong>Testing via the eShop (Stock)</strong><a class="headerlink" href="#testing-via-the-eshop-stock" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Open the eShop. Wait until it either opens or displays an error</li>
-<li>If it displays "Unable to display page." you seem to have Nintendo blocked</li>
+<li>Open the eShop. Wait until it either opens or displays an error.</li>
+<li>If it displays "Unable to display page.", you seem to have blocked Nintendo's servers.</li>
 </ol>
-<h3 id="testing-via-a-homebrew-app-cfw"><strong>Testing via a homebrew app (CFW)</strong><a class="headerlink" href="#testing-via-a-homebrew-app-cfw" title="Permanent link">&para;</a></h3>
+<h4 id="testing-via-a-homebrew-app-cfw"><strong>Testing via a homebrew app (CFW)</strong><a class="headerlink" href="#testing-via-a-homebrew-app-cfw" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Download the latest release of the <a href="https://github.com/meganukebmp/Switch_90DNS_tester/releases">90DNS Tester</a></li>
-<li>Place the <code>Switch_90DNS_tester.nro</code> in the <code>switch</code> folder on your SD</li>
-<li>Enter the homebrew menu and run the 90DNS Tester</li>
-<li>After the test finished it should look similar to the below picture, with every <code>nintendo</code> domain being blocked</li>
+<li>Place the <code>Switch_90DNS_tester.nro</code> in the <code>switch</code> folder on your SD.</li>
+<li>Enter the homebrew menu and run the 90DNS Tester.</li>
+<li>After the test finished it should look similar to the below picture, with every <code>nintendo</code> domain being blocked.</li>
 </ol>
 <div class="admonition tip">
 <p><img alt="tester example" src="../img/90dns_tester_switch.jpg" /></p>
