@@ -1345,8 +1345,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#funding-for-l4s-maintainers" class="md-nav__link">
-    Funding for L4S Maintainers
+  <a href="#the-installation" class="md-nav__link">
+    The installation
   </a>
   
 </li>
@@ -1424,6 +1424,10 @@
 
 
 <h1 id="installing-linux-4-switch">Installing Linux 4 Switch<a class="headerlink" href="#installing-linux-4-switch" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Have you partitioned your microSD card?</p>
+<p>This guide assumes that you've followed the NH-Server guide up until this point, your microSD card should be partitioned accordingly. If you didn't do so, see <a href="/user_guide/all/partitioning_sd_syscfw">this page</a> of our guide.</p>
+</div>
 <p>Linux 4 Switch is a sister project to Switchroot Android--it uses a similar kernel but provides a variety of Linux distributions.The available distributions at this time are:</p>
 <ul>
 <li>
@@ -1436,13 +1440,23 @@
 <p>Fedora 39 (maintained by azkali, a L4S kernel developer)</p>
 </li>
 <li>
-<p>Lakka 5.x (maintianed by gavin_darkglider, a L4S kernel developer and Lakka maintainer)</p>
+<p>Lakka 5.x (maintained by gavin_darkglider, a L4S kernel developer and Lakka maintainer)</p>
 </li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Looking for Arch?</p>
+<p>Unfortunately, L4S Arch Linux is deprecated following an xorg ABI change that breaks compatibility with the Tegra210 BSP.</p>
+</div>
+<h3 id="the-installation"><strong>The installation</strong><a class="headerlink" href="#the-installation" title="Permanent link">&para;</a></h3>
 <p>To install an L4S distribution, follow the official guide starting from <a href="https://wiki.switchroot.org/wiki/linux/linux-distributions">0. Linux Distributions</a>.</p>
-<p>!! tip "Looking for Arch?"
-   Unfortunately, L4S Arch Linux is deprecated following an xorg ABI change that breaks compatibility with the Tegra210 BSP.</p>
-<h2 id="funding-for-l4s-maintainers">Funding for L4S Maintainers<a class="headerlink" href="#funding-for-l4s-maintainers" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Note:</strong> You can skip partitioning your microSD card since you partitioned your microSD card during the NH-Server guide. Start from step 4. during the <a href="https://wiki.switchroot.org/wiki/linux/linux-install-update-guide#installation">Installation</a> section.</li>
+</ul>
+<hr />
+<p>This page was made in collaboration with <code>makinbacon21</code> on Discord. See the collapsible section below for the L4S guide maintainers.</p>
+<details class="note">
+<summary>L4S Project Staff (Android / Linux)</summary>
+<p>If you'd like, you can donate to the people who made this project possible using these links.</p>
 <ul>
 <li>
 <p>CTCaer (Linux &amp; Low level developer, Hekate maintainer)
@@ -1461,6 +1475,7 @@
 <a href="https://patreon.com/aveao">https://patreon.com/aveao</a></p>
 </li>
 </ul>
+</details>
 
 
 
