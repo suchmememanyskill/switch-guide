@@ -1,9 +1,11 @@
 # Installing Android
 
 !!! warning "Have you partitioned your microSD card?"
-    This guide assumes that you've followed the NH-Server guide up until this point, your microSD card should be partitioned accordingly. If you didn't do so, see [this page](/user_guide/all/partitioning_sd_syscfw) of our guide or the bottom of this page for instructions on how to solely install Android on the official Switchroot Wiki.
+    This guide assumes that you've followed the NH-Server guide to run Atmosphère up until this point, your microSD card should be partitioned accordingly for Android. If you didn't do so, see [this page](/user_guide/all/partitioning_sd_syscfw) of our guide, or the [Official Switchroot Documentation](https://wiki.switchroot.org/wiki/android/11-r-setup-guide) for instructions on how to solely install Android.
 
-This page will detail the setup of the latest release of Switchroot Android, Android 11, for your Nintendo Switch. This page assumes that you have no previous installation, so please do not follow this if you already have Switchroot Android installed on your microSD card, as it will overwrite your data. This page will not detail things such as rooting and overclocking; links to these types of additions can be found in the [Power User Guides](#power-user-guides) section at the bottom of this page.
+This page will detail the setup of the latest release of Switchroot Android, Android 11, for your Nintendo Switch. The Switch lacks a cell modem; simply installing Android does not grant your Switch access to cell towers. This means, unlike most Android devices, you will not be able to make emergency phone calls, and you will still need Wi-Fi to access the Internet. This page assumes that you have no previous installation, so please do not follow this if you already have Switchroot Android installed on your microSD card, as it will overwrite your data. 
+
+This page will also *not* detail things such as rooting and overclocking; links to these types of additions can be found in the [Power User Guides](#power-user-guides) section at the bottom of this page.
 
 !!! info "Looking for Android 10?"
     An unfortunate bug with clocking on Android 11 results in degraded performance for Erista (v1) units on Android 11. Android 10 installation is not covered here, but there is a [guide](https://wiki.switchroot.org/wiki/android/10-q-setup-guide) on the Switchroot Wiki. However, Android 11 is the currently supported version and uses much more recent graphics drivers, etc.
@@ -106,10 +108,6 @@ To learn more about using the Switch Configuration App and overclocking, see the
 ### **Need Help?**
 
 Join the [Switchroot Discord server](https://discord.gg/N9PPYXjWMY).
-
-### **Official Switchroot Documentation**
-
-If you wish to solely install Android to your microSD card, see the [official Switchroot Wiki guide](https://wiki.switchroot.org/wiki/android/11-r-setup-guide). Make sure you back up the data on your microSD card beforehand (as is also mentioned during the official guide).
 
 -----
 
