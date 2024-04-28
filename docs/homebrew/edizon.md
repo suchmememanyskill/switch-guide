@@ -1,5 +1,7 @@
 # Games cheats
 
+### **EdiZon**
+
 For cheats management, [EdiZon](https://github.com/WerWolv/EdiZon/releases) is recommended. It has support for Atmosphere's cheat engine, providing an easy way to download new cheats, as well as toggle them on or off.
 
 
