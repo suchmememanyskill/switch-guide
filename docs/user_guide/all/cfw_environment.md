@@ -42,7 +42,7 @@ For more information on terminology, please refer to the [glossary](../../extras
     * Dumping eShop games, saves, and encryption keys for preservation or installation on emuMMC or external Switch emulators
     * Restoring modified save data for many games
     * Custom fonts and home menu theming
-    * Modifying and cheating in most offline games (and some online games; [[info]](../../extras/cheats.md))
+    * Modifying and cheating in most offline games (and some online games; [[info]](../../homebrew/edizon.md))
 
     If you prefer snappiness, online play, and a seamless transition between official features and custom features, you may consider using CFW on sysMMC. In this guide, sysMMC is assumed to be utilised for online play.
 

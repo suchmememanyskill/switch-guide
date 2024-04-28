@@ -46,13 +46,13 @@ You will now be able to launch the Homebrew Menu by opening the album or by hold
 
 ### **What the included homebrew applications do**
 
-- JKSV is a save manager, it can dump and restore saves from/to your system. For more information, see [Save Management](../../extras/save_management.md)
+- JKSV is a save manager, it can dump and restore saves from/to your system. For more information, see [Save Management](../../homebrew/edizon.md)
 
 - FTPD is a FTP tool for connecting your Switch's SD contents wirelessly to your PC. Tools like WinSCP can connect to your Switch on `(IP of Switch):5000`
 
 - NX-Shell is a file explorer for the Switch. You can move files, listen to MP3 files, view images etc.
 
-- NXThemeInstaller is a theme installer app. See the [Theming section of our guide](../../extras/theming.md) for more information
+- NXThemeInstaller is a theme installer app. See the [Theming section of our guide](../../homebrew/nxtheme-installer.md) for more information
 
 
 If you wish to install more homebrew apps, place them (`.nro` files) in the `switch` folder on your microSD card.
