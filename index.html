@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.4">
     
     
       
@@ -457,6 +457,13 @@
         <li class="md-nav__item">
   <a href="#what-do-i-need-to-know-before-starting" class="md-nav__link">
     What do I need to know before starting?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#click-the-button-below-to-get-started-with-the-guide" class="md-nav__link">
+    Click the button below to get started with the guide!
   </a>
   
 </li>
@@ -1460,7 +1467,7 @@
 <h1 id="nh-switch-guide"><strong>NH Switch Guide</strong><a class="headerlink" href="#nh-switch-guide" title="Permanent link">&para;</a></h1>
 <p>The NH Switch Guide is a collaboration from Nintendo Homebrew's Discord community, getting you from a stock Switch to Atmosphère.</p>
 <p>For live support with this guide, visit us in <strong>#switch-assistance-1</strong> or <strong>#switch-assistance-2</strong> over at the <a href="https://discord.gg/C29hYvh">NH Discord server</a>.</p>
-<p>Prepare to set aside a minimum of an hour to follow this guide. This is specifically for you to carefully read and understand each page for safe execution for the safety and longevity of your Switch console. Some required device backups can also take around ten to thirty minutes to create, depending on your Switch model and your microSD speed.</p>
+<p>Prepare to set aside a minimum of an hour to follow this guide. This is specifically for you to carefully read and understand each page for safe execution for the safety and longevity of your Switch console. Some required device backups can also take around ten to thirty minutes to create, depending on your Switch model and your microSD card specifications.</p>
 <h3 id="what-is-custom-firmware"><strong>What is Custom Firmware?</strong><a class="headerlink" href="#what-is-custom-firmware" title="Permanent link">&para;</a></h3>
 <p>Custom FirmWare (“CFW”) is complex software that modifies the function of a device's operating system, also known as a system firmware.
 Atmosphère, for example, patches the Switch OS (named Horizon) on the fly.</p>
@@ -1475,7 +1482,7 @@ Atmosphère, for example, patches the Switch OS (named Horizon) on the fly.</p>
 <p>This guide will give you the opportunity to set aside space on your microSD to install these custom OSes onto, if you desire. It is important to note that these installations are optional; you do not need to install any custom OS in order to complete this guide and install Atmosphère. However, it is better to decide sooner rather than later, as the installation process involves formatting your microSD card.</p>
 <h3 id="what-does-this-guide-install"><strong>What does this guide install?</strong><a class="headerlink" href="#what-does-this-guide-install" title="Permanent link">&para;</a></h3>
 <p>This guide has the end-goal of taking a completely unmodified Switch from stock firmware to a custom firmware named Atmosphère.</p>
-<p>"<a href="files/extras/fusee_gelee_nvidia.pdf">fusee-gelee</a>" is currently the most widespread software entrypoint of launching custom firmware. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to boot the console via any payload we choose, instead of only ones that Nvidia and Nintendo authorize.  The result allows full baremetal control over your console, including system storage backups, recovery, custom firmwares, and custom operating systems.
+<p><a href="files/extras/fusee_gelee_nvidia.pdf">fusee-gelee</a> is currently the most widespread software entrypoint of launching custom firmware. It utilizes a vulnerability in the bootROM of the first-generation Switch systems, allowing us to boot the console via any payload we choose, instead of only ones that Nvidia and Nintendo authorize.  The result allows full baremetal control over your console, including system storage backups, recovery, custom firmwares, and custom operating systems.
 &nbsp;</p>
 <h3 id="what-can-i-do-with-custom-firmware"><strong>What can I do with custom firmware?</strong><a class="headerlink" href="#what-can-i-do-with-custom-firmware" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1492,7 +1499,7 @@ Atmosphère, for example, patches the Switch OS (named Horizon) on the fly.</p>
 <p>Acknowledge that EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. A brick is a damaged device that no longer functions; something that becomes as "useful as a brick". On the Switch, they're rare, but still a possibility -- so make sure you read the directions carefully before performing them, and follow them EXACTLY.</p>
 <p>This guide will work on first-generation (V1) and modchipped Switch consoles in all regions on any firmware version.</p>
 <div class="admonition note">
-<p>You will need just <strong>one</strong> of the following in order to successfully follow this guide:</p>
+<p class="admonition-title"><strong>You will need <em>one</em> of the following in order to successfully follow this guide:</strong></p>
 <ul>
 <li>A PC, and a USB-C cable capable of data transfer to connect them together</li>
 <li>An Android device, and a USB-C cable capable of data transfer to connect them together<ul>
@@ -1511,14 +1518,13 @@ If you must use a smaller microSD card, you can choose to use the sysNAND CFW pa
 </div>
 <p>Upon completion, you will lose no data, ending up with everything that you started with (games, Nintendo Account, saves, etc will be preserved). Your functionalities will only be enhanced.</p>
 <p>Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off.</p>
-<p>Custom firmware is not permanently installed and does not change anything on your console simply by running it. It will be entirely unloaded upon rebooting the console if you aren't using a modchip. However, CFW does allow you to make permanent changes at your own will, so <strong>be responsible and cautious with the abilities enabled by CFW</strong>.</p>
+<p>Custom firmware is not permanently installed and does not change anything on your console simply by running it. It will be entirely unloaded upon rebooting the console. However, CFW does allow you to make permanent changes to your console at your own will, so <strong>be responsible and cautious with the abilities enabled by CFW</strong>.</p>
 <p>It is advised that you read the entire guide from start to finish one or more times before actually running through the guide with your system.</p>
-<p><img alt="reading warning" src="user_guide/img/ability.png" /></p>
 <p>If something doesn't make sense while you follow the guide, please reach out and ask for clarification rather than fumble around on your own. If your English isn't the best, use a translator such as <a href="https://translate.google.com/">Google Translate</a> to submit your questions, so we can help.</p>
-<p>&nbsp;</p>
-<h1 id="select-an-option-below-to-continue-the-guide"><strong>Select an option below to continue the guide!</strong><a class="headerlink" href="#select-an-option-below-to-continue-the-guide" title="Permanent link">&para;</a></h1>
-<p><a class="md-button md-button--primary" href="user_guide/getting_started/">Get Started with RCM (free) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a> <a class="md-button md-button--primary" href="user_guide/modchip/">Get Started with Modchips (not free!) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
-<p>&nbsp;</p>
+<hr />
+<h3 id="click-the-button-below-to-get-started-with-the-guide"><strong>Click the button below to get started with the guide!</strong><a class="headerlink" href="#click-the-button-below-to-get-started-with-the-guide" title="Permanent link">&para;</a></h3>
+<p><a class="md-button md-button--primary" href="user_guide/getting_started/">Continue to Getting Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<hr />
 <p>Note: We are not currently, historically, or will we ever be, associated with Anton Retro, sthetix, Ely M., or other derivative or YouTube/TikTok guide publishers, especially any that claim relation to us.</p>
 <p>Furthermore, we resent any implication to the contrary.</p>
 <details>

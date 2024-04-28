@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.4">
     
     
       
@@ -503,15 +503,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#console-preparation" class="md-nav__link">
-    Console Preparation
+  <a href="#version-table" class="md-nav__link">
+    Version Table
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#version-table" class="md-nav__link">
-    Version Table
+  <a href="#console-preparation" class="md-nav__link">
+    Console Preparation
   </a>
   
 </li>
@@ -1452,12 +1452,13 @@
 
 
 <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<h3 id="finding-your-serial-number"><strong>Finding your serial number</strong><a class="headerlink" href="#finding-your-serial-number" title="Permanent link">&para;</a></h3>
-<p>In the RCM path, we'll first determine if your Switch is vulnerable to "fusee-gelee", the exploit we will be using to launch CFW.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This vulnerability was discovered independently by different Switch hacking teams, who all independently released versions of the exploit in April 2018. Nintendo and NVIDIA were informed 90 days before before these releases, and patched consoles were launched by mid-2018. NVIDIA <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability">publicly acknowledged the flaw</a> in April as well. In July 2019, Nintendo announced updated consoles: the Switch Lite (HDH-001), and a new model of original Switch (HAC-001-01 / "V2") with better battery life. Both of these new models use the Tegra X1+ (also known as Mariko, the T214, and T210B01) with a brand-new bootROM, and cannot currently be hacked without a modchip.</p>
+<p class="admonition-title">About modchipped Switch console users</p>
+<p>If you already know you have a modchipped Switch console, you can continue with the <a href="#if-your-switch-is-patched-and-modchipped-click-the-button-below-to-follow-the-modchip-path-of-the-guide"><strong>Modchip introduction</strong></a> button at the bottom of this page.</p>
 </div>
+<h3 id="finding-your-serial-number"><strong>Finding your serial number</strong><a class="headerlink" href="#finding-your-serial-number" title="Permanent link">&para;</a></h3>
+<p>In the RCM path, we'll first determine if your Switch is vulnerable to fusee-gelee, the exploit we will be using to launch CFW.</p>
+<p>The fusee-gelee vulnerability was discovered independently by different Switch hacking teams, who all independently released versions of the exploit in April 2018. Nintendo and NVIDIA were informed 90 days before before these releases, and patched consoles were launched by mid-2018. NVIDIA <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability">publicly acknowledged the flaw</a> in April as well. In July 2019, Nintendo announced updated consoles: the Switch Lite (HDH-001), and a new model of original Switch (HAC-001(-01)/"V2") with better battery life. Both of these new models use the Tegra X1+ (also known as Mariko, the T214, and T210B01) with a brand-new bootROM, and cannot currently be hacked without a modchip.</p>
 <p>Patched and Mariko units can be identified by their serial number. This number can be found in the Settings applet at <strong>System -&gt; Serial Information</strong>. You can also find it on the bottom of the console, adjacent to the charging port. However, it is always more accurate to use the serial reported in Settings instead, especially if you aren't the original owner of the console.</p>
 <p>&nbsp;</p>
 <p><img alt="Visual for System Settings serial location" src="../img/getting_started_serial_location.jpg" /></p>
@@ -1470,12 +1471,11 @@
 <li>If your serial number is listed as "patched", there is nothing you can do at this time besides installing a modchip (hardware modification. It <strong>requires</strong> experience with microsoldering.).</li>
 <li>If your system is patched, it is highly advised to keep it on 7.0.1 or lower, if possible, as there may be a vulnerability for these versions in the far future. <strong>DO NOT update patched consoles past 7.0.1 if you want to ever have a chance of running homebrew and/or CFW on them if you do not have the skills required to install a modchip.</strong></li>
 </ul>
-<div class="admonition tip">
+<div class="admonition note">
 <p class="admonition-title">Notice</p>
 <p>If you are unsure if your serial is patched, you can test your console yourself following the instructions <a href="../rcm/sending_payload/">here</a>.</p>
 </div>
 <hr />
-<p>&nbsp;</p>
 <h3 id="serial-list"><strong>Serial list</strong><a class="headerlink" href="#serial-list" title="Permanent link">&para;</a></h3>
 <p>The following information is based on <a href="https://gbatemp.net/threads/switch-informations-by-serial-number-read-the-first-post-before-asking-questions.481215/">this GBATemp thread</a>.</p>
 <table>
@@ -1533,18 +1533,10 @@
 </tbody>
 </table>
 <p>If your serial number is not listed above, your device is not vulnerable to the fusee-gelee exploit.</p>
-<p>&nbsp;</p>
-<h3 id="console-preparation"><strong>Console Preparation</strong><a class="headerlink" href="#console-preparation" title="Permanent link">&para;</a></h3>
-<div class="admonition danger">
-<p class="admonition-title">Important</p>
-<p>Before setting up for homebrew, install at least one eShop title to utilize "title takeover", an Atmosphère feature that allows homebrew to use more resources than they would normally have. Try downloading a free game (like <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (like <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a>), or a game demo (like <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>). Running the Homebrew Menu via a game cartridge is an alternative, but requires the game to be inserted any time you want to launch the Homebrew Menu. Generally, title takeover doesn't permanently alter the donor game or application. <br> Once you obtain any bootable title, you are prepared to continue on with the guide.</p>
-</div>
-<p>&nbsp;</p>
-<hr />
 <h3 id="version-table"><strong>Version Table</strong><a class="headerlink" href="#version-table" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While the "New" Switch (HAC-001-01)'s earliest possible firmware is 7.0.1, it is <strong>not</strong> vulnerable to <em>déjà vu</em>, the exploit used by Nereba and Caffeine, because of hardware differences from the "old" Switch (HAC-001).</p>
+<p>While the "New" Switch (HAC-001(-01)'s earliest possible firmware is 7.0.1, it is <strong>not</strong> vulnerable to <em>déjà vu</em>, the exploit used by Nereba and Caffeine, because of hardware differences from the "old" Switch (HAC-001).</p>
 </div>
 <table>
 <thead>
@@ -1552,7 +1544,7 @@
 <th style="text-align: left;">Firmware Version</th>
 <th style="text-align: left;">Unpatched Switch systems (HAC-001)</th>
 <th style="text-align: left;">Patched Switch systems (HAC-001)</th>
-<th style="text-align: left;">"New" Switch (HAC-001-01)</th>
+<th style="text-align: left;">"New" Switch (HAC-001(-01)</th>
 <th style="text-align: left;">Switch Lite (HDH-001)</th>
 </tr>
 </thead>
@@ -1581,7 +1573,7 @@
 <tr>
 <td style="text-align: left;">5.0.0 - 7.0.0</td>
 <td style="text-align: left;"><a href="../rcm/"><strong>RCM</strong></a></td>
-<td style="text-align: left;"><a href="../modchip/">Modchip</a> / Wait for CFW</td>
+<td style="text-align: left;"><a href="../modchip/"><strong>Modchip</strong></a> / Wait for CFW</td>
 <td style="text-align: left;"><strong>N/A</strong></td>
 <td style="text-align: left;"><strong>N/A</strong></td>
 </tr>
@@ -1609,14 +1601,25 @@
 </tbody>
 </table>
 <div class="admonition note">
-<p class="admonition-title">About OLED</p>
-<p>All OLED Switch models (HEG-001) are currently unhackable via software.</p>
+<p class="admonition-title">About Mariko Switch models</p>
+<p>All Mariko (V2) Switch models (<code>HAC-001(-01)</code>, <code>HDH-001</code>, <code>HEG-001</code>) are currently unhackable via software. If <strong>Modchip</strong> is listed as a method for your console model, then that means the device is currently unhackable without a hardware modification. If there are theoretical exploits that may lead to CFW or homebrew for that device, you also have the choice to "wait" for their release. These exploits may (and will likely) never launch and there is <strong>NO ETA</strong>, so what you choose to do is up to you. This guide assumes you have a functional modchip installation if you <em>do</em> have a Patched console.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Modchip methods</p>
-<p>If "Modchip" is listed as a method for your console version, then that means the device is currently unhackable without a hardware modification. If there are theoretical exploits that may lead to CFW or homebrew for that device, you also have the choice to "wait" for their release. These exploits may never launch and there is NO ETA, so what you choose to do is up to you.  </p>
+<h3 id="console-preparation"><strong>Console Preparation</strong><a class="headerlink" href="#console-preparation" title="Permanent link">&para;</a></h3>
+<h4 id="important">Important<a class="headerlink" href="#important" title="Permanent link">&para;</a></h4>
+<p>Before setting up for homebrew, install at least one eShop title to utilize "title takeover", an Atmosphère feature that allows homebrew to use more resources than they would normally have. Try downloading a free game (like <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (like <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a>), or a game demo (like <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>). Running the Homebrew Menu via a game cartridge is an alternative, but requires the game to be inserted any time you want to launch the Homebrew Menu. Generally, title takeover doesn't permanently alter the donor game or application. <br> Once you obtain any bootable title, you are prepared to continue on with the guide.</p>
+<hr />
+<div class="grid cards">
+<ul>
+<li>
+<h4 id="if-your-switch-is-not-patched-click-the-button-below-to-follow-the-rcm-path-of-the-guide">If your Switch is not patched, click the button below to follow the RCM path of the guide.<a class="headerlink" href="#if-your-switch-is-not-patched-click-the-button-below-to-follow-the-rcm-path-of-the-guide" title="Permanent link">&para;</a></h4>
+<p><a class="md-button md-button--primary" href="../rcm/">Continue to RCM <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+</li>
+<li>
+<h4 id="if-your-switch-is-patched-and-modchipped-click-the-button-below-to-follow-the-modchip-path-of-the-guide">If your Switch is patched and modchipped, click the button below to follow the Modchip path of the guide.<a class="headerlink" href="#if-your-switch-is-patched-and-modchipped-click-the-button-below-to-follow-the-modchip-path-of-the-guide" title="Permanent link">&para;</a></h4>
+<p><a class="md-button md-button--primary" href="../modchip/">Continue to Modchip introduction <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+</li>
+</ul>
 </div>
-<p>If your Switch is not patched, <a class="md-button md-button--primary" href="../rcm/">Continue to RCM <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 <details>
 <summary>Frequently Asked Questions about this page</summary>
 <ul>
@@ -1624,7 +1627,7 @@
       A: To our knowledge, there hasn't been a single console which has disproved the trends documented here. Unless your serial is potentially patched, you can be certain that the table is accurate to reality.</li>
 <li><strong>Q: Why is it essential to install at least one eShop title before setting up homebrew, and what is "title takeover"?</strong> <br>
       A: By default, the homebrew menu and its apps inherit the resources of the Album applet. Applets don't have as many system resources as full apps, and as such have inconsistent behavior when used for homebrew purposes. Title takeover ensures the best performance, and is required for some homebrew.</li>
-<li><strong>Q: Why is the "New" Switch (HAC-001-01) not vulnerable to <em>déjà vu</em>, and what are the implications for Switch Lite (HDH-001) and OLED Switch consoles?</strong> <br>
+<li><strong>Q: Why is the "New" Switch (HAC-001(-01) not vulnerable to <em>déjà vu</em>, and what are the implications for Switch Lite (HDH-001) and OLED Switch consoles?</strong> <br>
       A: Despite being exploitable via software, <em>déjà vu</em> is actually a bootROM exploit that isn't present in the new bootROM of the Tegra X1+.</li>
 </ul>
 </details>

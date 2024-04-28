@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.4">
     
     
       
@@ -1426,7 +1426,6 @@
 <h1 id="rcm">RCM<a class="headerlink" href="#rcm" title="Permanent link">&para;</a></h1>
 <h3 id="about-rcm"><strong>About RCM</strong><a class="headerlink" href="#about-rcm" title="Permanent link">&para;</a></h3>
 <p>RCM (short for <strong>R</strong>e<strong>C</strong>overy <strong>M</strong>ode) is a pre-boot mode for Tegra processors that allows NVIDIA and Nintendo to send the Switch tiny programs for various internal uses. On unpatched consoles, once a payload was sent,  then quickly copied into the memory buffer behind the stack, it overflowed the memory buffer into the stack. This leads to a  "smashed stack" and unsigned code execution within a bootROM context, giving us access to nearly everything on the console. We use it here to launch Atmosphère.</p>
-<p>Before setting up for homebrew, install at least one eShop title to utilize "title takeover", an Atmosphère feature that allows homebrew to use more resources than they would normally have. Try downloading a free game (such as <a href="https://www.nintendo.com/games/detail/fallout-shelter-switch/">Fallout Shelter</a>), application (such as <a href="https://www.nintendo.com/games/detail/youtube-switch/">YouTube</a>), or a game demo (such as <a href="https://www.nintendo.com/games/detail/10-second-run-returns-switch">10 Second Run RETURNS</a>). Running the Homebrew Menu via a game cartridge will also work, but it must be inserted every time you want to boot into homebrew. Title takeover does not permanently replace or remove the donor game/application, nor does it become tied to it specifically. Any installation or cartridge used for title takeover can always be used normally if you don't hold any buttons when booting that title. <br> Once you obtain any bootable title, you are prepared to continue on with the guide.</p>
 <p>If you choose the emuMMC path introduced later in the guide, it'll be important to disable the <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/41209">Automatic Save Data Cloud</a> function beforehand, as well as making sure <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">the Switch is set as the primary console</a>. <br></p>
 <p><a class="md-button md-button--primary" href="entering_rcm/">Continue to Entering RCM <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 <details>
