@@ -18,7 +18,9 @@ Methods to enter RCM can require nothing more than household items (not recommen
     - If your Switch displays the Nintendo logo and boots normally (or the screen was on and goes black), you didn't successfully enter RCM and should try again. Otherwise, if your console still has a black screen (even after tapping the power button again), your Switch is in RCM and you can let go of the `Volume Up` button.
 3. Once your Switch is in RCM, remove the RCM jig (if applicable) and continue with the next page of the guide by clicking on the button at the bottom of this page.
 
-=== "RCM Jig (Recommended for beginners)"
+-----
+
+=== "RCM Jig"
 
     Some jig designs use paperclips, inheriting the same risks as the "metal bridge" / "paperclip method" and should not be done.
 
@@ -28,20 +30,18 @@ Methods to enter RCM can require nothing more than household items (not recommen
 
     #### The RCM jig pictured below is the model we recommend:
 
-    ??? note "RCM Jig (Click to unfold)"
-        ![recommended_jig](../rcm/img/recommended_jig.jpg)
+    ![recommended_jig](../rcm/img/recommended_jig.jpg){ width="250"}
+
     -----
     
-    If you plan on making your own jig, the second image lays out the right Joy-Con pad out on the console. Make sure your jig NEVER touches pin 4. Pin 4 provides 5 volts of power to the Joy-Con, and can permanently damage the rail or console if shorted.
+    !!! note "Making your own RCM Jig"
+        If you plan on making your own jig, the second image lays out the right Joy-Con pad out on the console. Make sure your jig NEVER touches pin 4. Pin 4 provides 5 volts of power to the Joy-Con, and can permanently damage the rail or console if shorted.
+        ![switchjigs.com jigs](../rcm/img/entering_rcm_jig.jpg){ width="600"}
 
-    ??? info "3D Printed RCM Jig"
-        ![switchjigs.com jigs](../rcm/img/entering_rcm_jig.jpg)
-
-    ??? tip "Right Joy-Con rail pinout"
-        ![Console Numbered Pads Refrence](../rcm/img/entering_rcm_pads_numbered.jpg)
+        ![Console Numbered Pads Refrence](../rcm/img/entering_rcm_pads_numbered.jpg){ width="600"}
 
 
-=== "Soldered Joy-Con Pads - Physical RCM Button (Safest but not recommended for beginners)"
+=== "Soldered Joy-Con Pads - Physical RCM Button"
 
     This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.
 
@@ -49,31 +49,31 @@ Methods to enter RCM can require nothing more than household items (not recommen
 
     The goal of this method is to open the right Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however you will be soldering wires to pins 7 and 10 (shown below) and wiring them to the "rail release button" at the top back of the right Joy-Con.
 
-    ??? note "JoyCon pad pinout (Click to unfold)"
-        ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg)
+    #### JoyCon pad pinout:
+    ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
 
     In order to start this method you will want to take two lengths of wire, and wrap one end of each into a small circle.
 
-    ??? abstract "Wire reference (Click to unfold)"
-        ![wire reference](../rcm/img/entering_rcm_button_1.jpg)
+    #### Wire reference:
+    ![wire reference](../rcm/img/entering_rcm_button_1.jpg){ width="675"}
 
 	You will then want to take the circular end of one of the wires and add a small amount of solder, keeping it mostly flat (ONLY DO THIS TO ONE OF THE WIRES!). You will then glue this wire down to the below point on the rail release button. Make sure glue doesn't cover the top of the solder/wire as it will act as a contact point. Also, ensure that you leave enough space for the button to function correctly. Try pushing the button from the outside and observing its travel path so that you can see where and how you should safely glue the solder glob.
 
-    ??? info "Joy-Con button (Click to unfold)"
-        ![eip joycon button reference](../rcm/img/entering_rcm_button_5.jpg)
+    #### Joy-Con button:
+    ![eip joycon button reference](../rcm/img/entering_rcm_button_5.jpg){ width="650"}
 
-    ??? tip "Joy-Con button (Click to unfold)"
-        ![pbanj joycon button reference](../rcm/img/entering_rcm_button_3.jpg)
+    #### Joy-Con button:
+    ![pbanj joycon button reference](../rcm/img/entering_rcm_button_3.jpg){ width="650"}
 
     The first wire should now be in place as seen by the green circle below. The second wire does not need any solder, instead you will hold it in place using the screw as shown by the red circle in the picture below.
 
-    ??? success "Joy-Con button in place (Click to unfold)"
-        ![pbanj joycon button reference](../rcm/img/entering_rcm_button_6.jpg)
+    #### Joy-Con button in place:
+    ![pbanj joycon button reference](../rcm/img/entering_rcm_button_6.jpg){ width="650"}
 
     Pressing the Joy-Con button in you should now notice the solder point you created making contact with the piece of metal held in by the screw. Once you have these elements in place you want to connect one wire to pad 7 and the other to pad 10 (it doesn't matter which is which). After that you have successfully created an RCM button on your Joycon. You will now need to hold down the Joycon release button when attempting to boot RCM.
 
-    ??? question "Successful installation (Click to unfold)"   
-        ![pbanj joycon button reference](../rcm/img/entering_rcm_button_2.jpg)
+    #### Successful installation:
+    ![pbanj joycon button reference](../rcm/img/entering_rcm_button_2.jpg){ width="650"}
 
 
 
@@ -83,13 +83,13 @@ Methods to enter RCM can require nothing more than household items (not recommen
 
     The goal of this method is to open the right handed Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however the goal is to solder pins 7 and 10 (shown below) together with a surface-mount `0805 10k` resistor. Apart from using a physical switch/button, this is currently considered the safest method that involves soldering to pads.
 
-    ??? note "JoyCon pad pinout (Click to unfold)"
-        ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg)
+    #### JoyCon pad pinout:
+    ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
 
     Here is an example from `stuck_pixel` from the ReSwitched Discord server.
 
-    ??? abstract "Successful installation (Click to unfold)"
-        ![stuckpixel solder example](../rcm/img/entering_rcm_solder_710_stuckpixel.jpg)
+    #### Successful installation:
+    ![stuckpixel solder example](../rcm/img/entering_rcm_solder_710_stuckpixel.jpg){ width="650"}
 
 
 
@@ -101,13 +101,13 @@ Methods to enter RCM can require nothing more than household items (not recommen
 
     The goal of this method is to open the right Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however the goal is to solder pads 9 and 10 (seen below) together. This can either be done using a small wire, or directly bridging the pads with solder.
 
-    ??? note "JoyCon pad pinout (Click to unfold)"
-        ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg)
+    #### JoyCon pad pinout:
+    ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
 
     Below is an example from `yami0666` from our Discord server.
 
-    ??? abstract "Successful soldering job (Click to unfold)"
-        ![YyAoMmIi solder example](../rcm/img/entering_rcm_solder_910_yyaommii.jpg)
+    #### Successful soldering job:
+    ![YyAoMmIi solder example](../rcm/img/entering_rcm_solder_910_yyaommii.jpg){ width="650" }
 
 
 === "Bent Joy-Con Pins (Not recommended)"
@@ -118,13 +118,13 @@ Methods to enter RCM can require nothing more than household items (not recommen
 
     The goal of this method is to open the right handed Joy-Con to the point that you can reach the contact pads easily, and use a thin object such as a knife to gently bend pin 9 and 10 (shown below) slightly up and towards each other so they touch, shorting them.
 
-    ??? note "JoyCon pinout (Click to unfold)"
-        ![Joycon Pin Reference](../rcm/img/enterting_rcm_pins_numbered.jpg)
+    #### JoyCon pinout:
+    ![Joycon Pin Reference](../rcm/img/enterting_rcm_pins_numbered.jpg){ width="600"}
 
     Here is an example from `sonlen` on our Discord server.
 
-    ??? abstract "Bent Joy-Con pins (Click to unfold)"
-        ![Sonlen's example](../rcm/img/entering_rcm_bent_pins.jpg)
+    #### Bent Joy-Con pins:
+    ![Sonlen's example](../rcm/img/entering_rcm_bent_pins.jpg){ width="650"}
 
 
 [Continue to Sending a Payload :material-arrow-right:](sending_payload.md){ .md-button .md-button--primary }
