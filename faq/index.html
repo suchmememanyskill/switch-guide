@@ -946,6 +946,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homebrew/ftpd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FTPD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homebrew/nxtheme-installer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NXTheme Installer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homebrew/nx-shell/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NX-Shell
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homebrew/edizon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EdiZon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1086,74 +1170,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../extras/theming/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Theming
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../extras/save_management/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Save Management
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../extras/game_modding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Game Modding
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../extras/cheats/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Game Cheats
   </span>
   
 
@@ -1593,7 +1614,7 @@ Atmosphèreis maintained to support the latest firmware updates on unpatched uni
 <p><strong>"Old"</strong> <em>Patched Switch (HAC-001): Do NOT update past 7.0.1. Units on 7.0.1 and below will eventually get CFW. Patched units that have upgraded to 8.0.0 or 8.0.1 will likely get homebrew.</em></p>
 </li>
 <li>
-<p><strong>"New"</strong> <em>Switch (HAC-001-01): Do NOT update past 8.0.1. Units on 8.0.1 and below will likely get homebrew. Units on 8.1.0 and higher are not expected to be hacked and can be updated.</em></p>
+<p><strong>"New"</strong> <em>Switch (HAC-001(-01): Do NOT update past 8.0.1. Units on 8.0.1 and below will likely get homebrew. Units on 8.1.0 and higher are not expected to be hacked and can be updated.</em></p>
 </li>
 <li>
 <p><strong>Switch Lite</strong> <em>(HDH-001): Do NOT update past 8.0.1. Units on 8.0.1 and below will likely get homebrew. Units on 8.1.0 and higher are not expected to be hacked and can be updated.</em></p>
@@ -1609,7 +1630,7 @@ Additionally if you live in the EU you can set the "do not share" option on <a h
 <p>Nintendo still receives a lot of information, even with those options disabled.
 We also cannot know if Nintendo decides to look for something in the logs and ban people in retrospect.
 They have also shown to expand their telemetry options with every other firmware update.</p>
-<div class="admonition tip">
+<div class="admonition warning">
 <p class="admonition-title">Currently all bans have been for very obvious and intrusive actions, specifically:</p>
 <ul>
 <li>Developers using their unique Switch data to poke and reverse-engineer Nintendos Server responses</li>
@@ -1648,11 +1669,11 @@ These microSD cards are often fake and do not have the advertised amount of stor
 Amazon has had some problems with fake microSD cards, so we recommend buying them at a physical store. Even on trustworthy sites, <em>always, always check reviews on a product before buying!!</em></p>
 <p>If you suspect your microSD card is fake or damaged, see the instructions <a href="https://3ds.eiphax.tech/sd.html" target="_blank">here</a> to verify the integrity of your microSD card.</p>
 <h3 id="my-homebrew-is-not-showing-up-on-the-menu"><strong>My homebrew is not showing up on the menu</strong><a class="headerlink" href="#my-homebrew-is-not-showing-up-on-the-menu" title="Permanent link">&para;</a></h3>
-<p>This is an issue primarily affecting macOS users, but may occur on other devices as well. If you are able to launch the homebrew menu, but you are not seeing some or any of your homebrew, you will need to unset the archive bit with Hekate.</p>
+<p>This is an issue primarily affecting macOS users, but may occur on other devices as well. If you are able to launch the homebrew menu, but you are not seeing some or any of your homebrew, you may need to unset the archive bit with Hekate.</p>
 <ol>
 <li>Send the Hekate payload to your Switch by following these instructions: <a href="https://nh-server.github.io/switch-guide/user_guide/emummc/sending_payload/">here</a></li>
 <li>Click on <code>Tools</code> on the top menu bar</li>
-<li>In the bottom left corner click on <code>Archive bit * AutoRCM</code></li>
+<li>In the bottom left corner click on <code>Arch Bit • AutoRCM • Touch • Pkg1/2</code></li>
 <li>Click on <code>Fix Archive bit</code> - this might take a while</li>
 <li>Press <code>Close</code> in the top right corner</li>
 <li>Press <code>Home</code> in the top menu bar to get back from where you started</li>

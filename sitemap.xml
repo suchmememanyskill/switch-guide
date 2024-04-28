@@ -41,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://guide.suchmeme.nl/extras/cheats/</loc>
-         <lastmod>2024-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://guide.suchmeme.nl/extras/game_modding/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
@@ -76,17 +71,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://guide.suchmeme.nl/extras/save_management/</loc>
-         <lastmod>2024-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://guide.suchmeme.nl/extras/showing_file_extensions/</loc>
-         <lastmod>2024-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://guide.suchmeme.nl/extras/theming/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -106,12 +91,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://guide.suchmeme.nl/homebrew/edizon/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://guide.suchmeme.nl/homebrew/ftpd/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://guide.suchmeme.nl/homebrew/goldleaf/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://guide.suchmeme.nl/homebrew/jksv/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://guide.suchmeme.nl/homebrew/nx-shell/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://guide.suchmeme.nl/homebrew/nxtheme-installer/</loc>
+         <lastmod>2024-04-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://guide.suchmeme.nl/homebrew/theming/</loc>
          <lastmod>2024-04-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
