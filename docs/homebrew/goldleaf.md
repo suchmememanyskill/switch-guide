@@ -2,7 +2,9 @@
 
 Goldleaf is primarily a very extensive file and console content manager.
 
-Common use cases for Goldleaf are:
+-----
+
+#### Common use cases for Goldleaf are:
 
 - Account management
 - Browsing your microSD card
