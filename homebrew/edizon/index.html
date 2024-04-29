@@ -1071,9 +1071,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
+  <a href="#additional-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Instructions:
+      Additional information:
     </span>
   </a>
   
@@ -1498,18 +1498,17 @@
 
 <h1 id="games-cheats">Games cheats<a class="headerlink" href="#games-cheats" title="Permanent link">&para;</a></h1>
 <h3 id="edizon"><strong>EdiZon</strong><a class="headerlink" href="#edizon" title="Permanent link">&para;</a></h3>
-<p>For cheats management, <a href="https://github.com/WerWolv/EdiZon/releases">EdiZon</a> is recommended. It has support for Atmosphere's cheat engine, providing an easy way to download new cheats, as well as toggle them on or off.</p>
-<h3 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
+<p>For cheats management, <a href="https://github.com/WerWolv/EdiZon/releases">EdiZon</a> and/or <a href="https://github.com/tomvita/EdiZon-SE/releases">EdiZon-SE</a> (up to date and offers more features) are recommended. They offer support for Atmosphere's cheat engine, providing an easy way to download new cheats, as well as toggle them on or off.</p>
+<h4 id="usage-instructions"><strong>Usage instructions:</strong><a class="headerlink" href="#usage-instructions" title="Permanent link">&para;</a></h4>
 <p>Atmosphère looks for cheats to load in the <code>contents</code> sub-folder of the <code>atmosphere</code> folder. The template it looks for is <code>sd:/atmosphere/contents/&lt;title_id&gt;/cheats/&lt;build_id&gt;.txt</code>.
 You need to create the <code>&lt;title_id&gt;</code> folder and sub-folders manually:</p>
 <ul>
 <li><code>title_id</code> being the title or program of a game. This is game specific.</li>
 <li><code>build_id</code> being the version of a game. Cheats can be version specific so make sure the cheats you are using are compatible with your version.</li>
 </ul>
-<p><strong>Note: On Atmosphère 0.9.4 and below <code>contents</code> is called <code>titles</code></strong>.</p>
+<p><strong>Note: On Atmosphère 0.9.4 and below <code>contents</code> is called <code>titles</code>.</strong></p>
 <p>Switch game title IDs and build IDs can be found using the cheat menu of EdiZon (TID and BID, see below for a sample). Once the title is launched while in Atmosphere, your cheats should be applied.</p>
 <div class="admonition tip">
-<p class="admonition-title">Preventing cheats from being active</p>
 <p>To prevent cheats from being enabled by default, you can change your Atmosphère configuration:</p>
 <ul>
 <li>Copy <code>system_settings.ini</code> from <code>/atmosphere/config_templates</code> to <code>/atmosphere/config</code> if it is not already there.</li>
@@ -1518,12 +1517,13 @@ You need to create the <code>&lt;title_id&gt;</code> folder and sub-folders manu
 </ul>
 <p>By default, holding the L button while launching a game will disable any cheat.</p>
 </div>
-<p>For more in-depth details about Atmosphere's cheat engine, you can refer to <a href="https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/cheats.md">this page</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Cheats in EdiZon</p>
 <p>Here the title ID of the game (TID) is "0100646009FBE000" and the build ID of the game (BID) is "0B9A75586BC1A6C6". Cheats are loaded from <code>sd:/atmosphere/contents/0100646009FBE000/cheats/0B9A75586BC1A6C6.txt</code>.</p>
-<p><img alt="ExampleGameCheat" src="../../extras/img/game_cheating.jpg" /></p>
-</div>
+<p><img alt="ExampleGameCheat" src="../../extras/img/game_cheating.jpg" width="600" /></p>
+<hr />
+<h3 id="additional-information"><strong>Additional information:</strong><a class="headerlink" href="#additional-information" title="Permanent link">&para;</a></h3>
+<p>For more in-depth details about Atmosphere's cheat engine, you can refer to <a href="https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/cheats.md">this page</a>.<br></p>
+<p>EdiZon also offers a Tesla Menu overlay, however, the official EdiZon overlay is no longer maintained and will result in Atmosphere crashing when trying to use the EdiZon overlay on firmware version 16.0.0+.
+The maintained EdiZon overlay can be found <a href="https://github.com/proferabg/EdiZon-Overlay/releases">here</a>.</p>
 
 
 
