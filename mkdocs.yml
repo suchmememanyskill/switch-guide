@@ -62,6 +62,13 @@ nav:
       - 'NXTheme Installer': 'homebrew/nxtheme-installer.md'
       - 'NX-Shell': 'homebrew/nx-shell.md'
       - 'EdiZon': 'homebrew/edizon.md'
+      - 'Tesla-Menu': 'homebrew/tesla-menu.md'
+      - 'MissionControl': 'homebrew/mission-control.md'
+      - 'sys-con': 'homebrew/sys-con.md'
+      - 'sys-botbase': 'homebrew/sys-botbase.md'
+      - 'SysDVR': 'homebrew/sysdvr.md'
+      - 'sys-clk': 'homebrew/sys-clk.md'
+      - 'ldn_mitm': 'homebrew/ldn_mitm.md'
     - Tutorials:
         - 'Extras': 'extras/index.md'
         - 'Blocking Nintendo servers': 'extras/blocking_nintendo.md'

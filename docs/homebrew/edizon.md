@@ -36,5 +36,5 @@ Here the title ID of the game (TID) is "0100646009FBE000" and the build ID of th
 
 For more in-depth details about Atmosphere's cheat engine, you can refer to [this page](https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/cheats.md).<br>
 
-EdiZon also offers a Tesla Menu overlay, however, the official EdiZon overlay is no longer maintained and will result in Atmosphere crashing when trying to use the EdiZon overlay on firmware version 16.0.0+.
+EdiZon also offers a Tesla-Menu overlay, however, the official EdiZon overlay is no longer maintained and will result in Atmosphere crashing when trying to use the EdiZon overlay on firmware version 16.0.0+.
 The maintained EdiZon overlay can be found [here](https://github.com/proferabg/EdiZon-Overlay/releases).
