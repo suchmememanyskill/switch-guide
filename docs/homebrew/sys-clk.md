@@ -22,6 +22,12 @@ sys-clk is a [sysmodule](../../homebrew#terminologies) that allows you to overcl
 
 -----
 
+### **Basic usage instructions**
+
+Open the Homebrew menu and open sys-clk's manager app. This app allows you to change the global clock speeds or clock speeds based on title.
+
+-----
+
 ### **Troubleshooting**
 #### **My Switch crashes on boot after I installed sys-clk!:**
 

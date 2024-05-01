@@ -61,6 +61,12 @@ Tesla-Menu can be opened by pressing `L` + `R Stick press (R3)` + `DPAD down`, a
 
 &nbsp;
 
+#### **Tesla-Menu is only showing while on the main menu and not in-game!:**
+
+**Cause:** This issue will only happen when the Switch is docked, ensure that you've set the "Screen size" in `System Settings` > `TV Output` to 100%. Adjust your TV/monitor to fit the entirety of the screen of your Switch using its OSD (On Screen Display) or remote.
+
+&nbsp;
+
 #### **Tesla-Menu isn't opening when I press the correct button combination!:**
 
 Assuming you've followed the installation structions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.

@@ -24,6 +24,12 @@ ldn_mitm is a [sysmodule](../../homebrew#terminologies) that allows you to route
 
 -----
 
+### **Basic usage instructions**
+
+You can enable/disable ldn_mitm by opening the Homebrew menu, opening ldn_mitm's config app and pressing `Y` to toggle ldn_mitm.
+
+-----
+
 ### **Troubleshooting**
 #### **My Switch crashes on boot after I installed ldn_mitm!:**
 
