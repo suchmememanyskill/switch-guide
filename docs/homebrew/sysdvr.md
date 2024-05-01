@@ -25,6 +25,8 @@ and extensive troubleshooting information can be found on the SysDVR Wiki [here]
 
 **Cause:** If your Switch crashes with Error `2168-0002 (0x4a8)` and Title ID `00FF0000A53BB665`, you're using a version of SysDVR that's incompatible with your Switch firmware version and/or Atmosphere version. Update SysDVR and try again.
 
+&nbsp;
+
 #### **My Switch crashes after I launch a game with SysDVR enabled!:**
 
 **Cause:** If your Switch crashes with Error `2168-0002 (0x4a8)` and Title ID `00FF0000A53BB665`, you're using a version of SysDVR that's incompatible with your Switch firmware version and/or Atmosphere version. Update your SysDVR patches and SysDVR itself, then try again.

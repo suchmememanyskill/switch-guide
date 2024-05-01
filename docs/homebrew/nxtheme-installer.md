@@ -17,7 +17,7 @@ Using NXTheme Installer, you can install and create unique styles and layouts fo
 ### **Installing a theme**
 
 !!! note "Community Themes"
-	If you want to use community made themes, for example from the <a href="https://www.reddit.com/r/NXThemes/" target="_blank">**r/NXThemes**</a> subreddit or [Themezer](https://themezer.net), you can follow the guide below to install a community provided `.nxtheme` file.
+	If you want to use community made themes, for example from the <a href="https://www.reddit.com/r/NXThemes/" target="_blank">r/NXThemes</a> subreddit or [Themezer](https://themezer.net), you can follow the guide below to install a community provided `.nxtheme` file.
 
 #### **What you need:**
 
@@ -94,7 +94,7 @@ Using NXTheme Installer, you can install and create unique styles and layouts fo
 
 **Cause 3:** You installed a bad theme. You can remove them by navigating to `sd:/atmosphere/contents` and deleting the `01000000000001000` folder.
 
-- Note: `contents` is called `titles` on Atmosphère versions 0.9.4 and below.
+- **Note:** `contents` is called `titles` on Atmosphère versions 0.9.4 and below.
 
 &nbsp;
 
@@ -104,7 +104,7 @@ Using NXTheme Installer, you can install and create unique styles and layouts fo
 
 **Cause 2:** You installed a font that wasn't the right file type (e.g. `.otf`). You can remove your installed custom font data by navigating to `sd:/atmosphere/contents` and deleting the `0100000000000811` folder.
 
-- Note: `contents` is called `titles` on Atmosphère versions 0.9.4 and below.
+- **Note:** `contents` is called `titles` on Atmosphère versions 0.9.4 and below.
 
 &nbsp;
 

@@ -33,9 +33,17 @@
 
 -----
 
+##### **Booting into CFW**
 
-[Continue to Launching CFW (emuMMC) :material-arrow-right:](/user_guide/all/launching_cfw/#__tabbed_1_1){ .md-button .md-button--primary } [Continue to Launching CFW (sysCFW) :material-arrow-right:](/user_guide/all/launching_cfw/#__tabbed_1_2){ .md-button .md-button--primary }
+<div class="grid cards" markdown>
 
+-   Click the button below to continue to Launching emuMMC!
+    [Launching CFW (emuMMC) :material-arrow-right:](/user_guide/all/launching_cfw/#__tabbed_1_1){ .md-button .md-button--primary }
+
+-   Click the button below to continue to Launching sysCFW!
+    [Launching CFW (sysCFW) :material-arrow-right:](/user_guide/all/launching_cfw/#__tabbed_1_2){ .md-button .md-button--primary }
+
+</div>
 
 ??? "Frequently Asked Questions about this page"
       - **Q: Why is making a NAND backup considered crucial?** <br>
