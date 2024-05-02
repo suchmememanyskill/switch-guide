@@ -19,7 +19,7 @@ ldn_mitm is a [sysmodule](../../homebrew#terminologies) that allows you to route
 3. Extract the `.zip` file to a location on your computer.
     - If your archive manager allows for it, you can also simply open the `.zip` file directly.
 4. Copy the *contents* of the (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed ldn_mitm correctly, you should have a folder called `4200000000000010` (ldn_mitm) in `sd:/atmosphere/contents`.
+    - **Optional:** You can verify if you've installed ldn_mitm correctly, you should have a folder called `4200000000000010` (ldn_mitm) in `sd:/atmosphere/contents` and the `ldnmitm_config.nro` file in `sd:/switch/ldnmitm_config`.
 5. Boot into CFW.
 
 -----
@@ -27,6 +27,8 @@ ldn_mitm is a [sysmodule](../../homebrew#terminologies) that allows you to route
 ### **Basic usage instructions**
 
 You can enable/disable ldn_mitm by opening the Homebrew menu, opening ldn_mitm's config app and pressing `Y` to toggle ldn_mitm.
+
+![ldn_mitm](img/ldn_mitm.jpg)
 
 -----
 

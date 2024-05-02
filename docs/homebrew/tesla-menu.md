@@ -34,6 +34,8 @@ Tesla-Menu is an overlay menu developed by [WerWolv](https://github.com/WerWolv)
 ### **Opening Tesla-Menu**
 Tesla-Menu can be opened by pressing `L` + `R Stick press (R3)` + `DPAD down`, assuming you use the default configuration.
 
+![tesla](img/tesla-menu.jpg)
+
 -----
 
 ### **Commonly used Tesla-Menu overlays**
@@ -41,7 +43,7 @@ Tesla-Menu can be opened by pressing `L` + `R Stick press (R3)` + `DPAD down`, a
 - [EdiZon overlay](https://github.com/proferabg/EdiZon-Overlay)
 - [QuickNTP](https://github.com/nedex/QuickNTP)
 - [Emuiibo](https://github.com/XorTroll/emuiibo) (this requires you to also install the Emuiibo sysmodule)
-- [TriPlayer](https://github.com/DefenderOfHyrule/TriPlayer/tree/master) (this requires you to also install the TriPlayer sysmodule)
+- [TriPlayer](https://github.com/DefenderOfHyrule/TriPlayer) (this requires you to also install the TriPlayer sysmodule)
 - [ldn_mitm](https://github.com/DefenderOfHyrule/ldn_mitm) (this requires you to also install the ldn_mitm sysmodule)
 
 -----
