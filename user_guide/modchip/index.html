@@ -795,7 +795,7 @@
         
   
   <span class="md-ellipsis">
-    Partitioning the SD for emuMMC
+    Partitioning the microSD for emuMMC
   </span>
   
 
@@ -816,7 +816,7 @@
         
   
   <span class="md-ellipsis">
-    Partitioning the SD for sysCFW
+    Partitioning the microSD for sysCFW
   </span>
   
 
@@ -837,7 +837,7 @@
         
   
   <span class="md-ellipsis">
-    SD preparations
+    microSD Preparations
   </span>
   
 
@@ -1663,8 +1663,7 @@ This means without a microSD inserted at all times, your Switch becomes <em>unus
 <p>If you do turn on your Switch without a microSD card inserted, you should end up at a splash screen saying something along the lines of <code>NO SD</code>.</p>
 <details class="note" open="open">
 <summary>About modchips and their firmware versions</summary>
-<p>Some modchip firmwares (e.g., Spacecraft-NX, Hwfly-NX and the Picofly firmware) allow bypassing <code>sdloader</code> by holding one - or both - of the volume buttons during power-on, enabling normal boot without a microSD card. Not all modchips support firmware upgrades.</p>
-<p>If you do turn on your Switch without a microSD card inserted, you should end up at a splash screen of <code>sdloader</code> saying something along the lines of <code>NO SD</code>.</p>
+<p>Some modchip firmwares (e.g., Spacecraft-NX, Hwfly-NX and the Picofly firmware) allow bypassing <code>sdloader</code> by holding one - or both - of the volume buttons during power-on, enabling normal boot without a microSD card. Not all modchips support manual firmware updates.</p>
 </details>
 <p>Modchipped Switch consoles allow untethered, coldboot CFW loading, directly entering custom firmware without external devices like dongles or jigs. This is in contrast to the tethered coldboot "RCM" entrypoint.</p>
 <ul>
@@ -1672,13 +1671,14 @@ This means without a microSD inserted at all times, your Switch becomes <em>unus
 </ul>
 <p>Running CFW on modchipped consoles is more simplistic, as it only requires you to have <code>payload.bin</code> present on the root of your microSD card when you turn on the system.</p>
 <p>Furthermore, this guide assumes you have a functional modchip installation.</p>
+<hr />
 <h3 id="important"><strong>Important</strong><a class="headerlink" href="#important" title="Permanent link">&para;</a></h3>
 <p>If you do decide to follow the recommended emuMMC path later in the guide, make sure you disable <a href="https://www.nintendo.co.uk/Support/Nintendo-Switch/How-to-Enable-Disable-Automatic-Save-Data-Backups-and-Downloads-1434310.html">Automatic Save Data Cloud backups/downloads</a> beforehand as well as making sure <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">the Switch is set as Primary Console</a>.</p>
 <div class="admonition danger">
 <p class="admonition-title">Disclaimer</p>
 <p>We <strong>ONLY</strong> support the Picofly modchip (the <code>RP2040 Zero</code> development board and the "modchip variant" of it). Installing a modchip safely is your responsibility, so if you don't trust yourself, get someone trusted to perform the install.
 There is always a risk of your Switch being rendered dysfunctional when messing with its hardware without proper experience.
-The NH Discord server is not for fixing bad modchip installations.
+The NH-Discord server is not for fixing bad modchip installations.
 We can give advice and installation tips for the installation as long as it's for a Picofly modchip.</p>
 </div>
 <p><a class="md-button md-button--primary" href="preparing_hekate/">Continue to Preparing Hekate <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
