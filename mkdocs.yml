@@ -49,9 +49,9 @@ nav:
           - 'Preparing Hekate': 'user_guide/modchip/preparing_hekate.md'
         - Finalizing Setup:
           - 'Choosing an Environment': 'user_guide/all/cfw_environment.md'
-          - 'Partitioning the SD for emuMMC': 'user_guide/all/partitioning_sd.md'
-          - 'Partitioning the SD for sysCFW': 'user_guide/all/partitioning_sd_syscfw.md'
-          - 'SD preparations': 'user_guide/all/sd_preparation.md'
+          - 'Partitioning the microSD for emuMMC': 'user_guide/all/partitioning_sd.md'
+          - 'Partitioning the microSD for sysCFW': 'user_guide/all/partitioning_sd_syscfw.md'
+          - 'microSD Preparations': 'user_guide/all/sd_preparation.md'
           - 'Making Essential Backups': 'user_guide/all/making_essential_backups.md'
           - 'Launching CFW': 'user_guide/all/launching_cfw.md'
     - Homebrew:

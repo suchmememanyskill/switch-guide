@@ -1,4 +1,4 @@
-### **SD Preparation**
+### **Information**
 
 We will now place the required files for the Atmosphère custom firmware and some additional homebrew files on the microSD card.
 
@@ -6,6 +6,8 @@ Atmosphere has its own bootloader, called fusee. For the purposes of this guide 
 
 !!! warning "File name extensions"
     If you use Windows, you should enable file name extensions before continuing. See [this link](../../extras/showing_file_extensions.md) for a guide on how to do this.
+
+-----
 
 #### **What you need:**
 - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)

@@ -1,6 +1,6 @@
 ### **Information**
 
-This page summarizes the included Homebrew apps.
+This page summarizes the included Homebrew apps and additional Homebrew you can check out.
 
 #### The guide includes a few Homebrew apps by default, these apps are:
 

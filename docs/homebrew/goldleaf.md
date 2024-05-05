@@ -16,6 +16,8 @@ Goldleaf is primarily a very extensive file and console content manager.
 
 And a *lot* more, which you can view on Goldleaf's Github repository [here](https://github.com/XorTroll/Goldleaf).
 
-#### Goldleaf's main menu:
+-----
+
+#### Goldleaf screenshots:
 
 ![main menu](/homebrew/img/goldleaf.jpg)
