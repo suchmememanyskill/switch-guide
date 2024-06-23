@@ -1647,6 +1647,10 @@
 <p>This section details how to add an <code>udev</code> rule to let you send a payload to your Switch without needing to use <code>sudo</code>.</p>
 <p>The following instructions only work if you have a system that implements <code>udev</code>. Most modern distros come with <code>systemd</code> already installed, which includes a <code>udev</code> implementation.</p>
 <p>Do the following instructions while your Switch is <em>not</em> connected to your computer.</p>
+<div class="admonition note">
+<p class="admonition-title">For Arch Linux users:</p>
+<p>The package <code>android-udev</code> includes rules that will also allow for payload injection to work without root. Do note this also allows Android specific commands such as <code>adb</code> and <code>fastboot</code> to also work without root (as is the intention of it.)</p>
+</div>
 <p>&nbsp;</p>
 <h3 id="option-1-manually-adding-rules-and-group"><strong>Option 1: Manually adding rules and group</strong><a class="headerlink" href="#option-1-manually-adding-rules-and-group" title="Permanent link">&para;</a></h3>
 <p>The following instructions are not for beginners. Only do this if you understand what you are doing.</p>
