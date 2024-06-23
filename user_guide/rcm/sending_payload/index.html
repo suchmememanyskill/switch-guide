@@ -1641,7 +1641,7 @@
 </div>
 <p>Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same but slightly differ depending on what hardware you have available.</p>
 <p>&nbsp;</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Mac / Linux</label><label for="__tabbed_1_3">Android</label><label for="__tabbed_1_4">Chromebook</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Mac</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">Chromebook</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <h4 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
@@ -1678,7 +1678,7 @@
 <div class="tabbed-block">
 <h4 id="what-you-need_1"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/nh-server/fusee-interfacee-tk/releases" target="_blank">fusee-interfacee-tk</a> (also avaliable on the <a href="https://aur.archlinux.org/packages/fusee-interfacee-tk-bin">AUR</a>)<ul>
+<li>The latest release of <a href="https://github.com/DavidBuchanan314/fusee-nano" target="_blank">fusee-nano</a> (also available on the <a href="https://aur.archlinux.org/packages/fusee-nano">AUR</a>)<ul>
 <li>If you use Arch Linux or a derivative distro, the AUR package is recommended.</li>
 </ul>
 </li>
@@ -1687,12 +1687,17 @@
 </ul>
 <h4 id="instructions_1"><strong>Instructions:</strong><a class="headerlink" href="#instructions_1" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Download and run the payload injector (if you're on Linux, you will need to run this program as root, use <code>sudo</code>, or follow the instructions at <a href="../../../extras/adding_udev/">Linux injection without root</a>).</li>
+<li>Download and run the payload injector from your terminal. You will need to run the injector as root, unless you follow the instructions at <a href="../../../extras/adding_udev/">Linux injection without root</a>.</li>
 <li>Connect your Switch in RCM to your PC using the USB cable.</li>
-<li>Wait for your Switch to be shown as found in the injector.</li>
-<li>Press <code>Select Payload</code>, and navigate to and select the <code>hekate_ctcaer_X.X.X.bin</code> file.</li>
-<li>Click <code>Send Payload!</code> to launch the payload you selected.</li>
+<li>Run fusee-nano.<ul>
+<li>This can be done with <code>./fusee-nano /path/to/hekate-ctcaer_X.X.X.bin</code></li>
+<li>As mentioned earlier, unless you have followed the instructions at <a href="../../../extras/adding_udev/">Linux injection without root</a>, this will require root to run. For most systems, this is done with <code>sudo</code></li>
+</ul>
+</li>
 </ol>
+</div>
+<div class="tabbed-block">
+<h4 id="tbd">TBD<a class="headerlink" href="#tbd" title="Permanent link">&para;</a></h4>
 </div>
 <div class="tabbed-block">
 <h4 id="what-you-need_2"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_2" title="Permanent link">&para;</a></h4>
