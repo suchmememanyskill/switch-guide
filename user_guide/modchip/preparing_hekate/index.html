@@ -642,17 +642,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Preparing Hekate
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -663,32 +654,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#payload-and-bootloader-folder-placement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Payload and bootloader folder placement
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1630,10 +1595,13 @@
   
 
 
-  <h1>Preparing Hekate</h1>
-
-<h3 id="payload-and-bootloader-folder-placement"><strong>Payload and bootloader folder placement</strong><a class="headerlink" href="#payload-and-bootloader-folder-placement" title="Permanent link">&para;</a></h3>
-<p>To get ready for formatting and/or partitioning your microSD card, we will need to prepare your it with the required files.</p>
+<h1 id="payload-and-bootloader-folder-placement"><strong>Payload and bootloader folder placement</strong><a class="headerlink" href="#payload-and-bootloader-folder-placement" title="Permanent link">&para;</a></h1>
+<p>To get ready for formatting and/or partitioning your microSD card, we will need to prepare and place the required files on the microSD card.</p>
+<div class="admonition danger">
+<p class="admonition-title">Following the guide will delete everything on your microSD card!</p>
+<p>Later in the guide, you will be formatting and/or partitioning your microSD card. This means that all data on the microSD card will be lost. Now is a good time to back up <em>all</em> of its data to a safe place (for example, on your PC or external drive) so that you can restore it later. You can do this by following the instructions below.</p>
+</div>
+<hr />
 <h4 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the <code>hekate_ctcaer_(version).zip</code> release of Hekate)</li>
@@ -1643,20 +1611,20 @@
 <ol>
 <li>Extract the Hekate <code>.zip</code> to a location on your computer.</li>
 <li>Insert your microSD card into your computer.</li>
-<li>Inside of the extracted Hekate folder, you will find <code>/bootloader</code> and <code>hekate_ctcaer_(version).bin</code></li>
+<li>Copy the <code>Nintendo</code> folder (and any other important data) from the root of your microSD card to a safe space on your device.</li>
+<li>Inside of the extracted Hekate folder, you will find the <code>bootloader</code> folder and the <code>hekate_ctcaer_(version).bin</code> payload.</li>
 <li>Copy the <code>bootloader</code> folder and <code>hekate_ctcaer_(version).bin</code> payload to the root of your microSD card.</li>
 <li>Rename the <code>hekate_ctcaer_(version).bin</code> payload to <code>payload.bin</code></li>
-<li>Copy the <code>Nintendo</code> folder from the root of your microSD to a safe space on your device.</li>
 <li>Insert your microSD card back into your Switch, then turn it on.</li>
 <li>You should now be loaded into the Hekate GUI (Nyx), pictured below, within seconds.
-<img alt="Nyx" src="/user_guide/all/img/nyx.bmp" width="600" /><ul>
+<img alt="Nyx" src="../../all/img/nyx.bmp" width="600" /><ul>
 <li>If you are unable to load into Nyx, consult the warning message below.</li>
 </ul>
 </li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If your Switch does not load into the Hekate GUI, or shows a <code>NO SD</code>/<code>No Payload</code> screen when turning on the console, ensure that you inserted your microSD card and that Hekate's <code>payload.bin</code> is on the root of the microSD card.</p>
+<p>If your Switch does not load into the Hekate GUI, or shows a <code>No SD Card</code>/<code>No Payload</code> screen when turning on the console, ensure that you inserted your microSD card and that Hekate's <code>payload.bin</code> is on the root of the microSD card.</p>
 </div>
 <p><a class="md-button md-button--primary" href="../../all/cfw_environment/">Continue to choosing your CFW environment <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 <details>

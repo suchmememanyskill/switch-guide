@@ -758,18 +758,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#syscfw-cfw-on-sysmmc" class="md-nav__link">
+  <a href="#emummc-cfw-recommended" class="md-nav__link">
     <span class="md-ellipsis">
-      sysCFW (CFW on sysMMC)
+      emuMMC CFW (Recommended)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#emummc-cfw" class="md-nav__link">
+  <a href="#syscfw-cfw-on-sysmmc" class="md-nav__link">
     <span class="md-ellipsis">
-      emuMMC CFW
+      sysCFW (CFW on sysMMC)
     </span>
   </a>
   
@@ -1653,17 +1653,52 @@
 <h3 id="cfw-on-sysmmc-vs-cfw-on-emummc"><strong>CFW on sysMMC vs. CFW on emuMMC</strong><a class="headerlink" href="#cfw-on-sysmmc-vs-cfw-on-emummc" title="Permanent link">&para;</a></h3>
 <p>A "CFW Environment" describes the context in which you are using custom firmware (CFW).
 As a reminder, custom firmware is never permanently installed, and runs independently on top of the system firmware. This means that you never have to commit to where you want to use custom firmware.</p>
-<p>Atmosphère temporarily patches the OS to enable customisations. You can choose what version of the OS it patches, each time you turn on your system. Each option has its own benefits and drawbacks.</p>
+<p>Atmosphère temporarily patches HOS (HorizonOS, operating system of the switch) to enable customisations. You can choose what version of HOS it patches, each time you turn on your system. Each option has its own benefits and drawbacks.</p>
 <ul>
 <li>For the purposes of this guide, the suffix -NAND and -MMC are interchangeable.</li>
 </ul>
-<p>Generally, <code>sys-</code> refers to the physical storage chip inside of your Switch. It stands for "system".</p>
-<p>Generally, <code>emu-</code> refers to a virtual version of the OS, running from a microSD card. It stands for "emulated".</p>
+<p>Generally, <code>sys-</code> refers to the physical storage chip (sysMMC/eMMC) inside of your Switch. It stands for "system".</p>
+<p>Generally, <code>emu-</code> refers to a virtual version of the eMMC (internal storage), running from a microSD card. It stands for "emulated".</p>
 <p>For more information on terminology, please refer to the <a href="../../../extras/glossary/">glossary</a>.</p>
 <p><strong>You get to decide!</strong> Your choices are between using the internal storage or emulated storage. We will go over the advantages and disadvantages of either decision below.</p>
 <hr />
 <div class="grid cards">
 <ul>
+<li>
+<h3 id="emummc-cfw-recommended"><strong>emuMMC CFW (Recommended)</strong><a class="headerlink" href="#emummc-cfw-recommended" title="Permanent link">&para;</a></h3>
+<h4 id="cfw-on-emummc-has-the-following-benefits"><strong>CFW on emuMMC has the following benefits:</strong><a class="headerlink" href="#cfw-on-emummc-has-the-following-benefits" title="Permanent link">&para;</a></h4>
+<ul>
+<li>No risk of bans as long as emuMMC remains offline from Nintendo <a href="../../../extras/img/ban.png">[info]</a></li>
+<li>A safe area to test dangerous or risky mods and homebrew</li>
+<li>No chance of bricking and losing console-unique information while using CFW</li>
+</ul>
+<h4 id="the-following-drawbacks"><strong>The following drawbacks:</strong><a class="headerlink" href="#the-following-drawbacks" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Large microSD size requirement (32GB or 64GB will be reserved, depending on if you use a Switch OLED or not). If you want a <em>decent</em> experience, a minimum of 128GB is required (unless you are an advanced user and can resize the USER partition of your NAND)</li>
+<li>Slower console response times due to the limitation of your microSD card's classifications/specifications</li>
+<li>No official online play while in CFW</li>
+<li>More microSD card wear over time</li>
+<li>Doubled digital game storage requirements <link to dumping digital games></li>
+</ul>
+<h4 id="and-the-following-considerations"><strong>And the following considerations:</strong><a class="headerlink" href="#and-the-following-considerations" title="Permanent link">&para;</a></h4>
+<p>No parity between sysMMC and emuMMC (Game installs, save data, and system settings will be separated when you boot between the two)</p>
+<h4 id="in-particular-here-are-just-some-popular-use-cases-for-cfw-on-emummc"><strong>In particular, here are just <em>some</em> popular use-cases for CFW on emuMMC:</strong><a class="headerlink" href="#in-particular-here-are-just-some-popular-use-cases-for-cfw-on-emummc" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Restoring modified save data for any game</li>
+<li>Modding and cheating in any game</li>
+<li>Custom fonts and home menu theming</li>
+<li>Downgrading titles to base versions, without mandatory updates</li>
+<li>Enjoying CFW features such as custom sysmodules and homebrew apps</li>
+</ul>
+<p>If you prefer foolproofing, and a separation between official features and custom features, you may consider using CFW on emuMMC. In this guide, emuMMC is assumed to be utilised for offline play.</p>
+<div class="admonition note">
+<p class="admonition-title">About this path</p>
+<p>This path of the guide <strong><em>also</em></strong> includes sysCFW as launch option.</p>
+</div>
+<hr />
+<p>To proceed with CFW on <strong>emuMMC</strong>, click on the button below:</p>
+<p><a class="md-button md-button--primary" href="../partitioning_sd/">Continue with the emuMMC path <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+</li>
 <li>
 <h3 id="syscfw-cfw-on-sysmmc"><strong>sysCFW (CFW on sysMMC)</strong><a class="headerlink" href="#syscfw-cfw-on-sysmmc" title="Permanent link">&para;</a></h3>
 <h4 id="cfw-on-sysmmc-has-the-following-benefits"><strong>CFW on sysMMC has the following benefits:</strong><a class="headerlink" href="#cfw-on-sysmmc-has-the-following-benefits" title="Permanent link">&para;</a></h4>
@@ -1674,7 +1709,7 @@ As a reminder, custom firmware is never permanently installed, and runs independ
 <li>Fast console response time by not having to rely on the speed of your microSD card</li>
 <li>Longer microSD card lifespan</li>
 </ul>
-<h4 id="the-following-drawbacks"><strong>The following drawbacks:</strong><a class="headerlink" href="#the-following-drawbacks" title="Permanent link">&para;</a></h4>
+<h4 id="the-following-drawbacks_1"><strong>The following drawbacks:</strong><a class="headerlink" href="#the-following-drawbacks_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>A brick risk for risky behaviors, especially for modchip users <a href="#modchip-instability">[info]</a></li>
 <li>A Nintendo server ban risk for misbehavior <a href="https://nx.eiphax.tech/ban.html">[info]</a></li>
@@ -1694,44 +1729,13 @@ As a reminder, custom firmware is never permanently installed, and runs independ
 <p>To proceed with CFW on <strong>sysMMC</strong>, click on the button below:</p>
 <p><a class="md-button md-button--primary" href="../partitioning_sd_syscfw/">Continue with the sysCFW path <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 </li>
-<li>
-<h3 id="emummc-cfw"><strong>emuMMC CFW</strong><a class="headerlink" href="#emummc-cfw" title="Permanent link">&para;</a></h3>
-<h4 id="cfw-on-emummc-has-the-following-benefits"><strong>CFW on emuMMC has the following benefits:</strong><a class="headerlink" href="#cfw-on-emummc-has-the-following-benefits" title="Permanent link">&para;</a></h4>
-<ul>
-<li>No risk of bans as long as emuMMC remains offline from Nintendo <a href="../../../extras/img/ban.png">[info]</a></li>
-<li>A safe area to test dangerous or risky mods and homebrew</li>
-<li>No chance of bricking and losing console-unique information while using CFW</li>
-</ul>
-<h4 id="the-following-drawbacks_1"><strong>The following drawbacks:</strong><a class="headerlink" href="#the-following-drawbacks_1" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Large microSD size requirement (32GB or 64GB will be reserved, depending on if you use a Switch OLED or not). If you want a <em>decent</em> experience, a minimum of 128GB is required (unless you are an advanced user and can resize the USER partition of your NAND)</li>
-<li>Slower console response times</li>
-<li>No official online play while in CFW</li>
-<li>More microSD card wear over time</li>
-<li>Doubled digital game storage requirements <link to dumping digital games></li>
-</ul>
-<h4 id="and-the-following-considerations"><strong>And the following considerations:</strong><a class="headerlink" href="#and-the-following-considerations" title="Permanent link">&para;</a></h4>
-<p>No parity between sysMMC and emuMMC (Game installs, save data, and system settings will be separated when you boot between the two)</p>
-<h4 id="in-particular-here-are-just-some-popular-use-cases-for-cfw-on-emummc"><strong>In particular, here are just <em>some</em> popular use-cases for CFW on emuMMC:</strong><a class="headerlink" href="#in-particular-here-are-just-some-popular-use-cases-for-cfw-on-emummc" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Restoring modified save data for any game</li>
-<li>Modding and cheating in any game</li>
-<li>Custom fonts and home menu theming</li>
-<li>Downgrading titles to base versions, without mandatory updates</li>
-<li>Enjoying CFW features such as custom sysmodules and homebrew apps</li>
-</ul>
-<p>If you prefer foolproofing, and a separation between official features and custom features, you may consider using CFW on emuMMC. In this guide, emuMMC is assumed to be utilised for offline play.</p>
-<hr />
-<p>To proceed with CFW on <strong>emuMMC</strong>, click on the button below:</p>
-<p><a class="md-button md-button--primary" href="../partitioning_sd/">Continue with the emuMMC path <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
-</li>
 </ul>
 </div>
 <hr />
 <h5 id="modchip-instability">Modchip Instability<a class="headerlink" href="#modchip-instability" title="Permanent link">&para;</a></h5>
 <div class="admonition danger">
 <p class="admonition-title">About Modchipped Switch console users</p>
-<p>Modchips directly infiltrate communication with the internal storage chip. Due to this, there are slight chances of NAND backups being tainted with corrupted data. If a bad backup is restored to sysNAND, the console can be bricked, and a modchip alone won't be able to fix it. To be safe, either only run an emuMMC on a console with a modchip, verify BOOT0/1 backups using tools like <a href="https://github.com/eliboa/NxNandManager">NXNandManager (Windows)</a> or test NAND backups by running them as emuMMCs before you flash them to the sysNAND.</p>
+<p>Modchips directly infiltrate communication with the internal storage chip. Due to this, there are slight chances of NAND backups being tainted with corrupted data. If a bad backup is restored to sysNAND, the console can be bricked, and a modchip alone won't be able to fix it. To be safe, we recommend setting up an emuMMC on a console with a modchip, verify BOOT0/1 backups using tools like <a href="https://github.com/eliboa/NxNandManager">NXNandManager (Windows)</a> or test NAND backups by running them as emuMMCs before you flash them to the sysNAND.</p>
 </div>
 <details>
 <summary>Frequently Asked Questions about this page</summary>
