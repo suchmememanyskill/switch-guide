@@ -1363,9 +1363,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
+  <a href="#usage-instructions" class="md-nav__link">
     <span class="md-ellipsis">
-      Instructions
+      Usage instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
     </span>
   </a>
   
@@ -1634,17 +1652,56 @@
   
 
 
-<h1 id="game-modding-with-layeredfs">Game modding with LayeredFS<a class="headerlink" href="#game-modding-with-layeredfs" title="Permanent link">&para;</a></h1>
-<p>LayeredFS, a tool built in to Atmosphere, allows you to replace game files with your own.</p>
-<p>&nbsp;</p>
-<h3 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h3>
-<p>Make a folder on your microSD card inside the <code>atmosphere/contents/</code> folder, with the name being the title ID of the game you would like to replace the files of. For example if you want to do mods of The Legend of Zelda: Tears of the Kingdom the path would be <code>atmosphere/contents/0100F2C0115B6000/</code>. Switch game title IDs can be found on <a href="http://nswdb.com/">http://nswdb.com/</a>.</p>
-<p>If you have a pre-made mod, the files would be placed here. Some mods may include the title ID or the entire path for you to merge. Mods will usually come as a compressed format and need to be extracted to use. There may be a folder named <code>romfs</code> or <code>exefs</code> or both that need to go in the title ID folder. If the mod doesn't come with these you'll need to find the file path of the assets it is replacing yourself and set up the folder structure on your SD card inside of the title ID folder.  Then, once the title is launched while in Atmosphere, your mod should load. By default, holding the L button while launching a game will disable any mod.</p>
+<h1 id="game-modding-with-layeredfs"><strong>Game modding with LayeredFS</strong><a class="headerlink" href="#game-modding-with-layeredfs" title="Permanent link">&para;</a></h1>
+<p>LayeredFS, a tool built into Atmosphere, allows you to (temporarily) replace a game's assets with your own, modified assets as long as you're booted into CFW.</p>
+<h3 id="usage-instructions"><strong>Usage instructions</strong><a class="headerlink" href="#usage-instructions" title="Permanent link">&para;</a></h3>
+<p>Check the section below to find your mod's folder/file structure, then install your mod accordingly.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Checking folder/file structures</strong></p>
+<ul>
+<li>
+<p>If the mod solely includes a <code>romfs</code> (and/or <code>exefs</code> folder), you will need to place that folder inside of <code>sd:/atmosphere/contents/&lt;title_id&gt;/</code>.</p>
+<ul>
+<li><strong>Note:</strong> The title ID folder has to be created manually in this case. This is game specific and the title ID of every game can be found on the following websites: <a href="https://switchbrew.org/wiki/Title_list/Games">switchbrew</a> and <a href="https://nswdb.com/">nswdb</a>.</li>
+</ul>
+</li>
+<li>
+<p>If the mod solely includes a <code>contents</code> folder, you can simply copy that folder to <code>sd:/atmosphere/</code> on your microSD card and merge folders if prompted.</p>
+</li>
+<li>
+<p>If the mod has the complete folder structure set up (i.e. <code>atmosphere/contents/&lt;title_id&gt;/romfs</code>), you can simply copy the <code>atmosphere</code> folder (likely inside of a mod's <code>.zip</code> file) to the root of your microSD card and merge folders if prompted.</p>
+</li>
+</ul>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Atmosphere 0.9.4 and below</p>
-<p><strong>Note: On Atmosphère 0.9.4 and below <code>contents</code> is called <code>titles</code></strong></p>
+<p><strong>Note: On Atmosphère 0.9.4 and below, <code>contents</code> is called <code>titles</code></strong></p>
 </div>
+<p>In the image below, you can see a Batman skin mod being used in The Legend of Zelda: Breath of the Wild. In this example, the title ID and mod installation directory would be <code>sd:/atmosphere/contents/0100509005AF2000/</code>.</p>
 <p><img alt="ExampleGameMod" src="../img/game_modding.jpg" /></p>
+<hr />
+<h3 id="additional-notes"><strong>Additional notes</strong><a class="headerlink" href="#additional-notes" title="Permanent link">&para;</a></h3>
+<p>The <code>romfs</code> folder contains modified assets in the way the game would normally read them. <code>romfs</code> stands for "romFileSystem", which is quite literally what the filesystem (folder and file structure) of the game you're modding consists of internally.</br></p>
+<p>If you want to disable mods on launch of a game, hold the <code>L</code> button before launching the game and launch the game normally, <code>L</code> is the default button to do this. This will disable all modifications (like cheats and mods) that you have configured for your game.</p>
+<p>The modding process is also <strong><em>not</em></strong> the same for every game, for example:</p>
+<ul>
+<li>
+<p>Modding Super Smash Bros. requires <a href="https://github.com/Raytwo/ARCropolis">ARCropolis</a> and <a href="https://github.com/skyline-dev/skyline">skyline</a>, ARCropolis looks for mods in the <code>sd:/ultimate/mods</code> directory on your microSD card.</p>
+</li>
+<li>
+<p>Modding Splatoon 3 requires the <a href="https://flexlion.github.io/">Flexlion</a> mod menu.</p>
+</li>
+<li>
+<p>Animal Crossing: New Horizons requires some extra setup for mods to work. The folder that would normally be called <code>romfs</code> has to be called <code>romFs</code> and you'll need to create an empty file inside of <code>atmosphere/contents/01006F8002326000/romFs/System/Resource/</code> called <code>ResourceSizeTable.srsizetable</code>. More information on this can be found on the <a href="https://ac-modding.com/ACNH/mods.html">ac-modding website</a>.</p>
+</li>
+</ul>
+<hr />
+<h3 id="troubleshooting"><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<h4 id="my-game-crashes-upon-launch"><strong>My game crashes upon launch!</strong><a class="headerlink" href="#my-game-crashes-upon-launch" title="Permanent link">&para;</a></h4>
+<p>If your game crashes during launch, hold the <code>L</code> button to see if disabling all modifications for your game solves the issue. If so, delete the most recently added mod(s) for your game.</p>
+<h4 id="my-mods-arent-showing-up-in-game"><strong>My mods aren't showing up in-game!</strong><a class="headerlink" href="#my-mods-arent-showing-up-in-game" title="Permanent link">&para;</a></h4>
+<p>Assuming you've followed the installation structions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.</p>
+<p>This can be done by booting into Hekate and going to <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
 
 
 
