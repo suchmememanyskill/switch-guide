@@ -1645,31 +1645,42 @@
 <h4 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Enter RCM and inject the Hekate payload.<ul>
-<li>If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to <code>payload.bin</code> on the root of your SD.</li>
+<li>If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to <code>payload.bin</code> on the root of your microSD card.</li>
 </ul>
 </li>
-<li>Use the touch screen to navigate to <code>Tools</code> and then <code>Backup eMMC</code></li>
+<li>Use the touch screen or Joy-Cons to navigate to <code>Tools</code> &gt; <code>Backup eMMC</code>.</li>
 <li>Tap on <code>eMMC BOOT0 &amp; BOOT1</code><ul>
 <li>This should only take a few seconds, but if your microSD card is very slow, it may take around a minute.</li>
 </ul>
 </li>
 <li>Tap on <code>Close</code> to continue, then tap on <code>eMMC RAW GPP</code><ul>
 <li>This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your microSD card is very slow).</li>
-<li>On FAT32 microSD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.</li>
-<li>Hekate will stop producing these parts when it runs out of space. When this happens, do the following:</li>
-<li>Power off your system.</li>
-<li>Insert your microSD card into your PC.</li>
-<li>Move all files from the <code>backup</code> folder on your microSD card to a safe location on your PC.</li>
-<li>Insert your microSD card into your Switch.</li>
-<li>Enter RCM again, inject Hekate again, and continue the backup by tapping on <code>Tools</code> &gt; <code>Backup eMMC</code> &gt; <code>eMMC RAW GPP</code></li>
-<li>Repeat the process until the NAND is completely dumped.</li>
+<li>If your microSD card has less than 32GB of space available, please follow <a href="#on-fat32-formatted-microsd-cards-or-cards-that-have-less-than-32-gigabytes-of-space-available-the-nand-backup-will-be-split-into-1-or-2-gigabyte-parts">these instructions</a> instead.</li>
 </ul>
 </li>
-<li>Go to the top right and press <code>Close</code> &gt; <code>Home</code></li>
+<li>Go to the top right and press <code>Close</code> &gt; <code>Home</code>.</li>
 <li>Navigate to <code>Tools</code> &gt; <code>USB tools</code> &gt; <code>SD card</code> and plug your Switch into your PC via USB.</li>
 <li>Copy the <code>backup</code> folder on your microSD card to a safe location on your PC.</li>
-<li>Once done, eject the <code>UMS</code> device safely from within your computer's operating system and return to hekate's <code>Home</code> menu.</li>
+<li>Once done, you may delete the <code>backup</code> folder from the root of your microSD card and eject the <code>UMS</code> device safely from within your computer's operating system, then return to Hekate's <code>Home</code> menu.</li>
 </ol>
+<details class="note">
+<summary>About microSD cards with less than 32GB of free space</summary>
+<h4 id="on-fat32-formatted-microsd-cards-or-cards-that-have-less-than-32-gigabytes-of-space-available-the-nand-backup-will-be-split-into-1-or-2-gigabyte-parts">On FAT32 formatted microSD cards or cards that have less than 32 gigabytes of space available, the NAND backup will be split into 1 or 2 gigabyte parts.<a class="headerlink" href="#on-fat32-formatted-microsd-cards-or-cards-that-have-less-than-32-gigabytes-of-space-available-the-nand-backup-will-be-split-into-1-or-2-gigabyte-parts" title="Permanent link">&para;</a></h4>
+<p>Hekate will stop producing these parts when it runs out of space. When this happens, do the following:</p>
+<ol>
+<li>Press <code>OK</code> when Hekate tells you to back up your stuff.</br>
+    <img alt="nandbackup" src="../img/nandbackup.bmp" width="600" /></li>
+<li>Press <code>Close</code> &gt; <code>Close</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code> and connect your Switch to your PC via USB.</li>
+<li>Your microSD card should now be accessible on your PC, move the <code>backup</code> folder on the root of your microSD card to a safe location on your PC.<ul>
+<li><em>If</em> you are prompted to merge folders, do so.</li>
+</ul>
+</li>
+<li>Eject the <code>UMS</code> device safely from within your computer's operating system and close the UMS window in Hekate.</li>
+<li>Press <code>Close</code> &gt; <code>Backup eMMC</code> &gt; <code>eMMC RAW GPP</code> and continue backing up your NAND.</li>
+<li>Repeat step 2-5 until the NAND is completely dumped.</li>
+<li>Once done, return to Hekate's <code>Home</code> menu.</li>
+</ol>
+</details>
 <hr />
 <h5 id="booting-into-cfw"><strong>Booting into CFW</strong><a class="headerlink" href="#booting-into-cfw" title="Permanent link">&para;</a></h5>
 <div class="grid cards">
